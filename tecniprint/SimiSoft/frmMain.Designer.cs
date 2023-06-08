@@ -43,6 +43,7 @@ namespace SimiSoft
             btnRoles = new DevExpress.XtraBars.BarButtonItem();
             btnUsuarios = new DevExpress.XtraBars.BarButtonItem();
             btnVentas = new DevExpress.XtraBars.BarButtonItem();
+            barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             bar3 = new DevExpress.XtraBars.Bar();
             barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -50,7 +51,6 @@ namespace SimiSoft
             barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             tabMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(components);
-            barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)bManager).BeginInit();
             ((System.ComponentModel.ISupportInitialize)tabMdiManager).BeginInit();
             SuspendLayout();
@@ -74,7 +74,7 @@ namespace SimiSoft
             bar2.DockCol = 0;
             bar2.DockRow = 0;
             bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(mnArchivo), new DevExpress.XtraBars.LinkPersistInfo(mnCatalogo), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem1) });
+            bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(mnArchivo), new DevExpress.XtraBars.LinkPersistInfo(mnCatalogo) });
             bar2.OptionsBar.DrawBorder = false;
             bar2.OptionsBar.DrawDragBorder = false;
             bar2.OptionsBar.MultiLine = true;
@@ -158,6 +158,12 @@ namespace SimiSoft
             btnVentas.Name = "btnVentas";
             btnVentas.ItemClick += btnVentas_ItemClick;
             // 
+            // barButtonItem1
+            // 
+            barButtonItem1.Caption = "Sifunciono";
+            barButtonItem1.Id = 12;
+            barButtonItem1.Name = "barButtonItem1";
+            // 
             // bar3
             // 
             bar3.BarName = "Barra de estado";
@@ -211,12 +217,6 @@ namespace SimiSoft
             // tabMdiManager
             // 
             tabMdiManager.MdiParent = this;
-            // 
-            // barButtonItem1
-            // 
-            barButtonItem1.Caption = "Sifunciono";
-            barButtonItem1.Id = 12;
-            barButtonItem1.Name = "barButtonItem1";
             // 
             // frmMain
             // 
