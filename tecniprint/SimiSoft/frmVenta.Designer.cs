@@ -30,11 +30,15 @@
         {
             components = new System.ComponentModel.Container();
             groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            lblPrecioCantidad = new DevExpress.XtraEditors.LabelControl();
+            lblPrecioCantida = new DevExpress.XtraEditors.LabelControl();
+            btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            btnRegistrar = new DevExpress.XtraEditors.SimpleButton();
             cbCliente = new System.Windows.Forms.ComboBox();
             lblCliente = new DevExpress.XtraEditors.LabelControl();
             lblPrecioVenta = new DevExpress.XtraEditors.LabelControl();
             lblPrecioProducto = new DevExpress.XtraEditors.LabelControl();
-            textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            txtCantidad = new DevExpress.XtraEditors.TextEdit();
             labelControl3 = new DevExpress.XtraEditors.LabelControl();
             comboBox2 = new System.Windows.Forms.ComboBox();
             labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -65,19 +69,32 @@
             barDockControl7 = new DevExpress.XtraBars.BarDockControl();
             barDockControl8 = new DevExpress.XtraBars.BarDockControl();
             skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
+            txtPagoCon = new DevExpress.XtraEditors.TextEdit();
+            lblPagoCon = new DevExpress.XtraEditors.LabelControl();
+            lblSobra = new DevExpress.XtraEditors.LabelControl();
+            lblCambio = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCantidad.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)barManager3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtPagoCon.Properties).BeginInit();
             SuspendLayout();
             // 
             // groupControl1
             // 
+            groupControl1.Controls.Add(lblCambio);
+            groupControl1.Controls.Add(lblSobra);
+            groupControl1.Controls.Add(txtPagoCon);
+            groupControl1.Controls.Add(lblPagoCon);
+            groupControl1.Controls.Add(lblPrecioCantidad);
+            groupControl1.Controls.Add(lblPrecioCantida);
+            groupControl1.Controls.Add(btnCancelar);
+            groupControl1.Controls.Add(btnRegistrar);
             groupControl1.Controls.Add(cbCliente);
             groupControl1.Controls.Add(lblCliente);
             groupControl1.Controls.Add(lblPrecioVenta);
             groupControl1.Controls.Add(lblPrecioProducto);
-            groupControl1.Controls.Add(textEdit1);
+            groupControl1.Controls.Add(txtCantidad);
             groupControl1.Controls.Add(labelControl3);
             groupControl1.Controls.Add(comboBox2);
             groupControl1.Controls.Add(labelControl2);
@@ -88,6 +105,41 @@
             groupControl1.Size = new System.Drawing.Size(1066, 231);
             groupControl1.TabIndex = 0;
             groupControl1.Text = "Area de ventas";
+            groupControl1.Paint += groupControl1_Paint;
+            // 
+            // lblPrecioCantidad
+            // 
+            lblPrecioCantidad.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lblPrecioCantidad.Appearance.Options.UseFont = true;
+            lblPrecioCantidad.Location = new System.Drawing.Point(548, 115);
+            lblPrecioCantidad.Name = "lblPrecioCantidad";
+            lblPrecioCantidad.Size = new System.Drawing.Size(5, 13);
+            lblPrecioCantidad.TabIndex = 17;
+            lblPrecioCantidad.Text = "-";
+            // 
+            // lblPrecioCantida
+            // 
+            lblPrecioCantida.Location = new System.Drawing.Point(446, 115);
+            lblPrecioCantida.Name = "lblPrecioCantida";
+            lblPrecioCantida.Size = new System.Drawing.Size(96, 13);
+            lblPrecioCantida.TabIndex = 16;
+            lblPrecioCantida.Text = "Precio por cantidad:";
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new System.Drawing.Point(362, 191);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new System.Drawing.Size(75, 23);
+            btnCancelar.TabIndex = 15;
+            btnCancelar.Text = "Cancelar";
+            // 
+            // btnRegistrar
+            // 
+            btnRegistrar.Location = new System.Drawing.Point(281, 191);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new System.Drawing.Size(75, 23);
+            btnRegistrar.TabIndex = 14;
+            btnRegistrar.Text = "Registrar";
             // 
             // cbCliente
             // 
@@ -124,12 +176,18 @@
             lblPrecioProducto.TabIndex = 6;
             lblPrecioProducto.Text = "Precio del producto:";
             // 
-            // textEdit1
+            // txtCantidad
             // 
-            textEdit1.Location = new System.Drawing.Point(322, 94);
-            textEdit1.Name = "textEdit1";
-            textEdit1.Size = new System.Drawing.Size(100, 20);
-            textEdit1.TabIndex = 5;
+            txtCantidad.Location = new System.Drawing.Point(322, 94);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtCantidad.Properties.MaskSettings.Set("mask", "d");
+            txtCantidad.Properties.MaskSettings.Set("culture", "es-MX");
+            txtCantidad.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtCantidad.Properties.MaskSettings.Set("valueType", typeof(int));
+            txtCantidad.Properties.UseMaskAsDisplayFormat = true;
+            txtCantidad.Size = new System.Drawing.Size(100, 20);
+            txtCantidad.TabIndex = 5;
             // 
             // labelControl3
             // 
@@ -341,6 +399,43 @@
             skinBarSubItem1.Id = 4;
             skinBarSubItem1.Name = "skinBarSubItem1";
             // 
+            // txtPagoCon
+            // 
+            txtPagoCon.Location = new System.Drawing.Point(573, 189);
+            txtPagoCon.Name = "txtPagoCon";
+            txtPagoCon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtPagoCon.Properties.MaskSettings.Set("mask", "d");
+            txtPagoCon.Properties.MaskSettings.Set("culture", "es-MX");
+            txtPagoCon.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtPagoCon.Properties.MaskSettings.Set("valueType", typeof(int));
+            txtPagoCon.Properties.UseMaskAsDisplayFormat = true;
+            txtPagoCon.Size = new System.Drawing.Size(100, 20);
+            txtPagoCon.TabIndex = 19;
+            // 
+            // lblPagoCon
+            // 
+            lblPagoCon.Location = new System.Drawing.Point(520, 191);
+            lblPagoCon.Name = "lblPagoCon";
+            lblPagoCon.Size = new System.Drawing.Size(48, 13);
+            lblPagoCon.TabIndex = 18;
+            lblPagoCon.Text = "Pago con:";
+            // 
+            // lblSobra
+            // 
+            lblSobra.Location = new System.Drawing.Point(696, 191);
+            lblSobra.Name = "lblSobra";
+            lblSobra.Size = new System.Drawing.Size(46, 13);
+            lblSobra.TabIndex = 20;
+            lblSobra.Text = "Le Sobra:";
+            // 
+            // lblCambio
+            // 
+            lblCambio.Location = new System.Drawing.Point(748, 191);
+            lblCambio.Name = "lblCambio";
+            lblCambio.Size = new System.Drawing.Size(4, 13);
+            lblCambio.TabIndex = 21;
+            lblCambio.Text = "-";
+            // 
             // frmVenta
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,8 +457,9 @@
             ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
             groupControl1.ResumeLayout(false);
             groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCantidad.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)barManager3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtPagoCon.Properties).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -373,7 +469,7 @@
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private System.Windows.Forms.ComboBox cbProducto;
         private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtCantidad;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private System.Windows.Forms.ComboBox comboBox2;
         private DevExpress.XtraEditors.LabelControl labelControl2;
@@ -406,5 +502,13 @@
         private DevExpress.XtraBars.BarDockControl barDockControl7;
         private DevExpress.XtraBars.BarDockControl barDockControl8;
         private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
+        private DevExpress.XtraEditors.SimpleButton btnCancelar;
+        private DevExpress.XtraEditors.SimpleButton btnRegistrar;
+        private DevExpress.XtraEditors.LabelControl lblPrecioCantidad;
+        private DevExpress.XtraEditors.LabelControl lblPrecioCantida;
+        private DevExpress.XtraEditors.TextEdit txtPagoCon;
+        private DevExpress.XtraEditors.LabelControl lblPagoCon;
+        private DevExpress.XtraEditors.LabelControl lblCambio;
+        private DevExpress.XtraEditors.LabelControl lblSobra;
     }
 }

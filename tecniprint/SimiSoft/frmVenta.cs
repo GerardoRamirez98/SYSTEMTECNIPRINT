@@ -12,6 +12,7 @@ namespace TECNIPRINT
         public frmVenta()
         {
             InitializeComponent();
+            txtCantidad.TextChanged += txtCantidad_TextChanged;
         }
 
         public class ComboBoxItem
@@ -80,12 +81,28 @@ namespace TECNIPRINT
                 lblPrecioVenta.Text = "Precio no disponible";
             }
         }
+        private void txtCantidad_TextChanged(object sender, EventArgs e)
+        {
+            // Verificar si el texto del TextBox es un número válido
+            if (int.TryParse(txtCantidad.Text, out int cantidad) && decimal.TryParse(lblPrecioVenta.Text.Replace("$", ""), out decimal precioVenta))
+            {
+                // Realizar la multiplicación
+                decimal precioCantidad = cantidad * precioVenta;
 
+                // Mostrar el resultado en el Label
+                lblPrecioCantidad.Text = "$" + precioCantidad.ToString();
+            }
+        }
         //Fecha y Hora en tiempo real
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblHoraActual.Text = DateTime.Now.ToString("hh:mm:ss");
             lblFechaActual.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void groupControl1_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+
         }
     }
 }
