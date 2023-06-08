@@ -28,82 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvPermisos = new System.Windows.Forms.DataGridView();
-            this.lblRol = new DevExpress.XtraEditors.LabelControl();
-            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnBuscar = new DevExpress.XtraEditors.SimpleButton();
-            this.cbRoles = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPermisos)).BeginInit();
-            this.SuspendLayout();
+            dgvPermisos = new System.Windows.Forms.DataGridView();
+            lblRol = new DevExpress.XtraEditors.LabelControl();
+            btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            btnGuardar = new DevExpress.XtraEditors.SimpleButton();
+            btnBuscar = new DevExpress.XtraEditors.SimpleButton();
+            cbRoles = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)dgvPermisos).BeginInit();
+            SuspendLayout();
             // 
             // dgvPermisos
             // 
-            this.dgvPermisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPermisos.Location = new System.Drawing.Point(12, 41);
-            this.dgvPermisos.Name = "dgvPermisos";
-            this.dgvPermisos.Size = new System.Drawing.Size(505, 257);
-            this.dgvPermisos.TabIndex = 0;
+            dgvPermisos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvPermisos.Location = new System.Drawing.Point(12, 41);
+            dgvPermisos.Name = "dgvPermisos";
+            dgvPermisos.Size = new System.Drawing.Size(505, 257);
+            dgvPermisos.TabIndex = 0;
             // 
             // lblRol
             // 
-            this.lblRol.Location = new System.Drawing.Point(11, 15);
-            this.lblRol.Name = "lblRol";
-            this.lblRol.Size = new System.Drawing.Size(19, 13);
-            this.lblRol.TabIndex = 2;
-            this.lblRol.Text = "Rol:";
+            lblRol.Location = new System.Drawing.Point(11, 15);
+            lblRol.Name = "lblRol";
+            lblRol.Size = new System.Drawing.Size(19, 13);
+            lblRol.TabIndex = 2;
+            lblRol.Text = "Rol:";
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(186, 304);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
+            btnCancelar.Location = new System.Drawing.Point(186, 304);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new System.Drawing.Size(75, 23);
+            btnCancelar.TabIndex = 3;
+            btnCancelar.Text = "Cancelar";
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(267, 304);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 4;
-            this.btnGuardar.Text = "Guardar";
+            btnGuardar.Location = new System.Drawing.Point(267, 304);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new System.Drawing.Size(75, 23);
+            btnGuardar.TabIndex = 4;
+            btnGuardar.Text = "Guardar";
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(257, 10);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnBuscar.TabIndex = 5;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            btnBuscar.Location = new System.Drawing.Point(257, 10);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new System.Drawing.Size(75, 23);
+            btnBuscar.TabIndex = 5;
+            btnBuscar.Text = "Buscar";
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // cbRoles
             // 
-            this.cbRoles.FormattingEnabled = true;
-            this.cbRoles.Location = new System.Drawing.Point(36, 12);
-            this.cbRoles.Name = "cbRoles";
-            this.cbRoles.Size = new System.Drawing.Size(215, 21);
-            this.cbRoles.TabIndex = 6;
+            cbRoles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbRoles.FormattingEnabled = true;
+            cbRoles.Location = new System.Drawing.Point(36, 12);
+            cbRoles.Name = "cbRoles";
+            cbRoles.Size = new System.Drawing.Size(215, 21);
+            cbRoles.TabIndex = 6;
             // 
             // frmAsignarPermisosRol
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 336);
-            this.Controls.Add(this.cbRoles);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.lblRol);
-            this.Controls.Add(this.dgvPermisos);
-            this.Name = "frmAsignarPermisosRol";
-            this.Text = "AsignarPermisosRol";
-            this.Load += new System.EventHandler(this.frmAsignarPermisosRol_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPermisos)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(529, 336);
+            Controls.Add(cbRoles);
+            Controls.Add(btnBuscar);
+            Controls.Add(btnGuardar);
+            Controls.Add(btnCancelar);
+            Controls.Add(lblRol);
+            Controls.Add(dgvPermisos);
+            Name = "frmAsignarPermisosRol";
+            Text = "AsignarPermisosRol";
+            Load += frmAsignarPermisosRol_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvPermisos).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

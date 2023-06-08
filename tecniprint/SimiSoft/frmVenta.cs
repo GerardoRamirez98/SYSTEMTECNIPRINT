@@ -1,4 +1,5 @@
-﻿using FarmsRamirezBML;
+﻿using DevExpress.ClipboardSource.SpreadsheetML;
+using FarmsRamirezBML;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -16,40 +17,68 @@ namespace TECNIPRINT
         public class ComboBoxItem
         {
             public string Text { get; set; }
-            public object Value { get; set; }
+            public int Value { get; set; }
         }
+
+        private List<Producto> productos; // Declarar una variable para almacenar los productos
 
         private void frmVenta_Load(object sender, EventArgs e)
         {
             //fecha y hora en tiempo real del sistema
             timer1.Enabled = true;
 
-            //enlistar los productos
-            List<Producto> productos = new Producto().GetAll();
+            // Obtener la lista de productos
+            productos = new Producto().GetAll();
+
+            // Agregar el primer elemento del ComboBox como "Seleccione Producto"
+            cbProducto.Items.Add(new ComboBoxItem() { Value = 0, Text = "Seleccione Producto" });
+
+            // Agregar los productos activos al ComboBox
+            foreach (Producto producto in productos.Where(x => x.Activo == true))
             {
-                cbProducto.Items.Add(new ComboBoxItem() { Value = 0, Text = "Seleccione Producto" });
-                foreach (Producto row in productos.Where(x => x.Activo == true))
-                {
-                    cbProducto.Items.Add(new ComboBoxItem() { Value = row.IdProducto, Text = row.Nombre });
-                }
-                cbProducto.DisplayMember = "Text";
-                cbProducto.ValueMember = "Value";
-                cbProducto.SelectedIndex = 0;
+                cbProducto.Items.Add(new ComboBoxItem() { Value = producto.IdProducto, Text = producto.Nombre });
             }
+
+            // Configurar las propiedades del ComboBox
+            cbProducto.DisplayMember = "Text";
+            cbProducto.ValueMember = "Value";
+            cbProducto.SelectedIndex = 0;
+
+            // Manejar el evento de cambio de selección del ComboBox
+            cbProducto.SelectedIndexChanged += CbProducto_SelectedIndexChanged;
 
             //enlistar los clientes
             List<Cliente> clientes = new Cliente().GetAll();
+            cbCliente.Items.Add(new ComboBoxItem() { Value = 0, Text = "Seleccione Cliente" });
+            foreach (Cliente cliente in clientes.Where(x => x.Activo == true))
             {
-                cbCliente.Items.Add(new ComboBoxItem() { Value = 0, Text = "Seleccione Producto" });
-                foreach (Cliente row in clientes.Where(x => x.Activo == true))
-                {
-                    cbCliente.Items.Add(new ComboBoxItem() { Value = row.IdCliente, Text = row.Nombres + " " + row.ApellidoPaterno + " " + row.ApellidoMaterno});
-                }
-                cbCliente.DisplayMember = "Text";
-                cbCliente.ValueMember = "Value";
-                cbCliente.SelectedIndex = 0;
+                cbCliente.Items.Add(new ComboBoxItem() { Value = cliente.IdCliente, Text = cliente.Nombres + " " + cliente.ApellidoPaterno + " " + cliente.ApellidoMaterno });
             }
+            cbCliente.DisplayMember = "Text";
+            cbCliente.ValueMember = "Value";
+            cbCliente.SelectedIndex = 0;
+        }
 
+        // Evento de cambio de selección del ComboBox de productos
+        private void CbProducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Obtener el producto seleccionado
+            ComboBoxItem selectedItem = (ComboBoxItem)cbProducto.SelectedItem;
+            int productoId = selectedItem.Value;
+
+            // Buscar el producto en la lista
+            Producto selectedProduct = productos.FirstOrDefault(p => p.IdProducto == productoId);
+
+            if (selectedProduct != null)
+            {
+                // Mostrar el precio de venta en el Label
+                lblPrecioVenta.Text = selectedProduct.PrecioVenta.ToString();
+            }
+            else
+            {
+                // No se ha seleccionado un producto válido, mostrar un valor por defecto en el Label
+                lblPrecioVenta.Text = "Precio no disponible";
+            }
         }
 
         //Fecha y Hora en tiempo real
