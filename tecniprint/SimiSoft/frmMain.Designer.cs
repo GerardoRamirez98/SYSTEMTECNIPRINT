@@ -29,233 +29,214 @@ namespace SimiSoft
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.bManager = new DevExpress.XtraBars.BarManager(this.components);
-            this.bar2 = new DevExpress.XtraBars.Bar();
-            this.mnArchivo = new DevExpress.XtraBars.BarSubItem();
-            this.btnSalir = new DevExpress.XtraBars.BarButtonItem();
-            this.mnCatalogo = new DevExpress.XtraBars.BarSubItem();
-            this.btnAsignarPermisosRol = new DevExpress.XtraBars.BarButtonItem();
-            this.btnCategorias = new DevExpress.XtraBars.BarButtonItem();
-            this.btnClientes = new DevExpress.XtraBars.BarButtonItem();
-            this.btnProveedores = new DevExpress.XtraBars.BarButtonItem();
-            this.btnProductos = new DevExpress.XtraBars.BarButtonItem();
-            this.btnRoles = new DevExpress.XtraBars.BarButtonItem();
-            this.btnUsuarios = new DevExpress.XtraBars.BarButtonItem();
-            this.bar3 = new DevExpress.XtraBars.Bar();
-            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.tabMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.btnVentas = new DevExpress.XtraBars.BarButtonItem();
-            ((System.ComponentModel.ISupportInitialize)(this.bManager)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabMdiManager)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            bManager = new DevExpress.XtraBars.BarManager(components);
+            bar2 = new DevExpress.XtraBars.Bar();
+            mnArchivo = new DevExpress.XtraBars.BarSubItem();
+            btnSalir = new DevExpress.XtraBars.BarButtonItem();
+            mnCatalogo = new DevExpress.XtraBars.BarSubItem();
+            btnAsignarPermisosRol = new DevExpress.XtraBars.BarButtonItem();
+            btnCategorias = new DevExpress.XtraBars.BarButtonItem();
+            btnClientes = new DevExpress.XtraBars.BarButtonItem();
+            btnProveedores = new DevExpress.XtraBars.BarButtonItem();
+            btnProductos = new DevExpress.XtraBars.BarButtonItem();
+            btnRoles = new DevExpress.XtraBars.BarButtonItem();
+            btnUsuarios = new DevExpress.XtraBars.BarButtonItem();
+            btnVentas = new DevExpress.XtraBars.BarButtonItem();
+            bar3 = new DevExpress.XtraBars.Bar();
+            barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            tabMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(components);
+            barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            ((System.ComponentModel.ISupportInitialize)bManager).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)tabMdiManager).BeginInit();
+            SuspendLayout();
             // 
             // bManager
             // 
-            this.bManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.bar2,
-            this.bar3});
-            this.bManager.DockControls.Add(this.barDockControlTop);
-            this.bManager.DockControls.Add(this.barDockControlBottom);
-            this.bManager.DockControls.Add(this.barDockControlLeft);
-            this.bManager.DockControls.Add(this.barDockControlRight);
-            this.bManager.Form = this;
-            this.bManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.mnArchivo,
-            this.btnSalir,
-            this.mnCatalogo,
-            this.btnClientes,
-            this.btnProveedores,
-            this.btnProductos,
-            this.btnCategorias,
-            this.barButtonItem2,
-            this.btnRoles,
-            this.btnAsignarPermisosRol,
-            this.btnUsuarios,
-            this.btnVentas});
-            this.bManager.MainMenu = this.bar2;
-            this.bManager.MaxItemId = 12;
-            this.bManager.StatusBar = this.bar3;
+            bManager.Bars.AddRange(new DevExpress.XtraBars.Bar[] { bar2, bar3 });
+            bManager.DockControls.Add(barDockControlTop);
+            bManager.DockControls.Add(barDockControlBottom);
+            bManager.DockControls.Add(barDockControlLeft);
+            bManager.DockControls.Add(barDockControlRight);
+            bManager.Form = this;
+            bManager.Items.AddRange(new DevExpress.XtraBars.BarItem[] { mnArchivo, btnSalir, mnCatalogo, btnClientes, btnProveedores, btnProductos, btnCategorias, barButtonItem2, btnRoles, btnAsignarPermisosRol, btnUsuarios, btnVentas, barButtonItem1 });
+            bManager.MainMenu = bar2;
+            bManager.MaxItemId = 13;
+            bManager.StatusBar = bar3;
             // 
             // bar2
             // 
-            this.bar2.BarName = "Menú principal";
-            this.bar2.DockCol = 0;
-            this.bar2.DockRow = 0;
-            this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.mnArchivo),
-            new DevExpress.XtraBars.LinkPersistInfo(this.mnCatalogo)});
-            this.bar2.OptionsBar.DrawBorder = false;
-            this.bar2.OptionsBar.DrawDragBorder = false;
-            this.bar2.OptionsBar.MultiLine = true;
-            this.bar2.OptionsBar.UseWholeRow = true;
-            this.bar2.Text = "Menú principal";
+            bar2.BarName = "Menú principal";
+            bar2.DockCol = 0;
+            bar2.DockRow = 0;
+            bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(mnArchivo), new DevExpress.XtraBars.LinkPersistInfo(mnCatalogo), new DevExpress.XtraBars.LinkPersistInfo(barButtonItem1) });
+            bar2.OptionsBar.DrawBorder = false;
+            bar2.OptionsBar.DrawDragBorder = false;
+            bar2.OptionsBar.MultiLine = true;
+            bar2.OptionsBar.UseWholeRow = true;
+            bar2.Text = "Menú principal";
             // 
             // mnArchivo
             // 
-            this.mnArchivo.Caption = "Archivo";
-            this.mnArchivo.Id = 0;
-            this.mnArchivo.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnSalir)});
-            this.mnArchivo.Name = "mnArchivo";
+            mnArchivo.Caption = "Archivo";
+            mnArchivo.Id = 0;
+            mnArchivo.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(btnSalir) });
+            mnArchivo.Name = "mnArchivo";
             // 
             // btnSalir
             // 
-            this.btnSalir.Caption = "Salir";
-            this.btnSalir.Id = 1;
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnSalir_ItemClick);
+            btnSalir.Caption = "Salir";
+            btnSalir.Id = 1;
+            btnSalir.Name = "btnSalir";
+            btnSalir.ItemClick += btnSalir_ItemClick;
             // 
             // mnCatalogo
             // 
-            this.mnCatalogo.Caption = "Catalogo";
-            this.mnCatalogo.Id = 2;
-            this.mnCatalogo.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnAsignarPermisosRol),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnCategorias),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnClientes),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnProveedores),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnProductos),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnRoles),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnUsuarios),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnVentas)});
-            this.mnCatalogo.Name = "mnCatalogo";
+            mnCatalogo.Caption = "Catalogo";
+            mnCatalogo.Id = 2;
+            mnCatalogo.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(btnAsignarPermisosRol), new DevExpress.XtraBars.LinkPersistInfo(btnCategorias), new DevExpress.XtraBars.LinkPersistInfo(btnClientes), new DevExpress.XtraBars.LinkPersistInfo(btnProveedores), new DevExpress.XtraBars.LinkPersistInfo(btnProductos), new DevExpress.XtraBars.LinkPersistInfo(btnRoles), new DevExpress.XtraBars.LinkPersistInfo(btnUsuarios), new DevExpress.XtraBars.LinkPersistInfo(btnVentas) });
+            mnCatalogo.Name = "mnCatalogo";
             // 
             // btnAsignarPermisosRol
             // 
-            this.btnAsignarPermisosRol.Caption = "Asignar Permisos Rol";
-            this.btnAsignarPermisosRol.Id = 9;
-            this.btnAsignarPermisosRol.Name = "btnAsignarPermisosRol";
-            this.btnAsignarPermisosRol.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnAsignarPermisosRol_ItemClick);
+            btnAsignarPermisosRol.Caption = "Asignar Permisos Rol";
+            btnAsignarPermisosRol.Id = 9;
+            btnAsignarPermisosRol.Name = "btnAsignarPermisosRol";
+            btnAsignarPermisosRol.ItemClick += btnAsignarPermisosRol_ItemClick;
             // 
             // btnCategorias
             // 
-            this.btnCategorias.Caption = "Categorias";
-            this.btnCategorias.Id = 6;
-            this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCategorias_ItemClick);
+            btnCategorias.Caption = "Categorias";
+            btnCategorias.Id = 6;
+            btnCategorias.Name = "btnCategorias";
+            btnCategorias.ItemClick += btnCategorias_ItemClick;
             // 
             // btnClientes
             // 
-            this.btnClientes.Caption = "Clientes";
-            this.btnClientes.Id = 3;
-            this.btnClientes.Name = "btnClientes";
-            this.btnClientes.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnClientes_ItemClick);
+            btnClientes.Caption = "Clientes";
+            btnClientes.Id = 3;
+            btnClientes.Name = "btnClientes";
+            btnClientes.ItemClick += btnClientes_ItemClick;
             // 
             // btnProveedores
             // 
-            this.btnProveedores.Caption = "Proveedores";
-            this.btnProveedores.Id = 4;
-            this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProveedores_ItemClick);
+            btnProveedores.Caption = "Proveedores";
+            btnProveedores.Id = 4;
+            btnProveedores.Name = "btnProveedores";
+            btnProveedores.ItemClick += btnProveedores_ItemClick;
             // 
             // btnProductos
             // 
-            this.btnProductos.Caption = "Productos";
-            this.btnProductos.Id = 5;
-            this.btnProductos.Name = "btnProductos";
-            this.btnProductos.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnProductos_ItemClick);
+            btnProductos.Caption = "Productos";
+            btnProductos.Id = 5;
+            btnProductos.Name = "btnProductos";
+            btnProductos.ItemClick += btnProductos_ItemClick;
             // 
             // btnRoles
             // 
-            this.btnRoles.Caption = "Rol";
-            this.btnRoles.Id = 8;
-            this.btnRoles.Name = "btnRoles";
-            this.btnRoles.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnRoles_ItemClick);
+            btnRoles.Caption = "Rol";
+            btnRoles.Id = 8;
+            btnRoles.Name = "btnRoles";
+            btnRoles.ItemClick += btnRoles_ItemClick;
             // 
             // btnUsuarios
             // 
-            this.btnUsuarios.Caption = "Usuarios";
-            this.btnUsuarios.Id = 10;
-            this.btnUsuarios.Name = "btnUsuarios";
-            this.btnUsuarios.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUsuarios_ItemClick);
-            // 
-            // bar3
-            // 
-            this.bar3.BarName = "Barra de estado";
-            this.bar3.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
-            this.bar3.DockCol = 0;
-            this.bar3.DockRow = 0;
-            this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
-            this.bar3.OptionsBar.AllowQuickCustomization = false;
-            this.bar3.OptionsBar.DrawDragBorder = false;
-            this.bar3.OptionsBar.UseWholeRow = true;
-            this.bar3.Text = "Barra de estado";
-            // 
-            // barDockControlTop
-            // 
-            this.barDockControlTop.CausesValidation = false;
-            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Manager = this.bManager;
-            this.barDockControlTop.Size = new System.Drawing.Size(653, 25);
-            // 
-            // barDockControlBottom
-            // 
-            this.barDockControlBottom.CausesValidation = false;
-            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 362);
-            this.barDockControlBottom.Manager = this.bManager;
-            this.barDockControlBottom.Size = new System.Drawing.Size(653, 21);
-            // 
-            // barDockControlLeft
-            // 
-            this.barDockControlLeft.CausesValidation = false;
-            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 25);
-            this.barDockControlLeft.Manager = this.bManager;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 337);
-            // 
-            // barDockControlRight
-            // 
-            this.barDockControlRight.CausesValidation = false;
-            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(653, 25);
-            this.barDockControlRight.Manager = this.bManager;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 337);
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Productos";
-            this.barButtonItem2.Id = 7;
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // tabMdiManager
-            // 
-            this.tabMdiManager.MdiParent = this;
+            btnUsuarios.Caption = "Usuarios";
+            btnUsuarios.Id = 10;
+            btnUsuarios.Name = "btnUsuarios";
+            btnUsuarios.ItemClick += btnUsuarios_ItemClick;
             // 
             // btnVentas
             // 
-            this.btnVentas.Caption = "Ventas";
-            this.btnVentas.Id = 11;
-            this.btnVentas.Name = "btnVentas";
-            this.btnVentas.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnVentas_ItemClick);
+            btnVentas.Caption = "Ventas";
+            btnVentas.Id = 11;
+            btnVentas.Name = "btnVentas";
+            btnVentas.ItemClick += btnVentas_ItemClick;
+            // 
+            // bar3
+            // 
+            bar3.BarName = "Barra de estado";
+            bar3.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
+            bar3.DockCol = 0;
+            bar3.DockRow = 0;
+            bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
+            bar3.OptionsBar.AllowQuickCustomization = false;
+            bar3.OptionsBar.DrawDragBorder = false;
+            bar3.OptionsBar.UseWholeRow = true;
+            bar3.Text = "Barra de estado";
+            // 
+            // barDockControlTop
+            // 
+            barDockControlTop.CausesValidation = false;
+            barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            barDockControlTop.Location = new System.Drawing.Point(0, 0);
+            barDockControlTop.Manager = bManager;
+            barDockControlTop.Size = new System.Drawing.Size(653, 25);
+            // 
+            // barDockControlBottom
+            // 
+            barDockControlBottom.CausesValidation = false;
+            barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            barDockControlBottom.Location = new System.Drawing.Point(0, 362);
+            barDockControlBottom.Manager = bManager;
+            barDockControlBottom.Size = new System.Drawing.Size(653, 21);
+            // 
+            // barDockControlLeft
+            // 
+            barDockControlLeft.CausesValidation = false;
+            barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            barDockControlLeft.Location = new System.Drawing.Point(0, 25);
+            barDockControlLeft.Manager = bManager;
+            barDockControlLeft.Size = new System.Drawing.Size(0, 337);
+            // 
+            // barDockControlRight
+            // 
+            barDockControlRight.CausesValidation = false;
+            barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            barDockControlRight.Location = new System.Drawing.Point(653, 25);
+            barDockControlRight.Manager = bManager;
+            barDockControlRight.Size = new System.Drawing.Size(0, 337);
+            // 
+            // barButtonItem2
+            // 
+            barButtonItem2.Caption = "Productos";
+            barButtonItem2.Id = 7;
+            barButtonItem2.Name = "barButtonItem2";
+            // 
+            // tabMdiManager
+            // 
+            tabMdiManager.MdiParent = this;
+            // 
+            // barButtonItem1
+            // 
+            barButtonItem1.Caption = "Sifunciono";
+            barButtonItem1.Id = 12;
+            barButtonItem1.Name = "barButtonItem1";
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(653, 383);
-            this.Controls.Add(this.barDockControlLeft);
-            this.Controls.Add(this.barDockControlRight);
-            this.Controls.Add(this.barDockControlBottom);
-            this.Controls.Add(this.barDockControlTop);
-            this.IsMdiContainer = true;
-            this.Name = "frmMain";
-            this.Text = "TecniPrint";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bManager)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tabMdiManager)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(653, 383);
+            Controls.Add(barDockControlLeft);
+            Controls.Add(barDockControlRight);
+            Controls.Add(barDockControlBottom);
+            Controls.Add(barDockControlTop);
+            IsMdiContainer = true;
+            Name = "frmMain";
+            Text = "TecniPrint";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            FormClosing += frmMain_FormClosing;
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)bManager).EndInit();
+            ((System.ComponentModel.ISupportInitialize)tabMdiManager).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -280,6 +261,7 @@ namespace SimiSoft
         private DevExpress.XtraBars.BarButtonItem btnCategorias;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
         private DevExpress.XtraBars.BarButtonItem btnVentas;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
     }
 }
 
