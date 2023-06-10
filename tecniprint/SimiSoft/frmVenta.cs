@@ -103,5 +103,10 @@ namespace TECNIPRINT
         {
 
         }
+
+        private void groupControl3_Paint(object sender, System.Windows.Forms.PaintEventArgs e)
+        {
+
+        }
     }
 }
