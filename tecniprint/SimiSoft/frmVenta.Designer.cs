@@ -112,7 +112,7 @@
             groupControl1.Controls.Add(cbCliente);
             groupControl1.Controls.Add(lblCliente);
             groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl1.Location = new System.Drawing.Point(12, 12);
+            groupControl1.Location = new System.Drawing.Point(12, -5);
             groupControl1.Name = "groupControl1";
             groupControl1.Size = new System.Drawing.Size(1089, 336);
             groupControl1.TabIndex = 0;
@@ -540,9 +540,9 @@
             // listView1
             // 
             listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6, columnHeader7 });
-            listView1.Location = new System.Drawing.Point(12, 354);
+            listView1.Location = new System.Drawing.Point(12, 337);
             listView1.Name = "listView1";
-            listView1.Size = new System.Drawing.Size(1089, 339);
+            listView1.Size = new System.Drawing.Size(1089, 356);
             listView1.TabIndex = 9;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = System.Windows.Forms.View.Details;
