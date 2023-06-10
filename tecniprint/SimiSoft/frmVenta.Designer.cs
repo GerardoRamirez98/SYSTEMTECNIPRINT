@@ -208,6 +208,7 @@
             // 
             comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "FACTURA", "BOLETA DE VENTA", "TICKET/CINTA", "LIQUIDACION DE COMPRA" });
             comboBox1.Location = new System.Drawing.Point(305, 21);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new System.Drawing.Size(141, 21);
@@ -264,9 +265,9 @@
             // 
             lblSobra.Location = new System.Drawing.Point(595, 21);
             lblSobra.Name = "lblSobra";
-            lblSobra.Size = new System.Drawing.Size(46, 13);
+            lblSobra.Size = new System.Drawing.Size(39, 13);
             lblSobra.TabIndex = 20;
-            lblSobra.Text = "Le Sobra:";
+            lblSobra.Text = "Cambio:";
             // 
             // groupControl2
             // 
@@ -590,6 +591,7 @@
             Controls.Add(groupControl1);
             Name = "frmVenta";
             Text = "Ventas";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
             Load += frmVenta_Load;
             ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
             groupControl1.ResumeLayout(false);
