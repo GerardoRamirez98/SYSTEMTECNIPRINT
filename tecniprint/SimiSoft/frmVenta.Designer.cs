@@ -34,6 +34,8 @@
             simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             groupControl4 = new DevExpress.XtraEditors.GroupControl();
             groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            labelControl14 = new DevExpress.XtraEditors.LabelControl();
             labelControl6 = new DevExpress.XtraEditors.LabelControl();
             comboBox2 = new System.Windows.Forms.ComboBox();
             labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -48,18 +50,6 @@
             comboBox3 = new System.Windows.Forms.ComboBox();
             labelControl11 = new DevExpress.XtraEditors.LabelControl();
             textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            barManager3 = new DevExpress.XtraBars.BarManager(components);
-            bar1 = new DevExpress.XtraBars.Bar();
-            btnActualizarProducto = new DevExpress.XtraBars.BarButtonItem();
-            btnNuevoProducto = new DevExpress.XtraBars.BarButtonItem();
-            btnModificarProducto = new DevExpress.XtraBars.BarButtonItem();
-            btnEliminarProducto = new DevExpress.XtraBars.BarButtonItem();
-            skinBarSubItem2 = new DevExpress.XtraBars.SkinBarSubItem();
-            barDockControl5 = new DevExpress.XtraBars.BarDockControl();
-            barDockControl6 = new DevExpress.XtraBars.BarDockControl();
-            barDockControl7 = new DevExpress.XtraBars.BarDockControl();
-            barDockControl8 = new DevExpress.XtraBars.BarDockControl();
-            skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
             labelControl13 = new DevExpress.XtraEditors.LabelControl();
             labelControl12 = new DevExpress.XtraEditors.LabelControl();
             labelControl10 = new DevExpress.XtraEditors.LabelControl();
@@ -103,7 +93,6 @@
             ((System.ComponentModel.ISupportInitialize)groupControl2).BeginInit();
             groupControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)barManager3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtCantidad.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).BeginInit();
             SuspendLayout();
@@ -123,7 +112,7 @@
             groupControl1.Controls.Add(cbCliente);
             groupControl1.Controls.Add(lblCliente);
             groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl1.Location = new System.Drawing.Point(12, 26);
+            groupControl1.Location = new System.Drawing.Point(12, 12);
             groupControl1.Name = "groupControl1";
             groupControl1.Size = new System.Drawing.Size(1089, 336);
             groupControl1.TabIndex = 0;
@@ -132,7 +121,7 @@
             // 
             // simpleButton3
             // 
-            simpleButton3.Location = new System.Drawing.Point(95, 112);
+            simpleButton3.Location = new System.Drawing.Point(57, 106);
             simpleButton3.Name = "simpleButton3";
             simpleButton3.Size = new System.Drawing.Size(75, 23);
             simpleButton3.TabIndex = 27;
@@ -149,6 +138,8 @@
             // 
             // groupControl3
             // 
+            groupControl3.Controls.Add(labelControl15);
+            groupControl3.Controls.Add(labelControl14);
             groupControl3.Controls.Add(labelControl6);
             groupControl3.Controls.Add(comboBox2);
             groupControl3.Controls.Add(labelControl2);
@@ -162,16 +153,34 @@
             groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl3.Location = new System.Drawing.Point(272, 213);
             groupControl3.Name = "groupControl3";
-            groupControl3.Size = new System.Drawing.Size(589, 105);
+            groupControl3.Size = new System.Drawing.Size(812, 105);
             groupControl3.TabIndex = 25;
             groupControl3.Text = "Venta";
             groupControl3.Paint += groupControl3_Paint;
+            // 
+            // labelControl15
+            // 
+            labelControl15.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labelControl15.Appearance.Options.UseFont = true;
+            labelControl15.Location = new System.Drawing.Point(667, 48);
+            labelControl15.Name = "labelControl15";
+            labelControl15.Size = new System.Drawing.Size(31, 13);
+            labelControl15.TabIndex = 26;
+            labelControl15.Text = "$0.00";
+            // 
+            // labelControl14
+            // 
+            labelControl14.Location = new System.Drawing.Point(595, 48);
+            labelControl14.Name = "labelControl14";
+            labelControl14.Size = new System.Drawing.Size(44, 13);
+            labelControl14.TabIndex = 25;
+            labelControl14.Text = "Subtotal:";
             // 
             // labelControl6
             // 
             labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             labelControl6.Appearance.Options.UseFont = true;
-            labelControl6.Location = new System.Drawing.Point(494, 53);
+            labelControl6.Location = new System.Drawing.Point(667, 75);
             labelControl6.Name = "labelControl6";
             labelControl6.Size = new System.Drawing.Size(31, 13);
             labelControl6.TabIndex = 15;
@@ -179,7 +188,9 @@
             // 
             // comboBox2
             // 
+            comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "ANTICIPO APLICADO", "TARJETA CREDITO", "TARJETA DEBITO", "TARJETA AZTECA", "DINERO POR DEVOLUCION", "EFECTIVO", "CHEQUE", "CHEQUE POSFECHA", "CHEQUE CERTIFICADO", "CHEQUE POR COBRAR", "TRANSFERENCIA", "PAGO COMPENSATORIO" });
             comboBox2.Location = new System.Drawing.Point(86, 21);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new System.Drawing.Size(141, 21);
@@ -195,6 +206,7 @@
             // 
             // comboBox1
             // 
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
             comboBox1.Location = new System.Drawing.Point(305, 21);
             comboBox1.Name = "comboBox1";
@@ -203,7 +215,7 @@
             // 
             // labelControl5
             // 
-            labelControl5.Location = new System.Drawing.Point(422, 53);
+            labelControl5.Location = new System.Drawing.Point(595, 75);
             labelControl5.Name = "labelControl5";
             labelControl5.Size = new System.Drawing.Size(57, 13);
             labelControl5.TabIndex = 14;
@@ -242,7 +254,7 @@
             // 
             lblCambio.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblCambio.Appearance.Options.UseFont = true;
-            lblCambio.Location = new System.Drawing.Point(305, 53);
+            lblCambio.Location = new System.Drawing.Point(667, 21);
             lblCambio.Name = "lblCambio";
             lblCambio.Size = new System.Drawing.Size(31, 13);
             lblCambio.TabIndex = 21;
@@ -250,7 +262,7 @@
             // 
             // lblSobra
             // 
-            lblSobra.Location = new System.Drawing.Point(233, 53);
+            lblSobra.Location = new System.Drawing.Point(595, 21);
             lblSobra.Name = "lblSobra";
             lblSobra.Size = new System.Drawing.Size(46, 13);
             lblSobra.TabIndex = 20;
@@ -287,8 +299,9 @@
             // 
             // comboBox3
             // 
+            comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "PZA", "KG / GR", "M / CM", "L / ML", "H / MIN", "NO APLICA" });
+            comboBox3.Items.AddRange(new object[] { "PZA", "KG", "GR", "MTRS", "CM", "LTRS", "ML", "HRS", "MIN", "NO APLICA" });
             comboBox3.Location = new System.Drawing.Point(305, 25);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new System.Drawing.Size(100, 21);
@@ -305,98 +318,9 @@
             // textEdit2
             // 
             textEdit2.Location = new System.Drawing.Point(76, 105);
-            textEdit2.MenuManager = barManager3;
             textEdit2.Name = "textEdit2";
-            textEdit2.Size = new System.Drawing.Size(132, 20);
+            textEdit2.Size = new System.Drawing.Size(329, 20);
             textEdit2.TabIndex = 33;
-            // 
-            // barManager3
-            // 
-            barManager3.Bars.AddRange(new DevExpress.XtraBars.Bar[] { bar1 });
-            barManager3.DockControls.Add(barDockControl5);
-            barManager3.DockControls.Add(barDockControl6);
-            barManager3.DockControls.Add(barDockControl7);
-            barManager3.DockControls.Add(barDockControl8);
-            barManager3.Form = this;
-            barManager3.Items.AddRange(new DevExpress.XtraBars.BarItem[] { btnActualizarProducto, btnNuevoProducto, btnModificarProducto, btnEliminarProducto, skinBarSubItem1, skinBarSubItem2 });
-            barManager3.MaxItemId = 11;
-            // 
-            // bar1
-            // 
-            bar1.BarName = "Herramientas";
-            bar1.DockCol = 0;
-            bar1.DockRow = 0;
-            bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(btnActualizarProducto), new DevExpress.XtraBars.LinkPersistInfo(btnNuevoProducto), new DevExpress.XtraBars.LinkPersistInfo(btnModificarProducto), new DevExpress.XtraBars.LinkPersistInfo(btnEliminarProducto), new DevExpress.XtraBars.LinkPersistInfo(skinBarSubItem2) });
-            bar1.Text = "Herramientas";
-            // 
-            // btnActualizarProducto
-            // 
-            btnActualizarProducto.Caption = "Actualizar";
-            btnActualizarProducto.Id = 0;
-            btnActualizarProducto.Name = "btnActualizarProducto";
-            // 
-            // btnNuevoProducto
-            // 
-            btnNuevoProducto.Caption = "Nuevo";
-            btnNuevoProducto.Id = 1;
-            btnNuevoProducto.Name = "btnNuevoProducto";
-            // 
-            // btnModificarProducto
-            // 
-            btnModificarProducto.Caption = "Modificar";
-            btnModificarProducto.Id = 2;
-            btnModificarProducto.Name = "btnModificarProducto";
-            // 
-            // btnEliminarProducto
-            // 
-            btnEliminarProducto.Caption = "Eliminar";
-            btnEliminarProducto.Id = 3;
-            btnEliminarProducto.Name = "btnEliminarProducto";
-            // 
-            // skinBarSubItem2
-            // 
-            skinBarSubItem2.Caption = "Apariencia";
-            skinBarSubItem2.Id = 10;
-            skinBarSubItem2.Name = "skinBarSubItem2";
-            // 
-            // barDockControl5
-            // 
-            barDockControl5.CausesValidation = false;
-            barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
-            barDockControl5.Location = new System.Drawing.Point(0, 0);
-            barDockControl5.Manager = barManager3;
-            barDockControl5.Size = new System.Drawing.Size(1113, 20);
-            // 
-            // barDockControl6
-            // 
-            barDockControl6.CausesValidation = false;
-            barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            barDockControl6.Location = new System.Drawing.Point(0, 705);
-            barDockControl6.Manager = barManager3;
-            barDockControl6.Size = new System.Drawing.Size(1113, 0);
-            // 
-            // barDockControl7
-            // 
-            barDockControl7.CausesValidation = false;
-            barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            barDockControl7.Location = new System.Drawing.Point(0, 20);
-            barDockControl7.Manager = barManager3;
-            barDockControl7.Size = new System.Drawing.Size(0, 685);
-            // 
-            // barDockControl8
-            // 
-            barDockControl8.CausesValidation = false;
-            barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            barDockControl8.Location = new System.Drawing.Point(1113, 20);
-            barDockControl8.Manager = barManager3;
-            barDockControl8.Size = new System.Drawing.Size(0, 685);
-            // 
-            // skinBarSubItem1
-            // 
-            skinBarSubItem1.Caption = "Apariencia";
-            skinBarSubItem1.Id = 4;
-            skinBarSubItem1.Name = "skinBarSubItem1";
             // 
             // labelControl13
             // 
@@ -503,7 +427,6 @@
             // textEdit1
             // 
             textEdit1.Location = new System.Drawing.Point(67, 25);
-            textEdit1.MenuManager = barManager3;
             textEdit1.Name = "textEdit1";
             textEdit1.Size = new System.Drawing.Size(141, 20);
             textEdit1.TabIndex = 14;
@@ -547,7 +470,7 @@
             // simpleButton1
             // 
             simpleButton1.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("simpleButton1.ImageOptions.Image");
-            simpleButton1.Location = new System.Drawing.Point(242, 76);
+            simpleButton1.Location = new System.Drawing.Point(223, 76);
             simpleButton1.Name = "simpleButton1";
             simpleButton1.Size = new System.Drawing.Size(24, 21);
             simpleButton1.TabIndex = 22;
@@ -586,7 +509,7 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new System.Drawing.Point(176, 112);
+            btnCancelar.Location = new System.Drawing.Point(142, 106);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new System.Drawing.Size(75, 23);
             btnCancelar.TabIndex = 15;
@@ -596,9 +519,9 @@
             // 
             cbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbCliente.FormattingEnabled = true;
-            cbCliente.Location = new System.Drawing.Point(95, 76);
+            cbCliente.Location = new System.Drawing.Point(57, 76);
             cbCliente.Name = "cbCliente";
-            cbCliente.Size = new System.Drawing.Size(141, 21);
+            cbCliente.Size = new System.Drawing.Size(160, 21);
             cbCliente.TabIndex = 9;
             // 
             // lblCliente
@@ -616,9 +539,9 @@
             // listView1
             // 
             listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6, columnHeader7 });
-            listView1.Location = new System.Drawing.Point(12, 392);
+            listView1.Location = new System.Drawing.Point(12, 354);
             listView1.Name = "listView1";
-            listView1.Size = new System.Drawing.Size(1089, 301);
+            listView1.Size = new System.Drawing.Size(1089, 339);
             listView1.TabIndex = 9;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = System.Windows.Forms.View.Details;
@@ -665,10 +588,6 @@
             ClientSize = new System.Drawing.Size(1113, 705);
             Controls.Add(listView1);
             Controls.Add(groupControl1);
-            Controls.Add(barDockControl7);
-            Controls.Add(barDockControl8);
-            Controls.Add(barDockControl6);
-            Controls.Add(barDockControl5);
             Name = "frmVenta";
             Text = "Ventas";
             Load += frmVenta_Load;
@@ -684,11 +603,9 @@
             groupControl2.ResumeLayout(false);
             groupControl2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)barManager3).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtCantidad.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -717,18 +634,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ComboBox cbCliente;
         private DevExpress.XtraEditors.LabelControl lblCliente;
-        private DevExpress.XtraBars.BarManager barManager3;
-        private DevExpress.XtraBars.Bar bar1;
-        private DevExpress.XtraBars.BarButtonItem btnActualizarProducto;
-        private DevExpress.XtraBars.BarButtonItem btnNuevoProducto;
-        private DevExpress.XtraBars.BarButtonItem btnModificarProducto;
-        private DevExpress.XtraBars.BarButtonItem btnEliminarProducto;
-        private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem2;
-        private DevExpress.XtraBars.BarDockControl barDockControl5;
-        private DevExpress.XtraBars.BarDockControl barDockControl6;
-        private DevExpress.XtraBars.BarDockControl barDockControl7;
-        private DevExpress.XtraBars.BarDockControl barDockControl8;
-        private DevExpress.XtraBars.SkinBarSubItem skinBarSubItem1;
         private DevExpress.XtraEditors.SimpleButton btnCancelar;
         private DevExpress.XtraEditors.SimpleButton btnAgregar;
         private DevExpress.XtraEditors.LabelControl lblPrecioCantidad;
@@ -757,5 +662,7 @@
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private System.Windows.Forms.ComboBox comboBox3;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
     }
 }

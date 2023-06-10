@@ -1168,7 +1168,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1pYV8wPzAdIblgl0VcVAjlNHCgHuux7kRt2hKew0mQQ=</dsig:DigestValue>
+      <dsig:DigestValue>A04RxqumChSlfi2vppLsycoi+gt9+vmwP81sIhkGnYI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TP.dll.config" size="4314">
