@@ -302,3 +302,4 @@ C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.pdb
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\SimiSoft.genruntimeconfig.cache
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\ref\TP.dll
+C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.frmCotizaciones.resources

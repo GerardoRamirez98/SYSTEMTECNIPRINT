@@ -31,22 +31,23 @@
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVenta));
             groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            groupControl4 = new DevExpress.XtraEditors.GroupControl();
             groupControl3 = new DevExpress.XtraEditors.GroupControl();
+            labelControl6 = new DevExpress.XtraEditors.LabelControl();
             comboBox2 = new System.Windows.Forms.ComboBox();
             labelControl2 = new DevExpress.XtraEditors.LabelControl();
             comboBox1 = new System.Windows.Forms.ComboBox();
+            labelControl5 = new DevExpress.XtraEditors.LabelControl();
             labelControl7 = new DevExpress.XtraEditors.LabelControl();
             txtPagoCon = new DevExpress.XtraEditors.TextEdit();
             lblPagoCon = new DevExpress.XtraEditors.LabelControl();
+            lblCambio = new DevExpress.XtraEditors.LabelControl();
+            lblSobra = new DevExpress.XtraEditors.LabelControl();
             groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            cbProducto = new System.Windows.Forms.ComboBox();
-            labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            txtCantidad = new DevExpress.XtraEditors.TextEdit();
-            labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            lblPrecioProducto = new DevExpress.XtraEditors.LabelControl();
-            textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            comboBox3 = new System.Windows.Forms.ComboBox();
+            labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            textEdit2 = new DevExpress.XtraEditors.TextEdit();
             barManager3 = new DevExpress.XtraBars.BarManager(components);
             bar1 = new DevExpress.XtraBars.Bar();
             btnActualizarProducto = new DevExpress.XtraBars.BarButtonItem();
@@ -59,18 +60,29 @@
             barDockControl7 = new DevExpress.XtraBars.BarDockControl();
             barDockControl8 = new DevExpress.XtraBars.BarDockControl();
             skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
+            labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            cbProducto = new System.Windows.Forms.ComboBox();
+            labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            txtCantidad = new DevExpress.XtraEditors.TextEdit();
+            labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            lblPrecioProducto = new DevExpress.XtraEditors.LabelControl();
+            textEdit1 = new DevExpress.XtraEditors.TextEdit();
             lblPrecioVenta = new DevExpress.XtraEditors.LabelControl();
+            btnAgregar = new DevExpress.XtraEditors.SimpleButton();
             lblPrecioCantida = new DevExpress.XtraEditors.LabelControl();
             lblPrecioCantidad = new DevExpress.XtraEditors.LabelControl();
             simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             lblHoraActual = new DevExpress.XtraEditors.LabelControl();
             lblHora = new DevExpress.XtraEditors.LabelControl();
             lblFechaActual = new DevExpress.XtraEditors.LabelControl();
-            lblCambio = new DevExpress.XtraEditors.LabelControl();
             lblFecha = new DevExpress.XtraEditors.LabelControl();
-            lblSobra = new DevExpress.XtraEditors.LabelControl();
             btnCancelar = new DevExpress.XtraEditors.SimpleButton();
-            btnAgregar = new DevExpress.XtraEditors.SimpleButton();
             cbCliente = new System.Windows.Forms.ComboBox();
             lblCliente = new DevExpress.XtraEditors.LabelControl();
             timer1 = new System.Windows.Forms.Timer(components);
@@ -82,24 +94,23 @@
             columnHeader5 = new System.Windows.Forms.ColumnHeader();
             columnHeader6 = new System.Windows.Forms.ColumnHeader();
             columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            groupControl4 = new DevExpress.XtraEditors.GroupControl();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl3).BeginInit();
             groupControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)txtPagoCon.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl2).BeginInit();
             groupControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barManager3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtCantidad.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)barManager3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)groupControl4).BeginInit();
             SuspendLayout();
             // 
             // groupControl1
             // 
+            groupControl1.Controls.Add(simpleButton3);
             groupControl1.Controls.Add(groupControl4);
             groupControl1.Controls.Add(groupControl3);
             groupControl1.Controls.Add(groupControl2);
@@ -109,36 +120,62 @@
             groupControl1.Controls.Add(lblFechaActual);
             groupControl1.Controls.Add(lblFecha);
             groupControl1.Controls.Add(btnCancelar);
-            groupControl1.Controls.Add(btnAgregar);
             groupControl1.Controls.Add(cbCliente);
             groupControl1.Controls.Add(lblCliente);
             groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl1.Location = new System.Drawing.Point(12, 26);
             groupControl1.Name = "groupControl1";
-            groupControl1.Size = new System.Drawing.Size(1089, 243);
+            groupControl1.Size = new System.Drawing.Size(1089, 336);
             groupControl1.TabIndex = 0;
             groupControl1.Text = "Ventas";
             groupControl1.Paint += groupControl1_Paint;
+            // 
+            // simpleButton3
+            // 
+            simpleButton3.Location = new System.Drawing.Point(95, 112);
+            simpleButton3.Name = "simpleButton3";
+            simpleButton3.Size = new System.Drawing.Size(75, 23);
+            simpleButton3.TabIndex = 27;
+            simpleButton3.Text = "Nuevo";
+            // 
+            // groupControl4
+            // 
+            groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            groupControl4.Location = new System.Drawing.Point(867, 26);
+            groupControl4.Name = "groupControl4";
+            groupControl4.Size = new System.Drawing.Size(217, 181);
+            groupControl4.TabIndex = 26;
+            groupControl4.Text = "Imagen";
             // 
             // groupControl3
             // 
             groupControl3.Controls.Add(labelControl6);
             groupControl3.Controls.Add(comboBox2);
-            groupControl3.Controls.Add(labelControl5);
             groupControl3.Controls.Add(labelControl2);
             groupControl3.Controls.Add(comboBox1);
+            groupControl3.Controls.Add(labelControl5);
             groupControl3.Controls.Add(labelControl7);
             groupControl3.Controls.Add(txtPagoCon);
             groupControl3.Controls.Add(lblPagoCon);
             groupControl3.Controls.Add(lblCambio);
             groupControl3.Controls.Add(lblSobra);
             groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl3.Location = new System.Drawing.Point(272, 131);
+            groupControl3.Location = new System.Drawing.Point(272, 213);
             groupControl3.Name = "groupControl3";
-            groupControl3.Size = new System.Drawing.Size(589, 76);
+            groupControl3.Size = new System.Drawing.Size(589, 105);
             groupControl3.TabIndex = 25;
             groupControl3.Text = "Venta";
             groupControl3.Paint += groupControl3_Paint;
+            // 
+            // labelControl6
+            // 
+            labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labelControl6.Appearance.Options.UseFont = true;
+            labelControl6.Location = new System.Drawing.Point(494, 53);
+            labelControl6.Name = "labelControl6";
+            labelControl6.Size = new System.Drawing.Size(31, 13);
+            labelControl6.TabIndex = 15;
+            labelControl6.Text = "$0.00";
             // 
             // comboBox2
             // 
@@ -164,6 +201,14 @@
             comboBox1.Size = new System.Drawing.Size(141, 21);
             comboBox1.TabIndex = 24;
             // 
+            // labelControl5
+            // 
+            labelControl5.Location = new System.Drawing.Point(422, 53);
+            labelControl5.Name = "labelControl5";
+            labelControl5.Size = new System.Drawing.Size(57, 13);
+            labelControl5.TabIndex = 14;
+            labelControl5.Text = "Saldo Total:";
+            // 
             // labelControl7
             // 
             labelControl7.Location = new System.Drawing.Point(233, 25);
@@ -174,7 +219,7 @@
             // 
             // txtPagoCon
             // 
-            txtPagoCon.Location = new System.Drawing.Point(305, 49);
+            txtPagoCon.Location = new System.Drawing.Point(86, 50);
             txtPagoCon.Name = "txtPagoCon";
             txtPagoCon.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             txtPagoCon.Properties.MaskSettings.Set("mask", "d");
@@ -187,14 +232,40 @@
             // 
             // lblPagoCon
             // 
-            lblPagoCon.Location = new System.Drawing.Point(233, 52);
+            lblPagoCon.Location = new System.Drawing.Point(14, 53);
             lblPagoCon.Name = "lblPagoCon";
             lblPagoCon.Size = new System.Drawing.Size(48, 13);
             lblPagoCon.TabIndex = 18;
             lblPagoCon.Text = "Pago con:";
             // 
+            // lblCambio
+            // 
+            lblCambio.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lblCambio.Appearance.Options.UseFont = true;
+            lblCambio.Location = new System.Drawing.Point(305, 53);
+            lblCambio.Name = "lblCambio";
+            lblCambio.Size = new System.Drawing.Size(31, 13);
+            lblCambio.TabIndex = 21;
+            lblCambio.Text = "$0.00";
+            // 
+            // lblSobra
+            // 
+            lblSobra.Location = new System.Drawing.Point(233, 53);
+            lblSobra.Name = "lblSobra";
+            lblSobra.Size = new System.Drawing.Size(46, 13);
+            lblSobra.TabIndex = 20;
+            lblSobra.Text = "Le Sobra:";
+            // 
             // groupControl2
             // 
+            groupControl2.Controls.Add(comboBox3);
+            groupControl2.Controls.Add(labelControl11);
+            groupControl2.Controls.Add(textEdit2);
+            groupControl2.Controls.Add(labelControl13);
+            groupControl2.Controls.Add(labelControl12);
+            groupControl2.Controls.Add(labelControl10);
+            groupControl2.Controls.Add(labelControl9);
+            groupControl2.Controls.Add(labelControl8);
             groupControl2.Controls.Add(simpleButton2);
             groupControl2.Controls.Add(labelControl1);
             groupControl2.Controls.Add(cbProducto);
@@ -204,84 +275,40 @@
             groupControl2.Controls.Add(lblPrecioProducto);
             groupControl2.Controls.Add(textEdit1);
             groupControl2.Controls.Add(lblPrecioVenta);
+            groupControl2.Controls.Add(btnAgregar);
             groupControl2.Controls.Add(lblPrecioCantida);
             groupControl2.Controls.Add(lblPrecioCantidad);
             groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl2.Location = new System.Drawing.Point(272, 26);
             groupControl2.Name = "groupControl2";
-            groupControl2.Size = new System.Drawing.Size(589, 99);
+            groupControl2.Size = new System.Drawing.Size(589, 181);
             groupControl2.TabIndex = 16;
             groupControl2.Text = "Artículo";
             // 
-            // simpleButton2
+            // comboBox3
             // 
-            simpleButton2.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("simpleButton2.ImageOptions.Image");
-            simpleButton2.Location = new System.Drawing.Point(212, 50);
-            simpleButton2.Name = "simpleButton2";
-            simpleButton2.Size = new System.Drawing.Size(24, 21);
-            simpleButton2.TabIndex = 26;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Items.AddRange(new object[] { "PZA", "KG / GR", "M / CM", "L / ML", "H / MIN", "NO APLICA" });
+            comboBox3.Location = new System.Drawing.Point(305, 25);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new System.Drawing.Size(100, 21);
+            comboBox3.TabIndex = 36;
             // 
-            // labelControl1
+            // labelControl11
             // 
-            labelControl1.Location = new System.Drawing.Point(14, 53);
-            labelControl1.Name = "labelControl1";
-            labelControl1.Size = new System.Drawing.Size(47, 13);
-            labelControl1.TabIndex = 0;
-            labelControl1.Text = "Producto:";
+            labelControl11.Location = new System.Drawing.Point(212, 28);
+            labelControl11.Name = "labelControl11";
+            labelControl11.Size = new System.Drawing.Size(89, 13);
+            labelControl11.TabIndex = 35;
+            labelControl11.Text = "Unidad de Medida:";
             // 
-            // cbProducto
+            // textEdit2
             // 
-            cbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cbProducto.FormattingEnabled = true;
-            cbProducto.Location = new System.Drawing.Point(67, 50);
-            cbProducto.Name = "cbProducto";
-            cbProducto.Size = new System.Drawing.Size(141, 21);
-            cbProducto.TabIndex = 1;
-            // 
-            // labelControl3
-            // 
-            labelControl3.Location = new System.Drawing.Point(242, 53);
-            labelControl3.Name = "labelControl3";
-            labelControl3.Size = new System.Drawing.Size(47, 13);
-            labelControl3.TabIndex = 4;
-            labelControl3.Text = "Cantidad:";
-            // 
-            // txtCantidad
-            // 
-            txtCantidad.Location = new System.Drawing.Point(295, 51);
-            txtCantidad.Name = "txtCantidad";
-            txtCantidad.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            txtCantidad.Properties.MaskSettings.Set("mask", "d");
-            txtCantidad.Properties.MaskSettings.Set("culture", "es-MX");
-            txtCantidad.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
-            txtCantidad.Properties.MaskSettings.Set("valueType", typeof(int));
-            txtCantidad.Properties.UseMaskAsDisplayFormat = true;
-            txtCantidad.Size = new System.Drawing.Size(100, 20);
-            txtCantidad.TabIndex = 5;
-            // 
-            // labelControl4
-            // 
-            labelControl4.Location = new System.Drawing.Point(14, 28);
-            labelControl4.Name = "labelControl4";
-            labelControl4.Size = new System.Drawing.Size(37, 13);
-            labelControl4.TabIndex = 14;
-            labelControl4.Text = "Código:";
-            // 
-            // lblPrecioProducto
-            // 
-            lblPrecioProducto.Location = new System.Drawing.Point(401, 53);
-            lblPrecioProducto.Name = "lblPrecioProducto";
-            lblPrecioProducto.Size = new System.Drawing.Size(96, 13);
-            lblPrecioProducto.TabIndex = 6;
-            lblPrecioProducto.Text = "Precio del producto:";
-            // 
-            // textEdit1
-            // 
-            textEdit1.Location = new System.Drawing.Point(67, 25);
-            textEdit1.MenuManager = barManager3;
-            textEdit1.Name = "textEdit1";
-            textEdit1.Size = new System.Drawing.Size(141, 20);
-            textEdit1.TabIndex = 14;
+            textEdit2.Location = new System.Drawing.Point(76, 105);
+            textEdit2.MenuManager = barManager3;
+            textEdit2.Name = "textEdit2";
+            textEdit2.Size = new System.Drawing.Size(132, 20);
+            textEdit2.TabIndex = 33;
             // 
             // barManager3
             // 
@@ -371,19 +398,137 @@
             skinBarSubItem1.Id = 4;
             skinBarSubItem1.Name = "skinBarSubItem1";
             // 
+            // labelControl13
+            // 
+            labelControl13.Location = new System.Drawing.Point(76, 130);
+            labelControl13.Name = "labelControl13";
+            labelControl13.Size = new System.Drawing.Size(4, 13);
+            labelControl13.TabIndex = 32;
+            labelControl13.Text = "-";
+            // 
+            // labelControl12
+            // 
+            labelControl12.Location = new System.Drawing.Point(14, 130);
+            labelControl12.Name = "labelControl12";
+            labelControl12.Size = new System.Drawing.Size(33, 13);
+            labelControl12.TabIndex = 31;
+            labelControl12.Text = "Marca:";
+            // 
+            // labelControl10
+            // 
+            labelControl10.Location = new System.Drawing.Point(14, 108);
+            labelControl10.Name = "labelControl10";
+            labelControl10.Size = new System.Drawing.Size(58, 13);
+            labelControl10.TabIndex = 29;
+            labelControl10.Text = "Descripción:";
+            // 
+            // labelControl9
+            // 
+            labelControl9.Location = new System.Drawing.Point(76, 86);
+            labelControl9.Name = "labelControl9";
+            labelControl9.Size = new System.Drawing.Size(4, 13);
+            labelControl9.TabIndex = 28;
+            labelControl9.Text = "-";
+            // 
+            // labelControl8
+            // 
+            labelControl8.Location = new System.Drawing.Point(14, 86);
+            labelControl8.Name = "labelControl8";
+            labelControl8.Size = new System.Drawing.Size(41, 13);
+            labelControl8.TabIndex = 27;
+            labelControl8.Text = "Nombre:";
+            // 
+            // simpleButton2
+            // 
+            simpleButton2.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("simpleButton2.ImageOptions.Image");
+            simpleButton2.Location = new System.Drawing.Point(212, 50);
+            simpleButton2.Name = "simpleButton2";
+            simpleButton2.Size = new System.Drawing.Size(24, 21);
+            simpleButton2.TabIndex = 26;
+            // 
+            // labelControl1
+            // 
+            labelControl1.Location = new System.Drawing.Point(14, 53);
+            labelControl1.Name = "labelControl1";
+            labelControl1.Size = new System.Drawing.Size(47, 13);
+            labelControl1.TabIndex = 0;
+            labelControl1.Text = "Producto:";
+            // 
+            // cbProducto
+            // 
+            cbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbProducto.FormattingEnabled = true;
+            cbProducto.Location = new System.Drawing.Point(67, 50);
+            cbProducto.Name = "cbProducto";
+            cbProducto.Size = new System.Drawing.Size(141, 21);
+            cbProducto.TabIndex = 1;
+            // 
+            // labelControl3
+            // 
+            labelControl3.Location = new System.Drawing.Point(252, 53);
+            labelControl3.Name = "labelControl3";
+            labelControl3.Size = new System.Drawing.Size(47, 13);
+            labelControl3.TabIndex = 4;
+            labelControl3.Text = "Cantidad:";
+            // 
+            // txtCantidad
+            // 
+            txtCantidad.Location = new System.Drawing.Point(305, 51);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtCantidad.Properties.MaskSettings.Set("mask", "d");
+            txtCantidad.Properties.MaskSettings.Set("culture", "es-MX");
+            txtCantidad.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtCantidad.Properties.MaskSettings.Set("valueType", typeof(int));
+            txtCantidad.Properties.UseMaskAsDisplayFormat = true;
+            txtCantidad.Size = new System.Drawing.Size(100, 20);
+            txtCantidad.TabIndex = 5;
+            // 
+            // labelControl4
+            // 
+            labelControl4.Location = new System.Drawing.Point(14, 28);
+            labelControl4.Name = "labelControl4";
+            labelControl4.Size = new System.Drawing.Size(37, 13);
+            labelControl4.TabIndex = 14;
+            labelControl4.Text = "Código:";
+            // 
+            // lblPrecioProducto
+            // 
+            lblPrecioProducto.Location = new System.Drawing.Point(422, 53);
+            lblPrecioProducto.Name = "lblPrecioProducto";
+            lblPrecioProducto.Size = new System.Drawing.Size(96, 13);
+            lblPrecioProducto.TabIndex = 6;
+            lblPrecioProducto.Text = "Precio del producto:";
+            // 
+            // textEdit1
+            // 
+            textEdit1.Location = new System.Drawing.Point(67, 25);
+            textEdit1.MenuManager = barManager3;
+            textEdit1.Name = "textEdit1";
+            textEdit1.Size = new System.Drawing.Size(141, 20);
+            textEdit1.TabIndex = 14;
+            // 
             // lblPrecioVenta
             // 
             lblPrecioVenta.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblPrecioVenta.Appearance.Options.UseFont = true;
-            lblPrecioVenta.Location = new System.Drawing.Point(503, 53);
+            lblPrecioVenta.Location = new System.Drawing.Point(524, 53);
             lblPrecioVenta.Name = "lblPrecioVenta";
-            lblPrecioVenta.Size = new System.Drawing.Size(5, 13);
+            lblPrecioVenta.Size = new System.Drawing.Size(31, 13);
             lblPrecioVenta.TabIndex = 7;
-            lblPrecioVenta.Text = "-";
+            lblPrecioVenta.Text = "$0.00";
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Location = new System.Drawing.Point(509, 153);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new System.Drawing.Size(75, 23);
+            btnAgregar.TabIndex = 14;
+            btnAgregar.Text = "Agregar";
             // 
             // lblPrecioCantida
             // 
-            lblPrecioCantida.Location = new System.Drawing.Point(401, 72);
+            lblPrecioCantida.Location = new System.Drawing.Point(422, 72);
             lblPrecioCantida.Name = "lblPrecioCantida";
             lblPrecioCantida.Size = new System.Drawing.Size(96, 13);
             lblPrecioCantida.TabIndex = 16;
@@ -393,23 +538,23 @@
             // 
             lblPrecioCantidad.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             lblPrecioCantidad.Appearance.Options.UseFont = true;
-            lblPrecioCantidad.Location = new System.Drawing.Point(503, 72);
+            lblPrecioCantidad.Location = new System.Drawing.Point(524, 72);
             lblPrecioCantidad.Name = "lblPrecioCantidad";
-            lblPrecioCantidad.Size = new System.Drawing.Size(5, 13);
+            lblPrecioCantidad.Size = new System.Drawing.Size(31, 13);
             lblPrecioCantidad.TabIndex = 17;
-            lblPrecioCantidad.Text = "-";
+            lblPrecioCantidad.Text = "$0.00";
             // 
             // simpleButton1
             // 
             simpleButton1.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("simpleButton1.ImageOptions.Image");
-            simpleButton1.Location = new System.Drawing.Point(242, 57);
+            simpleButton1.Location = new System.Drawing.Point(242, 76);
             simpleButton1.Name = "simpleButton1";
             simpleButton1.Size = new System.Drawing.Size(24, 21);
             simpleButton1.TabIndex = 22;
             // 
             // lblHoraActual
             // 
-            lblHoraActual.Location = new System.Drawing.Point(212, 26);
+            lblHoraActual.Location = new System.Drawing.Point(53, 45);
             lblHoraActual.Name = "lblHoraActual";
             lblHoraActual.Size = new System.Drawing.Size(4, 13);
             lblHoraActual.TabIndex = 8;
@@ -417,7 +562,7 @@
             // 
             // lblHora
             // 
-            lblHora.Location = new System.Drawing.Point(173, 26);
+            lblHora.Location = new System.Drawing.Point(14, 45);
             lblHora.Name = "lblHora";
             lblHora.Size = new System.Drawing.Size(27, 13);
             lblHora.TabIndex = 7;
@@ -431,14 +576,6 @@
             lblFechaActual.TabIndex = 6;
             lblFechaActual.Text = "-";
             // 
-            // lblCambio
-            // 
-            lblCambio.Location = new System.Drawing.Point(504, 52);
-            lblCambio.Name = "lblCambio";
-            lblCambio.Size = new System.Drawing.Size(28, 13);
-            lblCambio.TabIndex = 21;
-            lblCambio.Text = "$0.00";
-            // 
             // lblFecha
             // 
             lblFecha.Location = new System.Drawing.Point(14, 26);
@@ -447,42 +584,26 @@
             lblFecha.TabIndex = 6;
             lblFecha.Text = "Fecha:";
             // 
-            // lblSobra
-            // 
-            lblSobra.Location = new System.Drawing.Point(452, 52);
-            lblSobra.Name = "lblSobra";
-            lblSobra.Size = new System.Drawing.Size(46, 13);
-            lblSobra.TabIndex = 20;
-            lblSobra.Text = "Le Sobra:";
-            // 
             // btnCancelar
             // 
-            btnCancelar.Location = new System.Drawing.Point(176, 93);
+            btnCancelar.Location = new System.Drawing.Point(176, 112);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new System.Drawing.Size(75, 23);
             btnCancelar.TabIndex = 15;
             btnCancelar.Text = "Cancelar";
             // 
-            // btnAgregar
-            // 
-            btnAgregar.Location = new System.Drawing.Point(95, 93);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new System.Drawing.Size(75, 23);
-            btnAgregar.TabIndex = 14;
-            btnAgregar.Text = "Agregar";
-            // 
             // cbCliente
             // 
             cbCliente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbCliente.FormattingEnabled = true;
-            cbCliente.Location = new System.Drawing.Point(95, 57);
+            cbCliente.Location = new System.Drawing.Point(95, 76);
             cbCliente.Name = "cbCliente";
             cbCliente.Size = new System.Drawing.Size(141, 21);
             cbCliente.TabIndex = 9;
             // 
             // lblCliente
             // 
-            lblCliente.Location = new System.Drawing.Point(14, 60);
+            lblCliente.Location = new System.Drawing.Point(14, 79);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new System.Drawing.Size(37, 13);
             lblCliente.TabIndex = 8;
@@ -495,9 +616,9 @@
             // listView1
             // 
             listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5, columnHeader6, columnHeader7 });
-            listView1.Location = new System.Drawing.Point(12, 275);
+            listView1.Location = new System.Drawing.Point(12, 392);
             listView1.Name = "listView1";
-            listView1.Size = new System.Drawing.Size(1089, 418);
+            listView1.Size = new System.Drawing.Size(1089, 301);
             listView1.TabIndex = 9;
             listView1.UseCompatibleStateImageBehavior = false;
             listView1.View = System.Windows.Forms.View.Details;
@@ -537,31 +658,6 @@
             columnHeader7.Text = "PRECIO FINAL";
             columnHeader7.Width = 113;
             // 
-            // labelControl5
-            // 
-            labelControl5.Location = new System.Drawing.Point(14, 52);
-            labelControl5.Name = "labelControl5";
-            labelControl5.Size = new System.Drawing.Size(53, 13);
-            labelControl5.TabIndex = 14;
-            labelControl5.Text = "Total Final:";
-            // 
-            // labelControl6
-            // 
-            labelControl6.Location = new System.Drawing.Point(86, 52);
-            labelControl6.Name = "labelControl6";
-            labelControl6.Size = new System.Drawing.Size(28, 13);
-            labelControl6.TabIndex = 15;
-            labelControl6.Text = "$0.00";
-            // 
-            // groupControl4
-            // 
-            groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl4.Location = new System.Drawing.Point(867, 26);
-            groupControl4.Name = "groupControl4";
-            groupControl4.Size = new System.Drawing.Size(217, 181);
-            groupControl4.TabIndex = 26;
-            groupControl4.Text = "Imagen";
-            // 
             // frmVenta
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -574,11 +670,12 @@
             Controls.Add(barDockControl6);
             Controls.Add(barDockControl5);
             Name = "frmVenta";
-            Text = "Venta";
+            Text = "Ventas";
             Load += frmVenta_Load;
             ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
             groupControl1.ResumeLayout(false);
             groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl4).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl3).EndInit();
             groupControl3.ResumeLayout(false);
             groupControl3.PerformLayout();
@@ -586,10 +683,10 @@
             ((System.ComponentModel.ISupportInitialize)groupControl2).EndInit();
             groupControl2.ResumeLayout(false);
             groupControl2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barManager3).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtCantidad.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)barManager3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)groupControl4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -651,5 +748,14 @@
         private DevExpress.XtraEditors.GroupControl groupControl3;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.GroupControl groupControl4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
