@@ -29,423 +29,423 @@ namespace SimiSoft
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblID = new DevExpress.XtraEditors.LabelControl();
-            this.txtID = new DevExpress.XtraEditors.TextEdit();
-            this.txtDescripcion = new DevExpress.XtraEditors.TextEdit();
-            this.lblDescripcion = new DevExpress.XtraEditors.LabelControl();
-            this.txtUnidadM = new DevExpress.XtraEditors.TextEdit();
-            this.lblUnidadM = new DevExpress.XtraEditors.LabelControl();
-            this.txtPrecioV = new DevExpress.XtraEditors.TextEdit();
-            this.lblPrecio = new DevExpress.XtraEditors.LabelControl();
-            this.txtStock = new DevExpress.XtraEditors.TextEdit();
-            this.lblStock = new DevExpress.XtraEditors.LabelControl();
-            this.txtMarca = new DevExpress.XtraEditors.TextEdit();
-            this.lblMarca = new DevExpress.XtraEditors.LabelControl();
-            this.btnCancelar = new DevExpress.XtraEditors.SimpleButton();
-            this.btnGuardar = new DevExpress.XtraEditors.SimpleButton();
-            this.txtCodigo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.txtNombre = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtPrecioC = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMargenG = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.txtStockMin = new DevExpress.XtraEditors.TextEdit();
-            this.txtStockMax = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.btnAbrirImg = new DevExpress.XtraEditors.SimpleButton();
-            this.pbImagen = new System.Windows.Forms.PictureBox();
-            this.pbCodigoBarra = new System.Windows.Forms.PictureBox();
-            this.bntGenerarCodigo = new DevExpress.XtraEditors.SimpleButton();
-            this.cboBarras = new System.Windows.Forms.ComboBox();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUnidadM.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrecioV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStock.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMarca.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrecioC.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMargenG.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStockMin.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStockMax.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCodigoBarra)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
-            this.groupControl2.SuspendLayout();
-            this.SuspendLayout();
+            lblID = new DevExpress.XtraEditors.LabelControl();
+            txtID = new DevExpress.XtraEditors.TextEdit();
+            txtDescripcion = new DevExpress.XtraEditors.TextEdit();
+            lblDescripcion = new DevExpress.XtraEditors.LabelControl();
+            txtUnidadM = new DevExpress.XtraEditors.TextEdit();
+            lblUnidadM = new DevExpress.XtraEditors.LabelControl();
+            txtPrecioV = new DevExpress.XtraEditors.TextEdit();
+            lblPrecio = new DevExpress.XtraEditors.LabelControl();
+            txtStock = new DevExpress.XtraEditors.TextEdit();
+            lblStock = new DevExpress.XtraEditors.LabelControl();
+            txtMarca = new DevExpress.XtraEditors.TextEdit();
+            lblMarca = new DevExpress.XtraEditors.LabelControl();
+            btnCancelar = new DevExpress.XtraEditors.SimpleButton();
+            btnGuardar = new DevExpress.XtraEditors.SimpleButton();
+            txtCodigo = new DevExpress.XtraEditors.TextEdit();
+            labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            txtNombre = new DevExpress.XtraEditors.TextEdit();
+            labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            txtPrecioC = new DevExpress.XtraEditors.TextEdit();
+            labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            txtMargenG = new DevExpress.XtraEditors.TextEdit();
+            labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            txtStockMin = new DevExpress.XtraEditors.TextEdit();
+            txtStockMax = new DevExpress.XtraEditors.TextEdit();
+            labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            btnAbrirImg = new DevExpress.XtraEditors.SimpleButton();
+            pbImagen = new System.Windows.Forms.PictureBox();
+            pbCodigoBarra = new System.Windows.Forms.PictureBox();
+            bntGenerarCodigo = new DevExpress.XtraEditors.SimpleButton();
+            cboBarras = new System.Windows.Forms.ComboBox();
+            groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            ((System.ComponentModel.ISupportInitialize)txtID.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtDescripcion.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtUnidadM.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtPrecioV.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtStock.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtMarca.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCodigo.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtNombre.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtPrecioC.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtMargenG.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtStockMin.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtStockMax.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbImagen).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbCodigoBarra).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
+            groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl2).BeginInit();
+            groupControl2.SuspendLayout();
+            SuspendLayout();
             // 
             // lblID
             // 
-            this.lblID.Location = new System.Drawing.Point(12, 12);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(15, 13);
-            this.lblID.TabIndex = 0;
-            this.lblID.Text = "ID:";
+            lblID.Location = new System.Drawing.Point(12, 12);
+            lblID.Name = "lblID";
+            lblID.Size = new System.Drawing.Size(15, 13);
+            lblID.TabIndex = 0;
+            lblID.Text = "ID:";
             // 
             // txtID
             // 
-            this.txtID.Enabled = false;
-            this.txtID.Location = new System.Drawing.Point(86, 9);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 20);
-            this.txtID.TabIndex = 0;
+            txtID.Enabled = false;
+            txtID.Location = new System.Drawing.Point(86, 9);
+            txtID.Name = "txtID";
+            txtID.Size = new System.Drawing.Size(100, 20);
+            txtID.TabIndex = 0;
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(304, 9);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(100, 20);
-            this.txtDescripcion.TabIndex = 8;
+            txtDescripcion.Location = new System.Drawing.Point(304, 9);
+            txtDescripcion.Name = "txtDescripcion";
+            txtDescripcion.Size = new System.Drawing.Size(100, 20);
+            txtDescripcion.TabIndex = 8;
             // 
             // lblDescripcion
             // 
-            this.lblDescripcion.Location = new System.Drawing.Point(218, 12);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(58, 13);
-            this.lblDescripcion.TabIndex = 2;
-            this.lblDescripcion.Text = "Descripción:";
+            lblDescripcion.Location = new System.Drawing.Point(218, 12);
+            lblDescripcion.Name = "lblDescripcion";
+            lblDescripcion.Size = new System.Drawing.Size(58, 13);
+            lblDescripcion.TabIndex = 2;
+            lblDescripcion.Text = "Descripción:";
             // 
             // txtUnidadM
             // 
-            this.txtUnidadM.Location = new System.Drawing.Point(304, 35);
-            this.txtUnidadM.Name = "txtUnidadM";
-            this.txtUnidadM.Size = new System.Drawing.Size(100, 20);
-            this.txtUnidadM.TabIndex = 9;
+            txtUnidadM.Location = new System.Drawing.Point(304, 35);
+            txtUnidadM.Name = "txtUnidadM";
+            txtUnidadM.Size = new System.Drawing.Size(100, 20);
+            txtUnidadM.TabIndex = 9;
             // 
             // lblUnidadM
             // 
-            this.lblUnidadM.Location = new System.Drawing.Point(218, 38);
-            this.lblUnidadM.Name = "lblUnidadM";
-            this.lblUnidadM.Size = new System.Drawing.Size(74, 13);
-            this.lblUnidadM.TabIndex = 4;
-            this.lblUnidadM.Text = "Unidad Medida:";
+            lblUnidadM.Location = new System.Drawing.Point(218, 38);
+            lblUnidadM.Name = "lblUnidadM";
+            lblUnidadM.Size = new System.Drawing.Size(74, 13);
+            lblUnidadM.TabIndex = 4;
+            lblUnidadM.Text = "Unidad Medida:";
             // 
             // txtPrecioV
             // 
-            this.txtPrecioV.Location = new System.Drawing.Point(86, 139);
-            this.txtPrecioV.Name = "txtPrecioV";
-            this.txtPrecioV.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtPrecioV.Properties.MaskSettings.Set("mask", "c");
-            this.txtPrecioV.Properties.MaskSettings.Set("culture", "es-MX");
-            this.txtPrecioV.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
-            this.txtPrecioV.Properties.MaskSettings.Set("valueType", typeof(decimal));
-            this.txtPrecioV.Properties.UseMaskAsDisplayFormat = true;
-            this.txtPrecioV.Size = new System.Drawing.Size(100, 20);
-            this.txtPrecioV.TabIndex = 5;
+            txtPrecioV.Location = new System.Drawing.Point(86, 139);
+            txtPrecioV.Name = "txtPrecioV";
+            txtPrecioV.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtPrecioV.Properties.MaskSettings.Set("mask", "c");
+            txtPrecioV.Properties.MaskSettings.Set("culture", "es-MX");
+            txtPrecioV.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtPrecioV.Properties.MaskSettings.Set("valueType", typeof(decimal));
+            txtPrecioV.Properties.UseMaskAsDisplayFormat = true;
+            txtPrecioV.Size = new System.Drawing.Size(100, 20);
+            txtPrecioV.TabIndex = 5;
             // 
             // lblPrecio
             // 
-            this.lblPrecio.Location = new System.Drawing.Point(12, 142);
-            this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(64, 13);
-            this.lblPrecio.TabIndex = 8;
-            this.lblPrecio.Text = "Precio Venta:";
+            lblPrecio.Location = new System.Drawing.Point(12, 142);
+            lblPrecio.Name = "lblPrecio";
+            lblPrecio.Size = new System.Drawing.Size(64, 13);
+            lblPrecio.TabIndex = 8;
+            lblPrecio.Text = "Precio Venta:";
             // 
             // txtStock
             // 
-            this.txtStock.Location = new System.Drawing.Point(304, 87);
-            this.txtStock.Name = "txtStock";
-            this.txtStock.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtStock.Properties.MaskSettings.Set("mask", "d");
-            this.txtStock.Properties.MaskSettings.Set("culture", "es-MX");
-            this.txtStock.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
-            this.txtStock.Properties.MaskSettings.Set("valueType", typeof(int));
-            this.txtStock.Properties.UseMaskAsDisplayFormat = true;
-            this.txtStock.Size = new System.Drawing.Size(100, 20);
-            this.txtStock.TabIndex = 11;
+            txtStock.Location = new System.Drawing.Point(304, 87);
+            txtStock.Name = "txtStock";
+            txtStock.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtStock.Properties.MaskSettings.Set("mask", "d");
+            txtStock.Properties.MaskSettings.Set("culture", "es-MX");
+            txtStock.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtStock.Properties.MaskSettings.Set("valueType", typeof(int));
+            txtStock.Properties.UseMaskAsDisplayFormat = true;
+            txtStock.Size = new System.Drawing.Size(100, 20);
+            txtStock.TabIndex = 11;
             // 
             // lblStock
             // 
-            this.lblStock.Location = new System.Drawing.Point(218, 90);
-            this.lblStock.Name = "lblStock";
-            this.lblStock.Size = new System.Drawing.Size(30, 13);
-            this.lblStock.TabIndex = 10;
-            this.lblStock.Text = "Stock:";
+            lblStock.Location = new System.Drawing.Point(218, 90);
+            lblStock.Name = "lblStock";
+            lblStock.Size = new System.Drawing.Size(30, 13);
+            lblStock.TabIndex = 10;
+            lblStock.Text = "Stock:";
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(86, 87);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(100, 20);
-            this.txtMarca.TabIndex = 3;
+            txtMarca.Location = new System.Drawing.Point(86, 87);
+            txtMarca.Name = "txtMarca";
+            txtMarca.Size = new System.Drawing.Size(100, 20);
+            txtMarca.TabIndex = 3;
             // 
             // lblMarca
             // 
-            this.lblMarca.Location = new System.Drawing.Point(12, 90);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(33, 13);
-            this.lblMarca.TabIndex = 12;
-            this.lblMarca.Text = "Marca:";
+            lblMarca.Location = new System.Drawing.Point(12, 90);
+            lblMarca.Name = "lblMarca";
+            lblMarca.Size = new System.Drawing.Size(33, 13);
+            lblMarca.TabIndex = 12;
+            lblMarca.Text = "Marca:";
             // 
             // btnCancelar
             // 
-            this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(137, 372);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.btnCancelar.TabIndex = 16;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            btnCancelar.Location = new System.Drawing.Point(137, 372);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new System.Drawing.Size(75, 23);
+            btnCancelar.TabIndex = 16;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(218, 372);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 15;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            btnGuardar.Location = new System.Drawing.Point(218, 372);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new System.Drawing.Size(75, 23);
+            btnGuardar.TabIndex = 15;
+            btnGuardar.Text = "Guardar";
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Location = new System.Drawing.Point(86, 35);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 1;
+            txtCodigo.Location = new System.Drawing.Point(86, 35);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new System.Drawing.Size(100, 20);
+            txtCodigo.TabIndex = 1;
             // 
             // labelControl1
             // 
-            this.labelControl1.Location = new System.Drawing.Point(12, 38);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(37, 13);
-            this.labelControl1.TabIndex = 14;
-            this.labelControl1.Text = "Codigo:";
+            labelControl1.Location = new System.Drawing.Point(12, 38);
+            labelControl1.Name = "labelControl1";
+            labelControl1.Size = new System.Drawing.Size(37, 13);
+            labelControl1.TabIndex = 14;
+            labelControl1.Text = "Codigo:";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(86, 61);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 2;
+            txtNombre.Location = new System.Drawing.Point(86, 61);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new System.Drawing.Size(100, 20);
+            txtNombre.TabIndex = 2;
             // 
             // labelControl2
             // 
-            this.labelControl2.Location = new System.Drawing.Point(12, 64);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(41, 13);
-            this.labelControl2.TabIndex = 16;
-            this.labelControl2.Text = "Nombre:";
+            labelControl2.Location = new System.Drawing.Point(12, 64);
+            labelControl2.Name = "labelControl2";
+            labelControl2.Size = new System.Drawing.Size(41, 13);
+            labelControl2.TabIndex = 16;
+            labelControl2.Text = "Nombre:";
             // 
             // txtPrecioC
             // 
-            this.txtPrecioC.Location = new System.Drawing.Point(86, 113);
-            this.txtPrecioC.Name = "txtPrecioC";
-            this.txtPrecioC.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtPrecioC.Properties.MaskSettings.Set("mask", "c");
-            this.txtPrecioC.Properties.MaskSettings.Set("valueType", typeof(decimal));
-            this.txtPrecioC.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
-            this.txtPrecioC.Properties.MaskSettings.Set("culture", "es-MX");
-            this.txtPrecioC.Properties.UseMaskAsDisplayFormat = true;
-            this.txtPrecioC.Size = new System.Drawing.Size(100, 20);
-            this.txtPrecioC.TabIndex = 4;
+            txtPrecioC.Location = new System.Drawing.Point(86, 113);
+            txtPrecioC.Name = "txtPrecioC";
+            txtPrecioC.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtPrecioC.Properties.MaskSettings.Set("mask", "c");
+            txtPrecioC.Properties.MaskSettings.Set("valueType", typeof(decimal));
+            txtPrecioC.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtPrecioC.Properties.MaskSettings.Set("culture", "es-MX");
+            txtPrecioC.Properties.UseMaskAsDisplayFormat = true;
+            txtPrecioC.Size = new System.Drawing.Size(100, 20);
+            txtPrecioC.TabIndex = 4;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(12, 116);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(73, 13);
-            this.labelControl3.TabIndex = 18;
-            this.labelControl3.Text = "Precio Compra:";
+            labelControl3.Location = new System.Drawing.Point(12, 116);
+            labelControl3.Name = "labelControl3";
+            labelControl3.Size = new System.Drawing.Size(73, 13);
+            labelControl3.TabIndex = 18;
+            labelControl3.Text = "Precio Compra:";
             // 
             // txtMargenG
             // 
-            this.txtMargenG.Location = new System.Drawing.Point(304, 61);
-            this.txtMargenG.Name = "txtMargenG";
-            this.txtMargenG.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtMargenG.Properties.MaskSettings.Set("mask", "P");
-            this.txtMargenG.Properties.MaskSettings.Set("culture", "es-MX");
-            this.txtMargenG.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
-            this.txtMargenG.Properties.MaskSettings.Set("valueType", typeof(int));
-            this.txtMargenG.Properties.UseMaskAsDisplayFormat = true;
-            this.txtMargenG.Size = new System.Drawing.Size(100, 20);
-            this.txtMargenG.TabIndex = 10;
+            txtMargenG.Location = new System.Drawing.Point(304, 61);
+            txtMargenG.Name = "txtMargenG";
+            txtMargenG.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtMargenG.Properties.MaskSettings.Set("mask", "P");
+            txtMargenG.Properties.MaskSettings.Set("culture", "es-MX");
+            txtMargenG.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtMargenG.Properties.MaskSettings.Set("valueType", typeof(int));
+            txtMargenG.Properties.UseMaskAsDisplayFormat = true;
+            txtMargenG.Size = new System.Drawing.Size(100, 20);
+            txtMargenG.TabIndex = 10;
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(218, 64);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(87, 13);
-            this.labelControl4.TabIndex = 20;
-            this.labelControl4.Text = "Margen Ganancia:";
+            labelControl4.Location = new System.Drawing.Point(218, 64);
+            labelControl4.Name = "labelControl4";
+            labelControl4.Size = new System.Drawing.Size(87, 13);
+            labelControl4.TabIndex = 20;
+            labelControl4.Text = "Margen Ganancia:";
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(12, 168);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(65, 13);
-            this.labelControl5.TabIndex = 22;
-            this.labelControl5.Text = "Stock Minimo:";
+            labelControl5.Location = new System.Drawing.Point(12, 168);
+            labelControl5.Name = "labelControl5";
+            labelControl5.Size = new System.Drawing.Size(65, 13);
+            labelControl5.TabIndex = 22;
+            labelControl5.Text = "Stock Minimo:";
             // 
             // txtStockMin
             // 
-            this.txtStockMin.Location = new System.Drawing.Point(86, 165);
-            this.txtStockMin.Name = "txtStockMin";
-            this.txtStockMin.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtStockMin.Properties.MaskSettings.Set("mask", "d");
-            this.txtStockMin.Properties.MaskSettings.Set("culture", "es-MX");
-            this.txtStockMin.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
-            this.txtStockMin.Properties.MaskSettings.Set("valueType", typeof(int));
-            this.txtStockMin.Properties.UseMaskAsDisplayFormat = true;
-            this.txtStockMin.Size = new System.Drawing.Size(100, 20);
-            this.txtStockMin.TabIndex = 6;
+            txtStockMin.Location = new System.Drawing.Point(86, 165);
+            txtStockMin.Name = "txtStockMin";
+            txtStockMin.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtStockMin.Properties.MaskSettings.Set("mask", "d");
+            txtStockMin.Properties.MaskSettings.Set("culture", "es-MX");
+            txtStockMin.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtStockMin.Properties.MaskSettings.Set("valueType", typeof(int));
+            txtStockMin.Properties.UseMaskAsDisplayFormat = true;
+            txtStockMin.Size = new System.Drawing.Size(100, 20);
+            txtStockMin.TabIndex = 6;
             // 
             // txtStockMax
             // 
-            this.txtStockMax.Location = new System.Drawing.Point(304, 113);
-            this.txtStockMax.Name = "txtStockMax";
-            this.txtStockMax.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
-            this.txtStockMax.Properties.MaskSettings.Set("mask", "d");
-            this.txtStockMax.Properties.MaskSettings.Set("culture", "es-MX");
-            this.txtStockMax.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
-            this.txtStockMax.Properties.MaskSettings.Set("valueType", typeof(int));
-            this.txtStockMax.Properties.UseMaskAsDisplayFormat = true;
-            this.txtStockMax.Size = new System.Drawing.Size(100, 20);
-            this.txtStockMax.TabIndex = 12;
+            txtStockMax.Location = new System.Drawing.Point(304, 113);
+            txtStockMax.Name = "txtStockMax";
+            txtStockMax.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            txtStockMax.Properties.MaskSettings.Set("mask", "d");
+            txtStockMax.Properties.MaskSettings.Set("culture", "es-MX");
+            txtStockMax.Properties.MaskSettings.Set("valueAfterDelete", DevExpress.Data.Mask.NumericMaskManager.ValueAfterDelete.ZeroThenNull);
+            txtStockMax.Properties.MaskSettings.Set("valueType", typeof(int));
+            txtStockMax.Properties.UseMaskAsDisplayFormat = true;
+            txtStockMax.Size = new System.Drawing.Size(100, 20);
+            txtStockMax.TabIndex = 12;
             // 
             // labelControl7
             // 
-            this.labelControl7.Location = new System.Drawing.Point(218, 116);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(69, 13);
-            this.labelControl7.TabIndex = 26;
-            this.labelControl7.Text = "Stock Maximo:";
+            labelControl7.Location = new System.Drawing.Point(218, 116);
+            labelControl7.Name = "labelControl7";
+            labelControl7.Size = new System.Drawing.Size(69, 13);
+            labelControl7.TabIndex = 26;
+            labelControl7.Text = "Stock Maximo:";
             // 
             // btnAbrirImg
             // 
-            this.btnAbrirImg.Location = new System.Drawing.Point(68, 125);
-            this.btnAbrirImg.Name = "btnAbrirImg";
-            this.btnAbrirImg.Size = new System.Drawing.Size(75, 23);
-            this.btnAbrirImg.TabIndex = 13;
-            this.btnAbrirImg.Text = "Abrir";
-            this.btnAbrirImg.Click += new System.EventHandler(this.btnAbrirImg_Click);
+            btnAbrirImg.Location = new System.Drawing.Point(68, 125);
+            btnAbrirImg.Name = "btnAbrirImg";
+            btnAbrirImg.Size = new System.Drawing.Size(75, 23);
+            btnAbrirImg.TabIndex = 13;
+            btnAbrirImg.Text = "Abrir";
+            btnAbrirImg.Click += btnAbrirImg_Click;
             // 
             // pbImagen
             // 
-            this.pbImagen.Location = new System.Drawing.Point(5, 24);
-            this.pbImagen.Name = "pbImagen";
-            this.pbImagen.Size = new System.Drawing.Size(200, 95);
-            this.pbImagen.TabIndex = 32;
-            this.pbImagen.TabStop = false;
+            pbImagen.Location = new System.Drawing.Point(5, 24);
+            pbImagen.Name = "pbImagen";
+            pbImagen.Size = new System.Drawing.Size(200, 95);
+            pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pbImagen.TabIndex = 32;
+            pbImagen.TabStop = false;
             // 
             // pbCodigoBarra
             // 
-            this.pbCodigoBarra.Location = new System.Drawing.Point(24, 24);
-            this.pbCodigoBarra.Name = "pbCodigoBarra";
-            this.pbCodigoBarra.Size = new System.Drawing.Size(150, 74);
-            this.pbCodigoBarra.TabIndex = 33;
-            this.pbCodigoBarra.TabStop = false;
+            pbCodigoBarra.Location = new System.Drawing.Point(24, 24);
+            pbCodigoBarra.Name = "pbCodigoBarra";
+            pbCodigoBarra.Size = new System.Drawing.Size(150, 74);
+            pbCodigoBarra.TabIndex = 33;
+            pbCodigoBarra.TabStop = false;
             // 
             // bntGenerarCodigo
             // 
-            this.bntGenerarCodigo.Location = new System.Drawing.Point(54, 125);
-            this.bntGenerarCodigo.Name = "bntGenerarCodigo";
-            this.bntGenerarCodigo.Size = new System.Drawing.Size(100, 23);
-            this.bntGenerarCodigo.TabIndex = 36;
-            this.bntGenerarCodigo.Text = "Generar Codigo";
-            this.bntGenerarCodigo.Click += new System.EventHandler(this.bntGenerarCodigo_Click);
+            bntGenerarCodigo.Location = new System.Drawing.Point(54, 125);
+            bntGenerarCodigo.Name = "bntGenerarCodigo";
+            bntGenerarCodigo.Size = new System.Drawing.Size(100, 23);
+            bntGenerarCodigo.TabIndex = 36;
+            bntGenerarCodigo.Text = "Generar Codigo";
+            bntGenerarCodigo.Click += bntGenerarCodigo_Click;
             // 
             // cboBarras
             // 
-            this.cboBarras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboBarras.FormattingEnabled = true;
-            this.cboBarras.Location = new System.Drawing.Point(42, 102);
-            this.cboBarras.Name = "cboBarras";
-            this.cboBarras.Size = new System.Drawing.Size(121, 21);
-            this.cboBarras.TabIndex = 37;
+            cboBarras.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cboBarras.FormattingEnabled = true;
+            cboBarras.Location = new System.Drawing.Point(42, 102);
+            cboBarras.Name = "cboBarras";
+            cboBarras.Size = new System.Drawing.Size(121, 21);
+            cboBarras.TabIndex = 37;
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.pbCodigoBarra);
-            this.groupControl1.Controls.Add(this.bntGenerarCodigo);
-            this.groupControl1.Controls.Add(this.cboBarras);
-            this.groupControl1.Location = new System.Drawing.Point(12, 191);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(200, 155);
-            this.groupControl1.TabIndex = 38;
-            this.groupControl1.Text = "Codigo de barras";
+            groupControl1.Controls.Add(pbCodigoBarra);
+            groupControl1.Controls.Add(bntGenerarCodigo);
+            groupControl1.Controls.Add(cboBarras);
+            groupControl1.Location = new System.Drawing.Point(12, 191);
+            groupControl1.Name = "groupControl1";
+            groupControl1.Size = new System.Drawing.Size(200, 155);
+            groupControl1.TabIndex = 38;
+            groupControl1.Text = "Codigo de barras";
             // 
             // groupControl2
             // 
-            this.groupControl2.Controls.Add(this.pbImagen);
-            this.groupControl2.Controls.Add(this.btnAbrirImg);
-            this.groupControl2.Location = new System.Drawing.Point(218, 191);
-            this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(210, 155);
-            this.groupControl2.TabIndex = 39;
-            this.groupControl2.Text = "Imagen";
+            groupControl2.Controls.Add(pbImagen);
+            groupControl2.Controls.Add(btnAbrirImg);
+            groupControl2.Location = new System.Drawing.Point(218, 191);
+            groupControl2.Name = "groupControl2";
+            groupControl2.Size = new System.Drawing.Size(210, 155);
+            groupControl2.TabIndex = 39;
+            groupControl2.Text = "Imagen";
             // 
             // frmNMProducto
             // 
-            this.AcceptButton = this.btnGuardar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(441, 408);
-            this.Controls.Add(this.groupControl2);
-            this.Controls.Add(this.groupControl1);
-            this.Controls.Add(this.txtStockMax);
-            this.Controls.Add(this.labelControl7);
-            this.Controls.Add(this.txtStockMin);
-            this.Controls.Add(this.labelControl5);
-            this.Controls.Add(this.txtMargenG);
-            this.Controls.Add(this.labelControl4);
-            this.Controls.Add(this.txtPrecioC);
-            this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.labelControl2);
-            this.Controls.Add(this.txtCodigo);
-            this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.txtMarca);
-            this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.txtStock);
-            this.Controls.Add(this.lblStock);
-            this.Controls.Add(this.txtPrecioV);
-            this.Controls.Add(this.lblPrecio);
-            this.Controls.Add(this.txtUnidadM);
-            this.Controls.Add(this.lblUnidadM);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.lblDescripcion);
-            this.Controls.Add(this.txtID);
-            this.Controls.Add(this.lblID);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.KeyPreview = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "frmNMProducto";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "NMProducto";
-            this.Load += new System.EventHandler(this.frmNMProducto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.txtID.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDescripcion.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtUnidadM.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrecioV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStock.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMarca.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtCodigo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNombre.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPrecioC.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMargenG.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStockMin.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtStockMax.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbCodigoBarra)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
-            this.groupControl2.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AcceptButton = btnGuardar;
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            CancelButton = btnCancelar;
+            ClientSize = new System.Drawing.Size(441, 408);
+            Controls.Add(groupControl2);
+            Controls.Add(groupControl1);
+            Controls.Add(txtStockMax);
+            Controls.Add(labelControl7);
+            Controls.Add(txtStockMin);
+            Controls.Add(labelControl5);
+            Controls.Add(txtMargenG);
+            Controls.Add(labelControl4);
+            Controls.Add(txtPrecioC);
+            Controls.Add(labelControl3);
+            Controls.Add(txtNombre);
+            Controls.Add(labelControl2);
+            Controls.Add(txtCodigo);
+            Controls.Add(labelControl1);
+            Controls.Add(btnGuardar);
+            Controls.Add(btnCancelar);
+            Controls.Add(txtMarca);
+            Controls.Add(lblMarca);
+            Controls.Add(txtStock);
+            Controls.Add(lblStock);
+            Controls.Add(txtPrecioV);
+            Controls.Add(lblPrecio);
+            Controls.Add(txtUnidadM);
+            Controls.Add(lblUnidadM);
+            Controls.Add(txtDescripcion);
+            Controls.Add(lblDescripcion);
+            Controls.Add(txtID);
+            Controls.Add(lblID);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            KeyPreview = true;
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "frmNMProducto";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "NMProducto";
+            Load += frmNMProducto_Load;
+            ((System.ComponentModel.ISupportInitialize)txtID.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtDescripcion.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtUnidadM.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtPrecioV.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtStock.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtMarca.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCodigo.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtNombre.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtPrecioC.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtMargenG.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtStockMin.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtStockMax.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbImagen).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbCodigoBarra).EndInit();
+            ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
+            groupControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)groupControl2).EndInit();
+            groupControl2.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

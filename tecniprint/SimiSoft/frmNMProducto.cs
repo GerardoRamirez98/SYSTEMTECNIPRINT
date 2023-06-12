@@ -137,6 +137,7 @@ namespace SimiSoft
             }.GetById();
             txtID.Text = producto.IdProducto.ToString();
             txtCodigo.Text = producto.Codigo;
+            pbCodigoBarra.ImageLocation = producto.CodigoBarras.ToString();
             txtNombre.Text = producto.Nombre;
             txtDescripcion.Text = producto.Descripcion;
             txtMarca.Text = producto.Marca;
@@ -147,13 +148,14 @@ namespace SimiSoft
             txtStock.Text = producto.Stock.ToString();
             txtStockMin.Text = producto.StockMin.ToString();
             txtStockMax.Text = producto.StockMax.ToString();
+            pbImagen.ImageLocation = producto.Imagen.ToString();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-        
+
         //VARIABLE PARA ALMACENAR LA URL DEL ARCHIVO A SUBIR
         string url = "";
 

@@ -655,7 +655,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>20WGgFtxYPvSUJqSN8laWuaftHP8D4GdfflzaOydBP4=</dsig:DigestValue>
+      <dsig:DigestValue>iXkHtZrVLEs97jahDf7AyXT6Wm9f44pKVN6uZpJ528s=</dsig:DigestValue>
     </hash>
   </file>
   <file name="FarmsRamirezDAL.dll" size="7168">
@@ -1168,7 +1168,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>226XhjKDTb4SAhxcmjC5ig2Vuoqicsk5mTX53AwzSA4=</dsig:DigestValue>
+      <dsig:DigestValue>nvy52LkBonKlWcnhXFoxWYOIttwFjVpnOH5Rxb9S8UY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TP.dll.config" size="4314">

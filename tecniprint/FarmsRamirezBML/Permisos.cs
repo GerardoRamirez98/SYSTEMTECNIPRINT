@@ -35,11 +35,11 @@ namespace FarmsRamirezBML
             return dataAccess.Execute("stp_permisos_delete", parametros);
         }
         public static List<Permisos> GetAll(int IdTipoUsuario)
-        //public List<Permisos> GetAll(int rolID)
         {
             var parametros = new DynamicParameters();
             parametros.Add("@IdRol", IdTipoUsuario);
             return dataAccess.Query<Permisos>("stp_permisos_getall");
+            
         }
 
         public Permisos GetById()
