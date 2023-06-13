@@ -29,467 +29,445 @@ namespace SimiSoft
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.bar6 = new DevExpress.XtraBars.Bar();
-            this.bar5 = new DevExpress.XtraBars.Bar();
-            this.bar4 = new DevExpress.XtraBars.Bar();
-            this.gcProductos = new DevExpress.XtraGrid.GridControl();
-            this.productoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.gvProductos = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ColIdProducto = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColCodigo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColCodigoBarras = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColNombre = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColMarca = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColUnidadMedida = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColPrecioCompra = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColMargenGanancia = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColPrecioVenta = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColStock = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColStockMin = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColStockMax = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColActivo = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColIdCategoria = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColFechaRegistro = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ColImagen = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.barManager3 = new DevExpress.XtraBars.BarManager(this.components);
-            this.bar1 = new DevExpress.XtraBars.Bar();
-            this.btnActualizarProducto = new DevExpress.XtraBars.BarButtonItem();
-            this.btnNuevoProducto = new DevExpress.XtraBars.BarButtonItem();
-            this.btnModificarProducto = new DevExpress.XtraBars.BarButtonItem();
-            this.btnEliminarProducto = new DevExpress.XtraBars.BarButtonItem();
-            this.skinBarSubItem2 = new DevExpress.XtraBars.SkinBarSubItem();
-            this.barDockControl5 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl6 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl7 = new DevExpress.XtraBars.BarDockControl();
-            this.barDockControl8 = new DevExpress.XtraBars.BarDockControl();
-            this.skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
-            this.bar8 = new DevExpress.XtraBars.Bar();
-            ((System.ComponentModel.ISupportInitialize)(this.gcProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvProductos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager3)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            bar6 = new DevExpress.XtraBars.Bar();
+            bar5 = new DevExpress.XtraBars.Bar();
+            bar4 = new DevExpress.XtraBars.Bar();
+            gcProductos = new DevExpress.XtraGrid.GridControl();
+            productoBindingSource = new System.Windows.Forms.BindingSource(components);
+            gvProductos = new DevExpress.XtraGrid.Views.Grid.GridView();
+            ColIdProducto = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColCodigo = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColCodigoBarras = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColNombre = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColMarca = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColUnidadMedida = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColPrecioCompra = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColMargenGanancia = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColPrecioVenta = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColStock = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColStockMin = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColStockMax = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColActivo = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColIdCategoria = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColFechaRegistro = new DevExpress.XtraGrid.Columns.GridColumn();
+            ColImagen = new DevExpress.XtraGrid.Columns.GridColumn();
+            barManager3 = new DevExpress.XtraBars.BarManager(components);
+            bar1 = new DevExpress.XtraBars.Bar();
+            btnActualizarProducto = new DevExpress.XtraBars.BarButtonItem();
+            btnNuevoProducto = new DevExpress.XtraBars.BarButtonItem();
+            btnModificarProducto = new DevExpress.XtraBars.BarButtonItem();
+            btnEliminarProducto = new DevExpress.XtraBars.BarButtonItem();
+            skinBarSubItem2 = new DevExpress.XtraBars.SkinBarSubItem();
+            barDockControl5 = new DevExpress.XtraBars.BarDockControl();
+            barDockControl6 = new DevExpress.XtraBars.BarDockControl();
+            barDockControl7 = new DevExpress.XtraBars.BarDockControl();
+            barDockControl8 = new DevExpress.XtraBars.BarDockControl();
+            skinBarSubItem1 = new DevExpress.XtraBars.SkinBarSubItem();
+            bar8 = new DevExpress.XtraBars.Bar();
+            ((System.ComponentModel.ISupportInitialize)gcProductos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)productoBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gvProductos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)barManager3).BeginInit();
+            SuspendLayout();
             // 
             // bar6
             // 
-            this.bar6.BarName = "Barra de estado";
-            this.bar6.DockCol = 0;
-            this.bar6.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
-            this.bar6.Text = "Barra de estado";
+            bar6.BarName = "Barra de estado";
+            bar6.DockCol = 0;
+            bar6.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
+            bar6.Text = "Barra de estado";
             // 
             // bar5
             // 
-            this.bar5.BarName = "Menú principal";
-            this.bar5.DockCol = 0;
-            this.bar5.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar5.Text = "Menú principal";
+            bar5.BarName = "Menú principal";
+            bar5.DockCol = 0;
+            bar5.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar5.Text = "Menú principal";
             // 
             // bar4
             // 
-            this.bar4.BarName = "Herramientas";
-            this.bar4.DockCol = 0;
-            this.bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar4.Text = "Herramientas";
+            bar4.BarName = "Herramientas";
+            bar4.DockCol = 0;
+            bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar4.Text = "Herramientas";
             // 
             // gcProductos
             // 
-            this.gcProductos.DataSource = this.productoBindingSource;
-            this.gcProductos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gcProductos.Location = new System.Drawing.Point(0, 20);
-            this.gcProductos.MainView = this.gvProductos;
-            this.gcProductos.Name = "gcProductos";
-            this.gcProductos.Size = new System.Drawing.Size(1236, 548);
-            this.gcProductos.TabIndex = 8;
-            this.gcProductos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gvProductos});
-            this.gcProductos.Click += new System.EventHandler(this.gridControl1_Click);
+            gcProductos.DataSource = productoBindingSource;
+            gcProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            gcProductos.Location = new System.Drawing.Point(0, 20);
+            gcProductos.MainView = gvProductos;
+            gcProductos.Name = "gcProductos";
+            gcProductos.Size = new System.Drawing.Size(1236, 548);
+            gcProductos.TabIndex = 8;
+            gcProductos.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvProductos });
+            gcProductos.Click += gridControl1_Click;
             // 
             // productoBindingSource
             // 
-            this.productoBindingSource.DataSource = typeof(FarmsRamirezBML.Producto);
+            productoBindingSource.DataSource = typeof(FarmsRamirezBML.Producto);
             // 
             // gvProductos
             // 
-            this.gvProductos.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ColIdProducto,
-            this.ColCodigo,
-            this.ColCodigoBarras,
-            this.ColNombre,
-            this.ColDescripcion,
-            this.ColMarca,
-            this.ColUnidadMedida,
-            this.ColPrecioCompra,
-            this.ColMargenGanancia,
-            this.ColPrecioVenta,
-            this.ColStock,
-            this.ColStockMin,
-            this.ColStockMax,
-            this.ColActivo,
-            this.ColIdCategoria,
-            this.ColFechaRegistro,
-            this.ColImagen});
-            this.gvProductos.GridControl = this.gcProductos;
-            this.gvProductos.Name = "gvProductos";
-            this.gvProductos.OptionsBehavior.Editable = false;
-            this.gvProductos.OptionsView.ColumnAutoWidth = false;
-            this.gvProductos.OptionsView.EnableAppearanceEvenRow = true;
-            this.gvProductos.OptionsView.ShowAutoFilterRow = true;
-            this.gvProductos.OptionsView.ShowGroupPanel = false;
+            gvProductos.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { ColIdProducto, ColCodigo, ColCodigoBarras, ColNombre, ColDescripcion, ColMarca, ColUnidadMedida, ColPrecioCompra, ColMargenGanancia, ColPrecioVenta, ColStock, ColStockMin, ColStockMax, ColActivo, ColIdCategoria, ColFechaRegistro, ColImagen });
+            gvProductos.GridControl = gcProductos;
+            gvProductos.Name = "gvProductos";
+            gvProductos.OptionsBehavior.Editable = false;
+            gvProductos.OptionsView.ColumnAutoWidth = false;
+            gvProductos.OptionsView.EnableAppearanceEvenRow = true;
+            gvProductos.OptionsView.ShowAutoFilterRow = true;
+            gvProductos.OptionsView.ShowGroupPanel = false;
             // 
             // ColIdProducto
             // 
-            this.ColIdProducto.Caption = "IdProducto";
-            this.ColIdProducto.FieldName = "IdProducto";
-            this.ColIdProducto.Name = "ColIdProducto";
-            this.ColIdProducto.OptionsColumn.AllowEdit = false;
-            this.ColIdProducto.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColIdProducto.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColIdProducto.OptionsColumn.AllowMove = false;
-            this.ColIdProducto.OptionsColumn.AllowSize = false;
-            this.ColIdProducto.OptionsColumn.FixedWidth = true;
-            this.ColIdProducto.Visible = true;
-            this.ColIdProducto.VisibleIndex = 0;
+            ColIdProducto.Caption = "IdProducto";
+            ColIdProducto.FieldName = "IdProducto";
+            ColIdProducto.Name = "ColIdProducto";
+            ColIdProducto.OptionsColumn.AllowEdit = false;
+            ColIdProducto.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColIdProducto.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColIdProducto.OptionsColumn.AllowMove = false;
+            ColIdProducto.OptionsColumn.AllowSize = false;
+            ColIdProducto.OptionsColumn.FixedWidth = true;
+            ColIdProducto.Visible = true;
+            ColIdProducto.VisibleIndex = 0;
             // 
             // ColCodigo
             // 
-            this.ColCodigo.Caption = "Codigo";
-            this.ColCodigo.FieldName = "Codigo";
-            this.ColCodigo.Name = "ColCodigo";
-            this.ColCodigo.OptionsColumn.AllowEdit = false;
-            this.ColCodigo.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColCodigo.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColCodigo.OptionsColumn.AllowMove = false;
-            this.ColCodigo.OptionsColumn.AllowSize = false;
-            this.ColCodigo.OptionsColumn.FixedWidth = true;
-            this.ColCodigo.Visible = true;
-            this.ColCodigo.VisibleIndex = 1;
+            ColCodigo.Caption = "Codigo";
+            ColCodigo.FieldName = "Codigo";
+            ColCodigo.Name = "ColCodigo";
+            ColCodigo.OptionsColumn.AllowEdit = false;
+            ColCodigo.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColCodigo.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColCodigo.OptionsColumn.AllowMove = false;
+            ColCodigo.OptionsColumn.AllowSize = false;
+            ColCodigo.OptionsColumn.FixedWidth = true;
+            ColCodigo.Visible = true;
+            ColCodigo.VisibleIndex = 1;
             // 
             // ColCodigoBarras
             // 
-            this.ColCodigoBarras.Caption = "CodigoBarras";
-            this.ColCodigoBarras.FieldName = "CodigoBarras";
-            this.ColCodigoBarras.Name = "ColCodigoBarras";
-            this.ColCodigoBarras.OptionsColumn.AllowEdit = false;
-            this.ColCodigoBarras.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColCodigoBarras.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColCodigoBarras.OptionsColumn.AllowMove = false;
-            this.ColCodigoBarras.OptionsColumn.AllowSize = false;
-            this.ColCodigoBarras.OptionsColumn.FixedWidth = true;
-            this.ColCodigoBarras.Visible = true;
-            this.ColCodigoBarras.VisibleIndex = 2;
+            ColCodigoBarras.Caption = "CodigoBarras";
+            ColCodigoBarras.FieldName = "CodigoBarras";
+            ColCodigoBarras.ImageOptions.SvgImageSize = new System.Drawing.Size(0, 50);
+            ColCodigoBarras.Name = "ColCodigoBarras";
+            ColCodigoBarras.OptionsColumn.AllowEdit = false;
+            ColCodigoBarras.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColCodigoBarras.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColCodigoBarras.OptionsColumn.AllowMove = false;
+            ColCodigoBarras.OptionsColumn.AllowSize = false;
+            ColCodigoBarras.OptionsColumn.FixedWidth = true;
+            ColCodigoBarras.OptionsColumn.ReadOnly = true;
+            ColCodigoBarras.Visible = true;
+            ColCodigoBarras.VisibleIndex = 2;
             // 
             // ColNombre
             // 
-            this.ColNombre.Caption = "Nombre";
-            this.ColNombre.FieldName = "Nombre";
-            this.ColNombre.Name = "ColNombre";
-            this.ColNombre.OptionsColumn.AllowEdit = false;
-            this.ColNombre.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColNombre.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColNombre.OptionsColumn.AllowMove = false;
-            this.ColNombre.OptionsColumn.AllowSize = false;
-            this.ColNombre.OptionsColumn.FixedWidth = true;
-            this.ColNombre.Visible = true;
-            this.ColNombre.VisibleIndex = 3;
+            ColNombre.Caption = "Nombre";
+            ColNombre.FieldName = "Nombre";
+            ColNombre.Name = "ColNombre";
+            ColNombre.OptionsColumn.AllowEdit = false;
+            ColNombre.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColNombre.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColNombre.OptionsColumn.AllowMove = false;
+            ColNombre.OptionsColumn.AllowSize = false;
+            ColNombre.OptionsColumn.FixedWidth = true;
+            ColNombre.Visible = true;
+            ColNombre.VisibleIndex = 3;
             // 
             // ColDescripcion
             // 
-            this.ColDescripcion.Caption = "Descripcion";
-            this.ColDescripcion.FieldName = "Descripcion";
-            this.ColDescripcion.Name = "ColDescripcion";
-            this.ColDescripcion.OptionsColumn.AllowEdit = false;
-            this.ColDescripcion.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColDescripcion.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColDescripcion.OptionsColumn.AllowMove = false;
-            this.ColDescripcion.OptionsColumn.AllowSize = false;
-            this.ColDescripcion.OptionsColumn.FixedWidth = true;
-            this.ColDescripcion.Visible = true;
-            this.ColDescripcion.VisibleIndex = 4;
+            ColDescripcion.Caption = "Descripcion";
+            ColDescripcion.FieldName = "Descripcion";
+            ColDescripcion.Name = "ColDescripcion";
+            ColDescripcion.OptionsColumn.AllowEdit = false;
+            ColDescripcion.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColDescripcion.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColDescripcion.OptionsColumn.AllowMove = false;
+            ColDescripcion.OptionsColumn.AllowSize = false;
+            ColDescripcion.OptionsColumn.FixedWidth = true;
+            ColDescripcion.Visible = true;
+            ColDescripcion.VisibleIndex = 4;
             // 
             // ColMarca
             // 
-            this.ColMarca.Caption = "Marca";
-            this.ColMarca.FieldName = "Marca";
-            this.ColMarca.Name = "ColMarca";
-            this.ColMarca.OptionsColumn.AllowEdit = false;
-            this.ColMarca.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColMarca.OptionsColumn.AllowMove = false;
-            this.ColMarca.OptionsColumn.AllowSize = false;
-            this.ColMarca.OptionsColumn.FixedWidth = true;
-            this.ColMarca.Visible = true;
-            this.ColMarca.VisibleIndex = 5;
+            ColMarca.Caption = "Marca";
+            ColMarca.FieldName = "Marca";
+            ColMarca.Name = "ColMarca";
+            ColMarca.OptionsColumn.AllowEdit = false;
+            ColMarca.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColMarca.OptionsColumn.AllowMove = false;
+            ColMarca.OptionsColumn.AllowSize = false;
+            ColMarca.OptionsColumn.FixedWidth = true;
+            ColMarca.Visible = true;
+            ColMarca.VisibleIndex = 5;
             // 
             // ColUnidadMedida
             // 
-            this.ColUnidadMedida.Caption = "UnidadMedida";
-            this.ColUnidadMedida.FieldName = "UnidadMedida";
-            this.ColUnidadMedida.Name = "ColUnidadMedida";
-            this.ColUnidadMedida.OptionsColumn.AllowEdit = false;
-            this.ColUnidadMedida.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColUnidadMedida.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColUnidadMedida.OptionsColumn.AllowMove = false;
-            this.ColUnidadMedida.OptionsColumn.AllowSize = false;
-            this.ColUnidadMedida.OptionsColumn.FixedWidth = true;
-            this.ColUnidadMedida.Visible = true;
-            this.ColUnidadMedida.VisibleIndex = 6;
+            ColUnidadMedida.Caption = "UnidadMedida";
+            ColUnidadMedida.FieldName = "UnidadMedida";
+            ColUnidadMedida.Name = "ColUnidadMedida";
+            ColUnidadMedida.OptionsColumn.AllowEdit = false;
+            ColUnidadMedida.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColUnidadMedida.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColUnidadMedida.OptionsColumn.AllowMove = false;
+            ColUnidadMedida.OptionsColumn.AllowSize = false;
+            ColUnidadMedida.OptionsColumn.FixedWidth = true;
+            ColUnidadMedida.Visible = true;
+            ColUnidadMedida.VisibleIndex = 6;
             // 
             // ColPrecioCompra
             // 
-            this.ColPrecioCompra.Caption = "PrecioCompra";
-            this.ColPrecioCompra.FieldName = "PrecioCompra";
-            this.ColPrecioCompra.Name = "ColPrecioCompra";
-            this.ColPrecioCompra.OptionsColumn.AllowEdit = false;
-            this.ColPrecioCompra.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColPrecioCompra.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColPrecioCompra.OptionsColumn.AllowMove = false;
-            this.ColPrecioCompra.OptionsColumn.AllowSize = false;
-            this.ColPrecioCompra.OptionsColumn.FixedWidth = true;
-            this.ColPrecioCompra.Visible = true;
-            this.ColPrecioCompra.VisibleIndex = 7;
+            ColPrecioCompra.Caption = "PrecioCompra";
+            ColPrecioCompra.FieldName = "PrecioCompra";
+            ColPrecioCompra.Name = "ColPrecioCompra";
+            ColPrecioCompra.OptionsColumn.AllowEdit = false;
+            ColPrecioCompra.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColPrecioCompra.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColPrecioCompra.OptionsColumn.AllowMove = false;
+            ColPrecioCompra.OptionsColumn.AllowSize = false;
+            ColPrecioCompra.OptionsColumn.FixedWidth = true;
+            ColPrecioCompra.Visible = true;
+            ColPrecioCompra.VisibleIndex = 7;
             // 
             // ColMargenGanancia
             // 
-            this.ColMargenGanancia.Caption = "MargenGanancia";
-            this.ColMargenGanancia.FieldName = "MargenGanancia";
-            this.ColMargenGanancia.Name = "ColMargenGanancia";
-            this.ColMargenGanancia.OptionsColumn.AllowEdit = false;
-            this.ColMargenGanancia.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColMargenGanancia.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColMargenGanancia.OptionsColumn.AllowMove = false;
-            this.ColMargenGanancia.OptionsColumn.AllowSize = false;
-            this.ColMargenGanancia.OptionsColumn.FixedWidth = true;
-            this.ColMargenGanancia.Visible = true;
-            this.ColMargenGanancia.VisibleIndex = 8;
+            ColMargenGanancia.Caption = "MargenGanancia";
+            ColMargenGanancia.FieldName = "MargenGanancia";
+            ColMargenGanancia.Name = "ColMargenGanancia";
+            ColMargenGanancia.OptionsColumn.AllowEdit = false;
+            ColMargenGanancia.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColMargenGanancia.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColMargenGanancia.OptionsColumn.AllowMove = false;
+            ColMargenGanancia.OptionsColumn.AllowSize = false;
+            ColMargenGanancia.OptionsColumn.FixedWidth = true;
+            ColMargenGanancia.Visible = true;
+            ColMargenGanancia.VisibleIndex = 8;
             // 
             // ColPrecioVenta
             // 
-            this.ColPrecioVenta.Caption = "PrecioVenta";
-            this.ColPrecioVenta.FieldName = "PrecioVenta";
-            this.ColPrecioVenta.Name = "ColPrecioVenta";
-            this.ColPrecioVenta.OptionsColumn.AllowEdit = false;
-            this.ColPrecioVenta.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColPrecioVenta.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColPrecioVenta.OptionsColumn.AllowMove = false;
-            this.ColPrecioVenta.OptionsColumn.AllowSize = false;
-            this.ColPrecioVenta.OptionsColumn.FixedWidth = true;
-            this.ColPrecioVenta.Visible = true;
-            this.ColPrecioVenta.VisibleIndex = 9;
+            ColPrecioVenta.Caption = "PrecioVenta";
+            ColPrecioVenta.FieldName = "PrecioVenta";
+            ColPrecioVenta.Name = "ColPrecioVenta";
+            ColPrecioVenta.OptionsColumn.AllowEdit = false;
+            ColPrecioVenta.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColPrecioVenta.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColPrecioVenta.OptionsColumn.AllowMove = false;
+            ColPrecioVenta.OptionsColumn.AllowSize = false;
+            ColPrecioVenta.OptionsColumn.FixedWidth = true;
+            ColPrecioVenta.Visible = true;
+            ColPrecioVenta.VisibleIndex = 9;
             // 
             // ColStock
             // 
-            this.ColStock.Caption = "Stock";
-            this.ColStock.FieldName = "Stock";
-            this.ColStock.Name = "ColStock";
-            this.ColStock.OptionsColumn.AllowEdit = false;
-            this.ColStock.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColStock.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColStock.OptionsColumn.AllowMove = false;
-            this.ColStock.OptionsColumn.AllowSize = false;
-            this.ColStock.OptionsColumn.FixedWidth = true;
-            this.ColStock.Visible = true;
-            this.ColStock.VisibleIndex = 10;
+            ColStock.Caption = "Stock";
+            ColStock.FieldName = "Stock";
+            ColStock.Name = "ColStock";
+            ColStock.OptionsColumn.AllowEdit = false;
+            ColStock.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColStock.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColStock.OptionsColumn.AllowMove = false;
+            ColStock.OptionsColumn.AllowSize = false;
+            ColStock.OptionsColumn.FixedWidth = true;
+            ColStock.Visible = true;
+            ColStock.VisibleIndex = 10;
             // 
             // ColStockMin
             // 
-            this.ColStockMin.Caption = "StockMin";
-            this.ColStockMin.FieldName = "StockMin";
-            this.ColStockMin.Name = "ColStockMin";
-            this.ColStockMin.OptionsColumn.AllowEdit = false;
-            this.ColStockMin.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColStockMin.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColStockMin.OptionsColumn.AllowMove = false;
-            this.ColStockMin.OptionsColumn.AllowSize = false;
-            this.ColStockMin.OptionsColumn.FixedWidth = true;
-            this.ColStockMin.Visible = true;
-            this.ColStockMin.VisibleIndex = 11;
+            ColStockMin.Caption = "StockMin";
+            ColStockMin.FieldName = "StockMin";
+            ColStockMin.Name = "ColStockMin";
+            ColStockMin.OptionsColumn.AllowEdit = false;
+            ColStockMin.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColStockMin.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColStockMin.OptionsColumn.AllowMove = false;
+            ColStockMin.OptionsColumn.AllowSize = false;
+            ColStockMin.OptionsColumn.FixedWidth = true;
+            ColStockMin.Visible = true;
+            ColStockMin.VisibleIndex = 11;
             // 
             // ColStockMax
             // 
-            this.ColStockMax.Caption = "StockMax";
-            this.ColStockMax.FieldName = "StockMax";
-            this.ColStockMax.Name = "ColStockMax";
-            this.ColStockMax.OptionsColumn.AllowEdit = false;
-            this.ColStockMax.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColStockMax.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColStockMax.OptionsColumn.AllowMove = false;
-            this.ColStockMax.OptionsColumn.AllowSize = false;
-            this.ColStockMax.OptionsColumn.FixedWidth = true;
-            this.ColStockMax.Visible = true;
-            this.ColStockMax.VisibleIndex = 12;
+            ColStockMax.Caption = "StockMax";
+            ColStockMax.FieldName = "StockMax";
+            ColStockMax.Name = "ColStockMax";
+            ColStockMax.OptionsColumn.AllowEdit = false;
+            ColStockMax.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColStockMax.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColStockMax.OptionsColumn.AllowMove = false;
+            ColStockMax.OptionsColumn.AllowSize = false;
+            ColStockMax.OptionsColumn.FixedWidth = true;
+            ColStockMax.Visible = true;
+            ColStockMax.VisibleIndex = 12;
             // 
             // ColActivo
             // 
-            this.ColActivo.Caption = "Activo";
-            this.ColActivo.FieldName = "Activo";
-            this.ColActivo.Name = "ColActivo";
+            ColActivo.Caption = "Activo";
+            ColActivo.FieldName = "Activo";
+            ColActivo.Name = "ColActivo";
             // 
             // ColIdCategoria
             // 
-            this.ColIdCategoria.Caption = "IdCategoria";
-            this.ColIdCategoria.FieldName = "IdCategoria";
-            this.ColIdCategoria.Name = "ColIdCategoria";
+            ColIdCategoria.Caption = "IdCategoria";
+            ColIdCategoria.FieldName = "IdCategoria";
+            ColIdCategoria.Name = "ColIdCategoria";
             // 
             // ColFechaRegistro
             // 
-            this.ColFechaRegistro.Caption = "FechaRegistro";
-            this.ColFechaRegistro.FieldName = "FechaRegistro";
-            this.ColFechaRegistro.Name = "ColFechaRegistro";
-            this.ColFechaRegistro.Visible = true;
-            this.ColFechaRegistro.VisibleIndex = 13;
+            ColFechaRegistro.Caption = "FechaRegistro";
+            ColFechaRegistro.FieldName = "FechaRegistro";
+            ColFechaRegistro.Name = "ColFechaRegistro";
+            ColFechaRegistro.OptionsColumn.AllowEdit = false;
+            ColFechaRegistro.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColFechaRegistro.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColFechaRegistro.OptionsColumn.AllowMove = false;
+            ColFechaRegistro.OptionsColumn.AllowSize = false;
+            ColFechaRegistro.OptionsColumn.FixedWidth = true;
+            ColFechaRegistro.Visible = true;
+            ColFechaRegistro.VisibleIndex = 13;
             // 
             // ColImagen
             // 
-            this.ColImagen.Caption = "Imagen";
-            this.ColImagen.FieldName = "Imagen";
-            this.ColImagen.Name = "ColImagen";
-            this.ColImagen.OptionsColumn.AllowEdit = false;
-            this.ColImagen.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
-            this.ColImagen.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
-            this.ColImagen.OptionsColumn.AllowMove = false;
-            this.ColImagen.OptionsColumn.AllowSize = false;
-            this.ColImagen.OptionsColumn.FixedWidth = true;
-            this.ColImagen.Visible = true;
-            this.ColImagen.VisibleIndex = 14;
+            ColImagen.Caption = "Imagen";
+            ColImagen.FieldName = "Imagen";
+            ColImagen.Name = "ColImagen";
+            ColImagen.OptionsColumn.AllowEdit = false;
+            ColImagen.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            ColImagen.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            ColImagen.OptionsColumn.AllowMove = false;
+            ColImagen.OptionsColumn.AllowSize = false;
+            ColImagen.OptionsColumn.FixedWidth = true;
+            ColImagen.OptionsColumn.ReadOnly = true;
+            ColImagen.Visible = true;
+            ColImagen.VisibleIndex = 14;
             // 
             // barManager3
             // 
-            this.barManager3.Bars.AddRange(new DevExpress.XtraBars.Bar[] {
-            this.bar1});
-            this.barManager3.DockControls.Add(this.barDockControl5);
-            this.barManager3.DockControls.Add(this.barDockControl6);
-            this.barManager3.DockControls.Add(this.barDockControl7);
-            this.barManager3.DockControls.Add(this.barDockControl8);
-            this.barManager3.Form = this;
-            this.barManager3.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.btnActualizarProducto,
-            this.btnNuevoProducto,
-            this.btnModificarProducto,
-            this.btnEliminarProducto,
-            this.skinBarSubItem1,
-            this.skinBarSubItem2});
-            this.barManager3.MaxItemId = 11;
+            barManager3.Bars.AddRange(new DevExpress.XtraBars.Bar[] { bar1 });
+            barManager3.DockControls.Add(barDockControl5);
+            barManager3.DockControls.Add(barDockControl6);
+            barManager3.DockControls.Add(barDockControl7);
+            barManager3.DockControls.Add(barDockControl8);
+            barManager3.Form = this;
+            barManager3.Items.AddRange(new DevExpress.XtraBars.BarItem[] { btnActualizarProducto, btnNuevoProducto, btnModificarProducto, btnEliminarProducto, skinBarSubItem1, skinBarSubItem2 });
+            barManager3.MaxItemId = 11;
             // 
             // bar1
             // 
-            this.bar1.BarName = "Herramientas";
-            this.bar1.DockCol = 0;
-            this.bar1.DockRow = 0;
-            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnActualizarProducto),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnNuevoProducto),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnModificarProducto),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnEliminarProducto),
-            new DevExpress.XtraBars.LinkPersistInfo(this.skinBarSubItem2)});
-            this.bar1.Text = "Herramientas";
+            bar1.BarName = "Herramientas";
+            bar1.DockCol = 0;
+            bar1.DockRow = 0;
+            bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(btnActualizarProducto), new DevExpress.XtraBars.LinkPersistInfo(btnNuevoProducto), new DevExpress.XtraBars.LinkPersistInfo(btnModificarProducto), new DevExpress.XtraBars.LinkPersistInfo(btnEliminarProducto), new DevExpress.XtraBars.LinkPersistInfo(skinBarSubItem2) });
+            bar1.Text = "Herramientas";
             // 
             // btnActualizarProducto
             // 
-            this.btnActualizarProducto.Caption = "Actualizar";
-            this.btnActualizarProducto.Id = 0;
-            this.btnActualizarProducto.Name = "btnActualizarProducto";
-            this.btnActualizarProducto.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnActualizarProducto_ItemClick);
+            btnActualizarProducto.Caption = "Actualizar";
+            btnActualizarProducto.Id = 0;
+            btnActualizarProducto.Name = "btnActualizarProducto";
+            btnActualizarProducto.ItemClick += btnActualizarProducto_ItemClick;
             // 
             // btnNuevoProducto
             // 
-            this.btnNuevoProducto.Caption = "Nuevo";
-            this.btnNuevoProducto.Id = 1;
-            this.btnNuevoProducto.Name = "btnNuevoProducto";
-            this.btnNuevoProducto.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNuevoProducto_ItemClick);
+            btnNuevoProducto.Caption = "Nuevo";
+            btnNuevoProducto.Id = 1;
+            btnNuevoProducto.Name = "btnNuevoProducto";
+            btnNuevoProducto.ItemClick += btnNuevoProducto_ItemClick;
             // 
             // btnModificarProducto
             // 
-            this.btnModificarProducto.Caption = "Modificar";
-            this.btnModificarProducto.Id = 2;
-            this.btnModificarProducto.Name = "btnModificarProducto";
-            this.btnModificarProducto.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnModificarProducto_ItemClick);
+            btnModificarProducto.Caption = "Modificar";
+            btnModificarProducto.Id = 2;
+            btnModificarProducto.Name = "btnModificarProducto";
+            btnModificarProducto.ItemClick += btnModificarProducto_ItemClick;
             // 
             // btnEliminarProducto
             // 
-            this.btnEliminarProducto.Caption = "Eliminar";
-            this.btnEliminarProducto.Id = 3;
-            this.btnEliminarProducto.Name = "btnEliminarProducto";
-            this.btnEliminarProducto.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEliminarProducto_ItemClick);
+            btnEliminarProducto.Caption = "Eliminar";
+            btnEliminarProducto.Id = 3;
+            btnEliminarProducto.Name = "btnEliminarProducto";
+            btnEliminarProducto.ItemClick += btnEliminarProducto_ItemClick;
             // 
             // skinBarSubItem2
             // 
-            this.skinBarSubItem2.Caption = "Apariencia";
-            this.skinBarSubItem2.Id = 10;
-            this.skinBarSubItem2.Name = "skinBarSubItem2";
+            skinBarSubItem2.Caption = "Apariencia";
+            skinBarSubItem2.Id = 10;
+            skinBarSubItem2.Name = "skinBarSubItem2";
             // 
             // barDockControl5
             // 
-            this.barDockControl5.CausesValidation = false;
-            this.barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barDockControl5.Location = new System.Drawing.Point(0, 0);
-            this.barDockControl5.Manager = this.barManager3;
-            this.barDockControl5.Size = new System.Drawing.Size(1236, 20);
+            barDockControl5.CausesValidation = false;
+            barDockControl5.Dock = System.Windows.Forms.DockStyle.Top;
+            barDockControl5.Location = new System.Drawing.Point(0, 0);
+            barDockControl5.Manager = barManager3;
+            barDockControl5.Size = new System.Drawing.Size(1236, 20);
             // 
             // barDockControl6
             // 
-            this.barDockControl6.CausesValidation = false;
-            this.barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControl6.Location = new System.Drawing.Point(0, 568);
-            this.barDockControl6.Manager = this.barManager3;
-            this.barDockControl6.Size = new System.Drawing.Size(1236, 0);
+            barDockControl6.CausesValidation = false;
+            barDockControl6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            barDockControl6.Location = new System.Drawing.Point(0, 568);
+            barDockControl6.Manager = barManager3;
+            barDockControl6.Size = new System.Drawing.Size(1236, 0);
             // 
             // barDockControl7
             // 
-            this.barDockControl7.CausesValidation = false;
-            this.barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControl7.Location = new System.Drawing.Point(0, 20);
-            this.barDockControl7.Manager = this.barManager3;
-            this.barDockControl7.Size = new System.Drawing.Size(0, 548);
+            barDockControl7.CausesValidation = false;
+            barDockControl7.Dock = System.Windows.Forms.DockStyle.Left;
+            barDockControl7.Location = new System.Drawing.Point(0, 20);
+            barDockControl7.Manager = barManager3;
+            barDockControl7.Size = new System.Drawing.Size(0, 548);
             // 
             // barDockControl8
             // 
-            this.barDockControl8.CausesValidation = false;
-            this.barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControl8.Location = new System.Drawing.Point(1236, 20);
-            this.barDockControl8.Manager = this.barManager3;
-            this.barDockControl8.Size = new System.Drawing.Size(0, 548);
+            barDockControl8.CausesValidation = false;
+            barDockControl8.Dock = System.Windows.Forms.DockStyle.Right;
+            barDockControl8.Location = new System.Drawing.Point(1236, 20);
+            barDockControl8.Manager = barManager3;
+            barDockControl8.Size = new System.Drawing.Size(0, 548);
             // 
             // skinBarSubItem1
             // 
-            this.skinBarSubItem1.Caption = "Apariencia";
-            this.skinBarSubItem1.Id = 4;
-            this.skinBarSubItem1.Name = "skinBarSubItem1";
+            skinBarSubItem1.Caption = "Apariencia";
+            skinBarSubItem1.Id = 4;
+            skinBarSubItem1.Name = "skinBarSubItem1";
             // 
             // bar8
             // 
-            this.bar8.BarName = "Barra de estado";
-            this.bar8.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
-            this.bar8.DockCol = 0;
-            this.bar8.DockRow = 0;
-            this.bar8.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
-            this.bar8.OptionsBar.AllowQuickCustomization = false;
-            this.bar8.OptionsBar.DrawDragBorder = false;
-            this.bar8.OptionsBar.UseWholeRow = true;
-            this.bar8.Text = "Barra de estado";
+            bar8.BarName = "Barra de estado";
+            bar8.CanDockStyle = DevExpress.XtraBars.BarCanDockStyle.Bottom;
+            bar8.DockCol = 0;
+            bar8.DockRow = 0;
+            bar8.DockStyle = DevExpress.XtraBars.BarDockStyle.Bottom;
+            bar8.OptionsBar.AllowQuickCustomization = false;
+            bar8.OptionsBar.DrawDragBorder = false;
+            bar8.OptionsBar.UseWholeRow = true;
+            bar8.Text = "Barra de estado";
             // 
             // frmProductos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1236, 568);
-            this.Controls.Add(this.gcProductos);
-            this.Controls.Add(this.barDockControl7);
-            this.Controls.Add(this.barDockControl8);
-            this.Controls.Add(this.barDockControl6);
-            this.Controls.Add(this.barDockControl5);
-            this.Name = "frmProductos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Productos";
-            this.Load += new System.EventHandler(this.frmProductos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.gcProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productoBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gvProductos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager3)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(1236, 568);
+            Controls.Add(gcProductos);
+            Controls.Add(barDockControl7);
+            Controls.Add(barDockControl8);
+            Controls.Add(barDockControl6);
+            Controls.Add(barDockControl5);
+            Name = "frmProductos";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Productos";
+            Load += frmProductos_Load;
+            ((System.ComponentModel.ISupportInitialize)gcProductos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)productoBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gvProductos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)barManager3).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

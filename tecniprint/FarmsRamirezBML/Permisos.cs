@@ -39,7 +39,6 @@ namespace FarmsRamirezBML
             var parametros = new DynamicParameters();
             parametros.Add("@IdRol", IdTipoUsuario);
             return dataAccess.Query<Permisos>("stp_permisos_getall");
-            
         }
 
         public Permisos GetById()

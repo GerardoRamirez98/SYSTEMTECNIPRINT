@@ -1,5 +1,9 @@
-﻿using FarmsRamirezBML;
+﻿using DevExpress.XtraGrid.Columns;
+using FarmsRamirezBML;
 using System;
+using System.Drawing;
+using System.IO;
+using System.Windows.Forms;
 
 namespace SimiSoft
 {

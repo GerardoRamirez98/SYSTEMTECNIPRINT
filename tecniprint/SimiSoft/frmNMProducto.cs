@@ -1,12 +1,9 @@
 ﻿using BarcodeLib;
-using DevExpress.Data.Browsing.Design;
-using DevExpress.Utils.Behaviors.Common;
 using DevExpress.XtraEditors;
 using FarmsRamirezBML;
 using System;
 using System.Drawing;
 using System.IO;// para los archivos en memoria
-using System.Net; // para usar servidor ftp xampp
 using System.Windows.Forms;
 
 
@@ -209,8 +206,7 @@ namespace SimiSoft
                         StockMin = Convert.ToInt32(txtStockMin.Text),
                         StockMax = Convert.ToInt32(txtStockMax.Text),
                         Imagen = SubirArchivo(txtCodigo.EditValue.ToString())
-
-                    }.Add() > 0)
+                    }.Add())
                     {
                         XtraMessageBox.Show("Producto insertado correctamente", Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();

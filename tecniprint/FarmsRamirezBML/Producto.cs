@@ -29,7 +29,7 @@ namespace FarmsRamirezBML
         {
         }
 
-        public int Add()
+        public bool Add()
         {
             var parametros = new DynamicParameters();
             parametros.Add("@Codigo", Codigo);
@@ -46,7 +46,8 @@ namespace FarmsRamirezBML
             parametros.Add("@StockMax", StockMax);
             parametros.Add("@Imagen", Imagen);
             
-            return dataAccess.Execute("stp_productos_add", parametros);
+            int rowsAffected = dataAccess.Execute("stp_productos_add", parametros);
+            return rowsAffected > 0;
         }
 
         public int Delete()

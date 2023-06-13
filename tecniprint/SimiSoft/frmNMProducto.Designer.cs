@@ -341,6 +341,7 @@ namespace SimiSoft
             pbCodigoBarra.Location = new System.Drawing.Point(24, 24);
             pbCodigoBarra.Name = "pbCodigoBarra";
             pbCodigoBarra.Size = new System.Drawing.Size(150, 74);
+            pbCodigoBarra.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pbCodigoBarra.TabIndex = 33;
             pbCodigoBarra.TabStop = false;
             // 
