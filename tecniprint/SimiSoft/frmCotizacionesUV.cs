@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace TP
 {
-    public partial class frmCotizaciones : DevExpress.XtraEditors.XtraForm
+    public partial class frmCotizacionesUV : DevExpress.XtraEditors.XtraForm
     {
-        public frmCotizaciones()
+        public frmCotizacionesUV()
         {
             InitializeComponent();
         }

@@ -24,7 +24,7 @@
     <Compile Update="frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmCotizaciones.cs">
+    <Compile Update="frmCotizacionesUV.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmLogin.cs">
