@@ -62,6 +62,8 @@ namespace SimiSoft
             cboBarras = new System.Windows.Forms.ComboBox();
             groupControl1 = new DevExpress.XtraEditors.GroupControl();
             groupControl2 = new DevExpress.XtraEditors.GroupControl();
+            lblCategoria = new DevExpress.XtraEditors.LabelControl();
+            cbCategorias = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)txtID.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtDescripcion.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtUnidadM.Properties).BeginInit();
@@ -384,6 +386,23 @@ namespace SimiSoft
             groupControl2.TabIndex = 39;
             groupControl2.Text = "Imagen";
             // 
+            // lblCategoria
+            // 
+            lblCategoria.Location = new System.Drawing.Point(218, 146);
+            lblCategoria.Name = "lblCategoria";
+            lblCategoria.Size = new System.Drawing.Size(51, 13);
+            lblCategoria.TabIndex = 40;
+            lblCategoria.Text = "Categoria:";
+            // 
+            // cbCategorias
+            // 
+            cbCategorias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbCategorias.FormattingEnabled = true;
+            cbCategorias.Location = new System.Drawing.Point(304, 143);
+            cbCategorias.Name = "cbCategorias";
+            cbCategorias.Size = new System.Drawing.Size(121, 21);
+            cbCategorias.TabIndex = 41;
+            // 
             // frmNMProducto
             // 
             AcceptButton = btnGuardar;
@@ -391,6 +410,8 @@ namespace SimiSoft
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             CancelButton = btnCancelar;
             ClientSize = new System.Drawing.Size(441, 408);
+            Controls.Add(cbCategorias);
+            Controls.Add(lblCategoria);
             Controls.Add(groupControl2);
             Controls.Add(groupControl1);
             Controls.Add(txtStockMax);
@@ -484,5 +505,7 @@ namespace SimiSoft
         private System.Windows.Forms.ComboBox cboBarras;
         private DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.GroupControl groupControl2;
+        private DevExpress.XtraEditors.LabelControl lblCategoria;
+        private System.Windows.Forms.ComboBox cbCategorias;
     }
 }

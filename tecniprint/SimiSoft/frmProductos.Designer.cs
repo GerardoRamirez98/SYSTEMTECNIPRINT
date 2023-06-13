@@ -51,6 +51,7 @@ namespace SimiSoft
             ColStockMax = new DevExpress.XtraGrid.Columns.GridColumn();
             ColActivo = new DevExpress.XtraGrid.Columns.GridColumn();
             ColIdCategoria = new DevExpress.XtraGrid.Columns.GridColumn();
+            colCategoriaDescripcion = new DevExpress.XtraGrid.Columns.GridColumn();
             ColFechaRegistro = new DevExpress.XtraGrid.Columns.GridColumn();
             ColImagen = new DevExpress.XtraGrid.Columns.GridColumn();
             barManager3 = new DevExpress.XtraBars.BarManager(components);
@@ -111,7 +112,7 @@ namespace SimiSoft
             // 
             // gvProductos
             // 
-            gvProductos.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { ColIdProducto, ColCodigo, ColCodigoBarras, ColNombre, ColDescripcion, ColMarca, ColUnidadMedida, ColPrecioCompra, ColMargenGanancia, ColPrecioVenta, ColStock, ColStockMin, ColStockMax, ColActivo, ColIdCategoria, ColFechaRegistro, ColImagen });
+            gvProductos.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { ColIdProducto, ColCodigo, ColCodigoBarras, ColNombre, ColDescripcion, ColMarca, ColUnidadMedida, ColPrecioCompra, ColMargenGanancia, ColPrecioVenta, ColStock, ColStockMin, ColStockMax, ColActivo, ColIdCategoria, colCategoriaDescripcion, ColFechaRegistro, ColImagen });
             gvProductos.GridControl = gcProductos;
             gvProductos.Name = "gvProductos";
             gvProductos.OptionsBehavior.Editable = false;
@@ -315,6 +316,21 @@ namespace SimiSoft
             ColIdCategoria.FieldName = "IdCategoria";
             ColIdCategoria.Name = "ColIdCategoria";
             // 
+            // colCategoriaDescripcion
+            // 
+            colCategoriaDescripcion.Caption = "CategoriaDescripcion";
+            colCategoriaDescripcion.FieldName = "CategoriaDescripcion";
+            colCategoriaDescripcion.Name = "colCategoriaDescripcion";
+            colCategoriaDescripcion.OptionsColumn.AllowEdit = false;
+            colCategoriaDescripcion.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            colCategoriaDescripcion.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            colCategoriaDescripcion.OptionsColumn.AllowMove = false;
+            colCategoriaDescripcion.OptionsColumn.AllowSize = false;
+            colCategoriaDescripcion.OptionsColumn.FixedWidth = true;
+            colCategoriaDescripcion.OptionsColumn.ReadOnly = true;
+            colCategoriaDescripcion.Visible = true;
+            colCategoriaDescripcion.VisibleIndex = 14;
+            // 
             // ColFechaRegistro
             // 
             ColFechaRegistro.Caption = "FechaRegistro";
@@ -342,7 +358,7 @@ namespace SimiSoft
             ColImagen.OptionsColumn.FixedWidth = true;
             ColImagen.OptionsColumn.ReadOnly = true;
             ColImagen.Visible = true;
-            ColImagen.VisibleIndex = 14;
+            ColImagen.VisibleIndex = 15;
             // 
             // barManager3
             // 
@@ -507,5 +523,6 @@ namespace SimiSoft
         private DevExpress.XtraGrid.Columns.GridColumn ColIdCategoria;
         private DevExpress.XtraGrid.Columns.GridColumn ColFechaRegistro;
         private DevExpress.XtraGrid.Columns.GridColumn ColImagen;
+        private DevExpress.XtraGrid.Columns.GridColumn colCategoriaDescripcion;
     }
 }

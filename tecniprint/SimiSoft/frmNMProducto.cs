@@ -1,7 +1,10 @@
 ﻿using BarcodeLib;
+using DevExpress.Mvvm.POCO;
+using DevExpress.Office.Utils;
 using DevExpress.XtraEditors;
 using FarmsRamirezBML;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;// para los archivos en memoria
 using System.Windows.Forms;
@@ -17,6 +20,17 @@ namespace SimiSoft
         {
             InitializeComponent();
             txtID.Enabled = false;
+
+            // Obtener todas las categorías
+            List<Categorias> categorias = new Categorias().GetAll();
+
+            // Agregar las descripciones de categoría al ComboBox
+            foreach (Categorias categoria in categorias)
+            {
+                cbCategorias.Items.Add(categoria.Descripcion);
+            }
+
+            cbCategorias.SelectedIndex = 0; // Establecer el primer elemento seleccionado por defecto
         }
 
         public class TipoCodigoBarras
@@ -145,6 +159,21 @@ namespace SimiSoft
             txtStock.Text = producto.Stock.ToString();
             txtStockMin.Text = producto.StockMin.ToString();
             txtStockMax.Text = producto.StockMax.ToString();
+
+            List<Categorias> productos = new Categorias().GetAll();
+            foreach (Categorias prod in productos)
+            {
+                cbCategorias.Items.Add(prod.Descripcion);
+            }
+
+            // Obtener el IdCategoria correspondiente a la descripción seleccionada
+            string categoriaSeleccionada = producto.CategoriaDescripcion;
+            int idCategoriaSeleccionada = productos.Find(prod => prod.Descripcion == categoriaSeleccionada)?.IdCategoria ?? 0;
+            cbCategorias.SelectedItem = categoriaSeleccionada;
+
+            // Asignar el IdCategoria al campo correspondiente en el producto
+            producto.IdCategoria = idCategoriaSeleccionada;
+
             pbImagen.ImageLocation = producto.Imagen.ToString();
         }
 
@@ -189,8 +218,15 @@ namespace SimiSoft
 
             if (Validar())
             {
+
+                string categoriaSeleccionada = cbCategorias.SelectedItem.ToString();
+
+                List<Categorias> productos = new Categorias().GetAll();
+                int idCategoriaSeleccionada = productos.Find(prod => prod.Descripcion == categoriaSeleccionada)?.IdCategoria ?? 0;
+
                 if (producto == null)
                 {
+
                     if (new Producto
                     {
                         Codigo = txtCodigo.Text,
@@ -205,6 +241,7 @@ namespace SimiSoft
                         Stock = Convert.ToInt32(txtStock.Text),
                         StockMin = Convert.ToInt32(txtStockMin.Text),
                         StockMax = Convert.ToInt32(txtStockMax.Text),
+                        IdCategoria = idCategoriaSeleccionada,
                         Imagen = SubirArchivo(txtCodigo.EditValue.ToString())
                     }.Add())
                     {
@@ -231,7 +268,8 @@ namespace SimiSoft
                     producto.Stock = Convert.ToInt32(txtStock.Text);
                     producto.StockMin = Convert.ToInt32(txtStockMin.Text);
                     producto.StockMax = Convert.ToInt32(txtStockMax.Text);
-                    producto.Imagen = Convert.ToString(url);
+                    producto.IdCategoria = idCategoriaSeleccionada;
+                    producto.Imagen = SubirArchivo(txtCodigo.EditValue.ToString());
 
                     if (producto.Update() > 0)
                     {

@@ -2,6 +2,7 @@
 using FarmsRamirezDAL;
 using System;
 using System.Collections.Generic;
+using System.Data;
 
 namespace FarmsRamirezBML
 {
@@ -21,6 +22,8 @@ namespace FarmsRamirezBML
         public int Stock { get; set; }
         public int StockMin { get; set; }
         public int StockMax { get; set; }
+        public int IdCategoria { get; set; }
+        public string CategoriaDescripcion { get; set; }
         public bool Activo { get; set; }
         public DateTime FechaRegistro { get; set; }
         public string Imagen { get; set; }
@@ -44,6 +47,7 @@ namespace FarmsRamirezBML
             parametros.Add("@Stock", Stock);
             parametros.Add("@StockMin", StockMin);
             parametros.Add("@StockMax", StockMax);
+            parametros.Add("@IdCategoria", IdCategoria);
             parametros.Add("@Imagen", Imagen);
             
             int rowsAffected = dataAccess.Execute("stp_productos_add", parametros);
@@ -85,6 +89,8 @@ namespace FarmsRamirezBML
             parametros.Add("@Stock", Stock);
             parametros.Add("@StockMin", StockMin);
             parametros.Add("@StockMax", StockMax);
+            parametros.Add("@IdCategoria", IdCategoria);
+            parametros.Add("@Imagen", Imagen);
             return dataAccess.Execute("stp_productos_update", parametros);
         }
 
