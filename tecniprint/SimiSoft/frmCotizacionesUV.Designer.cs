@@ -63,17 +63,38 @@
             labelControl17 = new DevExpress.XtraEditors.LabelControl();
             labelControl18 = new DevExpress.XtraEditors.LabelControl();
             groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            comboBox1 = new System.Windows.Forms.ComboBox();
+            labelControl30 = new DevExpress.XtraEditors.LabelControl();
             textEdit15 = new DevExpress.XtraEditors.TextEdit();
             labelControl21 = new DevExpress.XtraEditors.LabelControl();
-            labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            textEdit14 = new DevExpress.XtraEditors.TextEdit();
             textEdit13 = new DevExpress.XtraEditors.TextEdit();
             labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            textEdit14 = new DevExpress.XtraEditors.TextEdit();
             labelControl22 = new DevExpress.XtraEditors.LabelControl();
             labelControl23 = new DevExpress.XtraEditors.LabelControl();
             labelControl24 = new DevExpress.XtraEditors.LabelControl();
             labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            labelControl26 = new DevExpress.XtraEditors.LabelControl();
+            labelControl27 = new DevExpress.XtraEditors.LabelControl();
+            textEdit16 = new DevExpress.XtraEditors.TextEdit();
+            textEdit17 = new DevExpress.XtraEditors.TextEdit();
+            groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            labelControl29 = new DevExpress.XtraEditors.LabelControl();
+            labelControl28 = new DevExpress.XtraEditors.LabelControl();
+            groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            comboBox2 = new System.Windows.Forms.ComboBox();
+            labelControl31 = new DevExpress.XtraEditors.LabelControl();
+            labelControl32 = new DevExpress.XtraEditors.LabelControl();
+            comboBox3 = new System.Windows.Forms.ComboBox();
+            labelControl33 = new DevExpress.XtraEditors.LabelControl();
+            textEdit18 = new DevExpress.XtraEditors.TextEdit();
+            labelControl34 = new DevExpress.XtraEditors.LabelControl();
+            comboBox4 = new System.Windows.Forms.ComboBox();
+            labelControl35 = new DevExpress.XtraEditors.LabelControl();
+            comboBox5 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
@@ -95,11 +116,20 @@
             ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl5).BeginInit();
+            groupControl5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureEdit1.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl6).BeginInit();
             groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit16.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit17.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)groupControl7).BeginInit();
+            groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl8).BeginInit();
+            groupControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)textEdit18.Properties).BeginInit();
             SuspendLayout();
             // 
             // groupControl1
@@ -123,7 +153,7 @@
             groupControl1.Controls.Add(labelControl2);
             groupControl1.Controls.Add(labelControl1);
             groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl1.Location = new System.Drawing.Point(526, 242);
+            groupControl1.Location = new System.Drawing.Point(526, 116);
             groupControl1.Name = "groupControl1";
             groupControl1.Size = new System.Drawing.Size(209, 183);
             groupControl1.TabIndex = 0;
@@ -274,7 +304,7 @@
             groupControl2.Controls.Add(labelControl14);
             groupControl2.Controls.Add(labelControl13);
             groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl2.Location = new System.Drawing.Point(12, 242);
+            groupControl2.Location = new System.Drawing.Point(12, 116);
             groupControl2.Name = "groupControl2";
             groupControl2.Size = new System.Drawing.Size(209, 82);
             groupControl2.TabIndex = 1;
@@ -317,7 +347,7 @@
             groupControl3.Controls.Add(labelControl15);
             groupControl3.Controls.Add(labelControl16);
             groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl3.Location = new System.Drawing.Point(12, 330);
+            groupControl3.Location = new System.Drawing.Point(12, 204);
             groupControl3.Name = "groupControl3";
             groupControl3.Size = new System.Drawing.Size(209, 82);
             groupControl3.TabIndex = 4;
@@ -360,7 +390,7 @@
             groupControl4.Controls.Add(labelControl17);
             groupControl4.Controls.Add(labelControl18);
             groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl4.Location = new System.Drawing.Point(12, 418);
+            groupControl4.Location = new System.Drawing.Point(12, 292);
             groupControl4.Name = "groupControl4";
             groupControl4.Size = new System.Drawing.Size(209, 82);
             groupControl4.TabIndex = 4;
@@ -398,45 +428,87 @@
             // 
             // groupControl5
             // 
+            groupControl5.Controls.Add(pictureEdit1);
             groupControl5.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl5.Location = new System.Drawing.Point(227, 242);
+            groupControl5.Location = new System.Drawing.Point(227, 116);
             groupControl5.Name = "groupControl5";
             groupControl5.Size = new System.Drawing.Size(293, 258);
             groupControl5.TabIndex = 5;
             groupControl5.Text = "Impresion";
             // 
+            // pictureEdit1
+            // 
+            pictureEdit1.Location = new System.Drawing.Point(16, 26);
+            pictureEdit1.Name = "pictureEdit1";
+            pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            pictureEdit1.Size = new System.Drawing.Size(262, 219);
+            pictureEdit1.TabIndex = 0;
+            // 
             // groupControl6
             // 
+            groupControl6.Controls.Add(comboBox1);
+            groupControl6.Controls.Add(labelControl30);
             groupControl6.Controls.Add(textEdit15);
             groupControl6.Controls.Add(labelControl21);
-            groupControl6.Controls.Add(labelControl20);
-            groupControl6.Controls.Add(textEdit14);
             groupControl6.Controls.Add(textEdit13);
             groupControl6.Controls.Add(labelControl19);
             groupControl6.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl6.Location = new System.Drawing.Point(12, 53);
             groupControl6.Name = "groupControl6";
-            groupControl6.Size = new System.Drawing.Size(723, 183);
+            groupControl6.Size = new System.Drawing.Size(723, 60);
             groupControl6.TabIndex = 6;
+            // 
+            // comboBox1
+            // 
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new System.Drawing.Point(529, 22);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new System.Drawing.Size(161, 21);
+            comboBox1.TabIndex = 7;
+            // 
+            // labelControl30
+            // 
+            labelControl30.Location = new System.Drawing.Point(447, 26);
+            labelControl30.Name = "labelControl30";
+            labelControl30.Size = new System.Drawing.Size(76, 13);
+            labelControl30.TabIndex = 6;
+            labelControl30.Text = "Tipo Cotizacion:";
             // 
             // textEdit15
             // 
-            textEdit15.Location = new System.Drawing.Point(258, 23);
+            textEdit15.Location = new System.Drawing.Point(280, 23);
             textEdit15.Name = "textEdit15";
             textEdit15.Size = new System.Drawing.Size(161, 20);
             textEdit15.TabIndex = 5;
             // 
             // labelControl21
             // 
-            labelControl21.Location = new System.Drawing.Point(215, 26);
+            labelControl21.Location = new System.Drawing.Point(228, 26);
             labelControl21.Name = "labelControl21";
             labelControl21.Size = new System.Drawing.Size(37, 13);
             labelControl21.TabIndex = 4;
             labelControl21.Text = "Codigo:";
             // 
+            // textEdit13
+            // 
+            textEdit13.Location = new System.Drawing.Point(61, 23);
+            textEdit13.Name = "textEdit13";
+            textEdit13.Size = new System.Drawing.Size(161, 20);
+            textEdit13.TabIndex = 1;
+            // 
+            // labelControl19
+            // 
+            labelControl19.Location = new System.Drawing.Point(18, 26);
+            labelControl19.Name = "labelControl19";
+            labelControl19.Size = new System.Drawing.Size(37, 13);
+            labelControl19.TabIndex = 0;
+            labelControl19.Text = "Cliente:";
+            // 
             // labelControl20
             // 
-            labelControl20.Location = new System.Drawing.Point(5, 52);
+            labelControl20.Location = new System.Drawing.Point(20, 26);
             labelControl20.Name = "labelControl20";
             labelControl20.Size = new System.Drawing.Size(29, 13);
             labelControl20.TabIndex = 3;
@@ -444,25 +516,10 @@
             // 
             // textEdit14
             // 
-            textEdit14.Location = new System.Drawing.Point(48, 49);
+            textEdit14.Location = new System.Drawing.Point(63, 23);
             textEdit14.Name = "textEdit14";
-            textEdit14.Size = new System.Drawing.Size(100, 20);
+            textEdit14.Size = new System.Drawing.Size(171, 20);
             textEdit14.TabIndex = 2;
-            // 
-            // textEdit13
-            // 
-            textEdit13.Location = new System.Drawing.Point(48, 23);
-            textEdit13.Name = "textEdit13";
-            textEdit13.Size = new System.Drawing.Size(161, 20);
-            textEdit13.TabIndex = 1;
-            // 
-            // labelControl19
-            // 
-            labelControl19.Location = new System.Drawing.Point(5, 26);
-            labelControl19.Name = "labelControl19";
-            labelControl19.Size = new System.Drawing.Size(37, 13);
-            labelControl19.TabIndex = 0;
-            labelControl19.Text = "Cliente:";
             // 
             // labelControl22
             // 
@@ -496,11 +553,178 @@
             labelControl25.TabIndex = 10;
             labelControl25.Text = "hr-min-seg";
             // 
+            // labelControl26
+            // 
+            labelControl26.Location = new System.Drawing.Point(20, 52);
+            labelControl26.Name = "labelControl26";
+            labelControl26.Size = new System.Drawing.Size(31, 13);
+            labelControl26.TabIndex = 4;
+            labelControl26.Text = "Largo:";
+            // 
+            // labelControl27
+            // 
+            labelControl27.Location = new System.Drawing.Point(20, 78);
+            labelControl27.Name = "labelControl27";
+            labelControl27.Size = new System.Drawing.Size(34, 13);
+            labelControl27.TabIndex = 5;
+            labelControl27.Text = "Ancho:";
+            // 
+            // textEdit16
+            // 
+            textEdit16.Location = new System.Drawing.Point(63, 49);
+            textEdit16.Name = "textEdit16";
+            textEdit16.Size = new System.Drawing.Size(80, 20);
+            textEdit16.TabIndex = 6;
+            // 
+            // textEdit17
+            // 
+            textEdit17.Location = new System.Drawing.Point(63, 75);
+            textEdit17.Name = "textEdit17";
+            textEdit17.Size = new System.Drawing.Size(80, 20);
+            textEdit17.TabIndex = 7;
+            // 
+            // groupControl7
+            // 
+            groupControl7.Controls.Add(labelControl29);
+            groupControl7.Controls.Add(labelControl28);
+            groupControl7.Controls.Add(textEdit17);
+            groupControl7.Controls.Add(labelControl20);
+            groupControl7.Controls.Add(textEdit16);
+            groupControl7.Controls.Add(labelControl27);
+            groupControl7.Controls.Add(textEdit14);
+            groupControl7.Controls.Add(labelControl26);
+            groupControl7.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            groupControl7.Location = new System.Drawing.Point(12, 380);
+            groupControl7.Name = "groupControl7";
+            groupControl7.Size = new System.Drawing.Size(293, 106);
+            groupControl7.TabIndex = 11;
+            groupControl7.Text = "Datos Imagen";
+            // 
+            // labelControl29
+            // 
+            labelControl29.Location = new System.Drawing.Point(149, 78);
+            labelControl29.Name = "labelControl29";
+            labelControl29.Size = new System.Drawing.Size(17, 13);
+            labelControl29.TabIndex = 9;
+            labelControl29.Text = "cm.";
+            // 
+            // labelControl28
+            // 
+            labelControl28.Location = new System.Drawing.Point(149, 52);
+            labelControl28.Name = "labelControl28";
+            labelControl28.Size = new System.Drawing.Size(17, 13);
+            labelControl28.TabIndex = 8;
+            labelControl28.Text = "cm.";
+            // 
+            // groupControl8
+            // 
+            groupControl8.Controls.Add(labelControl34);
+            groupControl8.Controls.Add(comboBox4);
+            groupControl8.Controls.Add(labelControl35);
+            groupControl8.Controls.Add(comboBox5);
+            groupControl8.Controls.Add(textEdit18);
+            groupControl8.Controls.Add(labelControl33);
+            groupControl8.Controls.Add(labelControl32);
+            groupControl8.Controls.Add(comboBox3);
+            groupControl8.Controls.Add(labelControl31);
+            groupControl8.Controls.Add(comboBox2);
+            groupControl8.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            groupControl8.Location = new System.Drawing.Point(311, 380);
+            groupControl8.Name = "groupControl8";
+            groupControl8.Size = new System.Drawing.Size(424, 106);
+            groupControl8.TabIndex = 6;
+            groupControl8.Text = "Datos Impresion";
+            // 
+            // comboBox2
+            // 
+            comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new System.Drawing.Point(86, 21);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new System.Drawing.Size(121, 21);
+            comboBox2.TabIndex = 12;
+            // 
+            // labelControl31
+            // 
+            labelControl31.Location = new System.Drawing.Point(13, 26);
+            labelControl31.Name = "labelControl31";
+            labelControl31.Size = new System.Drawing.Size(39, 13);
+            labelControl31.TabIndex = 13;
+            labelControl31.Text = "Hot-Fix:";
+            // 
+            // labelControl32
+            // 
+            labelControl32.Location = new System.Drawing.Point(13, 53);
+            labelControl32.Name = "labelControl32";
+            labelControl32.Size = new System.Drawing.Size(67, 13);
+            labelControl32.TabIndex = 15;
+            labelControl32.Text = "Tipo Limpieza:";
+            // 
+            // comboBox3
+            // 
+            comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new System.Drawing.Point(86, 48);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new System.Drawing.Size(121, 21);
+            comboBox3.TabIndex = 14;
+            // 
+            // labelControl33
+            // 
+            labelControl33.Location = new System.Drawing.Point(13, 78);
+            labelControl33.Name = "labelControl33";
+            labelControl33.Size = new System.Drawing.Size(58, 13);
+            labelControl33.TabIndex = 16;
+            labelControl33.Text = "Total Pares:";
+            // 
+            // textEdit18
+            // 
+            textEdit18.Location = new System.Drawing.Point(86, 75);
+            textEdit18.Name = "textEdit18";
+            textEdit18.Size = new System.Drawing.Size(121, 20);
+            textEdit18.TabIndex = 17;
+            // 
+            // labelControl34
+            // 
+            labelControl34.Location = new System.Drawing.Point(226, 53);
+            labelControl34.Name = "labelControl34";
+            labelControl34.Size = new System.Drawing.Size(24, 13);
+            labelControl34.TabIndex = 21;
+            labelControl34.Text = "Tipo:";
+            // 
+            // comboBox4
+            // 
+            comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox4.FormattingEnabled = true;
+            comboBox4.Location = new System.Drawing.Point(274, 49);
+            comboBox4.Name = "comboBox4";
+            comboBox4.Size = new System.Drawing.Size(121, 21);
+            comboBox4.TabIndex = 20;
+            // 
+            // labelControl35
+            // 
+            labelControl35.Location = new System.Drawing.Point(226, 26);
+            labelControl35.Name = "labelControl35";
+            labelControl35.Size = new System.Drawing.Size(42, 13);
+            labelControl35.TabIndex = 19;
+            labelControl35.Text = "Material:";
+            // 
+            // comboBox5
+            // 
+            comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox5.FormattingEnabled = true;
+            comboBox5.Location = new System.Drawing.Point(274, 22);
+            comboBox5.Name = "comboBox5";
+            comboBox5.Size = new System.Drawing.Size(121, 21);
+            comboBox5.TabIndex = 18;
+            // 
             // frmCotizacionesUV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1001, 661);
+            ClientSize = new System.Drawing.Size(1001, 709);
+            Controls.Add(groupControl8);
+            Controls.Add(groupControl7);
             Controls.Add(labelControl25);
             Controls.Add(labelControl24);
             Controls.Add(labelControl23);
@@ -538,12 +762,23 @@
             ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl5).EndInit();
+            groupControl5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureEdit1.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl6).EndInit();
             groupControl6.ResumeLayout(false);
             groupControl6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit16.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit17.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)groupControl7).EndInit();
+            groupControl7.ResumeLayout(false);
+            groupControl7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)groupControl8).EndInit();
+            groupControl8.ResumeLayout(false);
+            groupControl8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)textEdit18.Properties).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -596,5 +831,26 @@
         private DevExpress.XtraEditors.LabelControl labelControl23;
         private DevExpress.XtraEditors.LabelControl labelControl24;
         private DevExpress.XtraEditors.LabelControl labelControl25;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
+        private DevExpress.XtraEditors.TextEdit textEdit17;
+        private DevExpress.XtraEditors.TextEdit textEdit16;
+        private DevExpress.XtraEditors.LabelControl labelControl27;
+        private DevExpress.XtraEditors.LabelControl labelControl26;
+        private DevExpress.XtraEditors.GroupControl groupControl7;
+        private DevExpress.XtraEditors.LabelControl labelControl29;
+        private DevExpress.XtraEditors.LabelControl labelControl28;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private DevExpress.XtraEditors.LabelControl labelControl30;
+        private DevExpress.XtraEditors.GroupControl groupControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl34;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private DevExpress.XtraEditors.LabelControl labelControl35;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private DevExpress.XtraEditors.TextEdit textEdit18;
+        private DevExpress.XtraEditors.LabelControl labelControl33;
+        private DevExpress.XtraEditors.LabelControl labelControl32;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private DevExpress.XtraEditors.LabelControl labelControl31;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
