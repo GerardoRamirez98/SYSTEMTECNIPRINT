@@ -1162,13 +1162,13 @@
       <dsig:DigestValue>FwedkfFV9x8Slwun8ARC2ScVRvhXTxQDgW01WFHG83M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TP.dll" size="300032">
+  <file name="TP.dll" size="307712">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>JSmUFr9Qbfcpzl0Zye1AbP1z+hw1VfDPRT2Ta1Dxm9Q=</dsig:DigestValue>
+      <dsig:DigestValue>C85Pzrhw2LrrrsPilgnvWgupO51znJI/05SM0vGDfKI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TP.dll.config" size="4314">

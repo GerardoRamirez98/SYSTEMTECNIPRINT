@@ -63,6 +63,17 @@
             labelControl17 = new DevExpress.XtraEditors.LabelControl();
             labelControl18 = new DevExpress.XtraEditors.LabelControl();
             groupControl5 = new DevExpress.XtraEditors.GroupControl();
+            groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            textEdit15 = new DevExpress.XtraEditors.TextEdit();
+            labelControl21 = new DevExpress.XtraEditors.LabelControl();
+            labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            textEdit14 = new DevExpress.XtraEditors.TextEdit();
+            textEdit13 = new DevExpress.XtraEditors.TextEdit();
+            labelControl19 = new DevExpress.XtraEditors.LabelControl();
+            labelControl22 = new DevExpress.XtraEditors.LabelControl();
+            labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            labelControl24 = new DevExpress.XtraEditors.LabelControl();
+            labelControl25 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
@@ -84,6 +95,11 @@
             ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)groupControl6).BeginInit();
+            groupControl6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).BeginInit();
             SuspendLayout();
             // 
             // groupControl1
@@ -107,7 +123,7 @@
             groupControl1.Controls.Add(labelControl2);
             groupControl1.Controls.Add(labelControl1);
             groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl1.Location = new System.Drawing.Point(526, 201);
+            groupControl1.Location = new System.Drawing.Point(526, 242);
             groupControl1.Name = "groupControl1";
             groupControl1.Size = new System.Drawing.Size(209, 183);
             groupControl1.TabIndex = 0;
@@ -258,7 +274,7 @@
             groupControl2.Controls.Add(labelControl14);
             groupControl2.Controls.Add(labelControl13);
             groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl2.Location = new System.Drawing.Point(12, 201);
+            groupControl2.Location = new System.Drawing.Point(12, 242);
             groupControl2.Name = "groupControl2";
             groupControl2.Size = new System.Drawing.Size(209, 82);
             groupControl2.TabIndex = 1;
@@ -301,7 +317,7 @@
             groupControl3.Controls.Add(labelControl15);
             groupControl3.Controls.Add(labelControl16);
             groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl3.Location = new System.Drawing.Point(12, 289);
+            groupControl3.Location = new System.Drawing.Point(12, 330);
             groupControl3.Name = "groupControl3";
             groupControl3.Size = new System.Drawing.Size(209, 82);
             groupControl3.TabIndex = 4;
@@ -344,7 +360,7 @@
             groupControl4.Controls.Add(labelControl17);
             groupControl4.Controls.Add(labelControl18);
             groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl4.Location = new System.Drawing.Point(12, 377);
+            groupControl4.Location = new System.Drawing.Point(12, 418);
             groupControl4.Name = "groupControl4";
             groupControl4.Size = new System.Drawing.Size(209, 82);
             groupControl4.TabIndex = 4;
@@ -383,17 +399,113 @@
             // groupControl5
             // 
             groupControl5.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl5.Location = new System.Drawing.Point(227, 201);
+            groupControl5.Location = new System.Drawing.Point(227, 242);
             groupControl5.Name = "groupControl5";
             groupControl5.Size = new System.Drawing.Size(293, 258);
             groupControl5.TabIndex = 5;
             groupControl5.Text = "Impresion";
+            // 
+            // groupControl6
+            // 
+            groupControl6.Controls.Add(textEdit15);
+            groupControl6.Controls.Add(labelControl21);
+            groupControl6.Controls.Add(labelControl20);
+            groupControl6.Controls.Add(textEdit14);
+            groupControl6.Controls.Add(textEdit13);
+            groupControl6.Controls.Add(labelControl19);
+            groupControl6.GroupStyle = DevExpress.Utils.GroupStyle.Light;
+            groupControl6.Location = new System.Drawing.Point(12, 53);
+            groupControl6.Name = "groupControl6";
+            groupControl6.Size = new System.Drawing.Size(723, 183);
+            groupControl6.TabIndex = 6;
+            // 
+            // textEdit15
+            // 
+            textEdit15.Location = new System.Drawing.Point(258, 23);
+            textEdit15.Name = "textEdit15";
+            textEdit15.Size = new System.Drawing.Size(161, 20);
+            textEdit15.TabIndex = 5;
+            // 
+            // labelControl21
+            // 
+            labelControl21.Location = new System.Drawing.Point(215, 26);
+            labelControl21.Name = "labelControl21";
+            labelControl21.Size = new System.Drawing.Size(37, 13);
+            labelControl21.TabIndex = 4;
+            labelControl21.Text = "Codigo:";
+            // 
+            // labelControl20
+            // 
+            labelControl20.Location = new System.Drawing.Point(5, 52);
+            labelControl20.Name = "labelControl20";
+            labelControl20.Size = new System.Drawing.Size(29, 13);
+            labelControl20.TabIndex = 3;
+            labelControl20.Text = "Estilo:";
+            // 
+            // textEdit14
+            // 
+            textEdit14.Location = new System.Drawing.Point(48, 49);
+            textEdit14.Name = "textEdit14";
+            textEdit14.Size = new System.Drawing.Size(100, 20);
+            textEdit14.TabIndex = 2;
+            // 
+            // textEdit13
+            // 
+            textEdit13.Location = new System.Drawing.Point(48, 23);
+            textEdit13.Name = "textEdit13";
+            textEdit13.Size = new System.Drawing.Size(161, 20);
+            textEdit13.TabIndex = 1;
+            // 
+            // labelControl19
+            // 
+            labelControl19.Location = new System.Drawing.Point(5, 26);
+            labelControl19.Name = "labelControl19";
+            labelControl19.Size = new System.Drawing.Size(37, 13);
+            labelControl19.TabIndex = 0;
+            labelControl19.Text = "Cliente:";
+            // 
+            // labelControl22
+            // 
+            labelControl22.Location = new System.Drawing.Point(12, 18);
+            labelControl22.Name = "labelControl22";
+            labelControl22.Size = new System.Drawing.Size(33, 13);
+            labelControl22.TabIndex = 7;
+            labelControl22.Text = "Fecha:";
+            // 
+            // labelControl23
+            // 
+            labelControl23.Location = new System.Drawing.Point(51, 18);
+            labelControl23.Name = "labelControl23";
+            labelControl23.Size = new System.Drawing.Size(48, 13);
+            labelControl23.TabIndex = 8;
+            labelControl23.Text = "dd-mm-yy";
+            // 
+            // labelControl24
+            // 
+            labelControl24.Location = new System.Drawing.Point(12, 37);
+            labelControl24.Name = "labelControl24";
+            labelControl24.Size = new System.Drawing.Size(27, 13);
+            labelControl24.TabIndex = 9;
+            labelControl24.Text = "Hora:";
+            // 
+            // labelControl25
+            // 
+            labelControl25.Location = new System.Drawing.Point(51, 37);
+            labelControl25.Name = "labelControl25";
+            labelControl25.Size = new System.Drawing.Size(51, 13);
+            labelControl25.TabIndex = 10;
+            labelControl25.Text = "hr-min-seg";
             // 
             // frmCotizacionesUV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1001, 661);
+            Controls.Add(labelControl25);
+            Controls.Add(labelControl24);
+            Controls.Add(labelControl23);
+            Controls.Add(labelControl22);
+            Controls.Add(groupControl6);
             Controls.Add(groupControl5);
             Controls.Add(groupControl4);
             Controls.Add(groupControl3);
@@ -426,7 +538,14 @@
             ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)groupControl6).EndInit();
+            groupControl6.ResumeLayout(false);
+            groupControl6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -466,5 +585,16 @@
         private DevExpress.XtraEditors.LabelControl labelControl17;
         private DevExpress.XtraEditors.LabelControl labelControl18;
         private DevExpress.XtraEditors.GroupControl groupControl5;
+        private DevExpress.XtraEditors.GroupControl groupControl6;
+        private DevExpress.XtraEditors.LabelControl labelControl20;
+        private DevExpress.XtraEditors.TextEdit textEdit14;
+        private DevExpress.XtraEditors.TextEdit textEdit13;
+        private DevExpress.XtraEditors.LabelControl labelControl19;
+        private DevExpress.XtraEditors.TextEdit textEdit15;
+        private DevExpress.XtraEditors.LabelControl labelControl21;
+        private DevExpress.XtraEditors.LabelControl labelControl22;
+        private DevExpress.XtraEditors.LabelControl labelControl23;
+        private DevExpress.XtraEditors.LabelControl labelControl24;
+        private DevExpress.XtraEditors.LabelControl labelControl25;
     }
 }
