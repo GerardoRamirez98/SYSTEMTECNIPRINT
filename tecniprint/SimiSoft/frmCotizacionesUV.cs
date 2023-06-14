@@ -49,7 +49,7 @@ namespace TP
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss")+".pdf";
 
-            string paginahtml_texto = "<table><tr><td></td>HOLA</tr></table>";
+            string paginahtml_texto = Properties.Resources.plantilla.ToString();
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
