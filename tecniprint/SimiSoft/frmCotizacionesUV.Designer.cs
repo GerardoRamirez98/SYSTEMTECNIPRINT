@@ -85,16 +85,16 @@
             labelControl29 = new DevExpress.XtraEditors.LabelControl();
             labelControl28 = new DevExpress.XtraEditors.LabelControl();
             groupControl8 = new DevExpress.XtraEditors.GroupControl();
-            comboBox2 = new System.Windows.Forms.ComboBox();
-            labelControl31 = new DevExpress.XtraEditors.LabelControl();
-            labelControl32 = new DevExpress.XtraEditors.LabelControl();
-            comboBox3 = new System.Windows.Forms.ComboBox();
-            labelControl33 = new DevExpress.XtraEditors.LabelControl();
-            textEdit18 = new DevExpress.XtraEditors.TextEdit();
             labelControl34 = new DevExpress.XtraEditors.LabelControl();
             comboBox4 = new System.Windows.Forms.ComboBox();
             labelControl35 = new DevExpress.XtraEditors.LabelControl();
             comboBox5 = new System.Windows.Forms.ComboBox();
+            textEdit18 = new DevExpress.XtraEditors.TextEdit();
+            labelControl33 = new DevExpress.XtraEditors.LabelControl();
+            labelControl32 = new DevExpress.XtraEditors.LabelControl();
+            comboBox3 = new System.Windows.Forms.ComboBox();
+            labelControl31 = new DevExpress.XtraEditors.LabelControl();
+            comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
@@ -398,7 +398,7 @@
             // 
             // textEdit11
             // 
-            textEdit11.Location = new System.Drawing.Point(75, 49);
+            textEdit11.Location = new System.Drawing.Point(73, 49);
             textEdit11.Name = "textEdit11";
             textEdit11.Size = new System.Drawing.Size(100, 20);
             textEdit11.TabIndex = 3;
@@ -516,9 +516,9 @@
             // 
             // textEdit14
             // 
-            textEdit14.Location = new System.Drawing.Point(63, 23);
+            textEdit14.Location = new System.Drawing.Point(55, 23);
             textEdit14.Name = "textEdit14";
-            textEdit14.Size = new System.Drawing.Size(171, 20);
+            textEdit14.Size = new System.Drawing.Size(202, 20);
             textEdit14.TabIndex = 2;
             // 
             // labelControl22
@@ -571,14 +571,14 @@
             // 
             // textEdit16
             // 
-            textEdit16.Location = new System.Drawing.Point(63, 49);
+            textEdit16.Location = new System.Drawing.Point(55, 49);
             textEdit16.Name = "textEdit16";
             textEdit16.Size = new System.Drawing.Size(80, 20);
             textEdit16.TabIndex = 6;
             // 
             // textEdit17
             // 
-            textEdit17.Location = new System.Drawing.Point(63, 75);
+            textEdit17.Location = new System.Drawing.Point(55, 75);
             textEdit17.Name = "textEdit17";
             textEdit17.Size = new System.Drawing.Size(80, 20);
             textEdit17.TabIndex = 7;
@@ -602,7 +602,7 @@
             // 
             // labelControl29
             // 
-            labelControl29.Location = new System.Drawing.Point(149, 78);
+            labelControl29.Location = new System.Drawing.Point(141, 78);
             labelControl29.Name = "labelControl29";
             labelControl29.Size = new System.Drawing.Size(17, 13);
             labelControl29.TabIndex = 9;
@@ -610,7 +610,7 @@
             // 
             // labelControl28
             // 
-            labelControl28.Location = new System.Drawing.Point(149, 52);
+            labelControl28.Location = new System.Drawing.Point(141, 51);
             labelControl28.Name = "labelControl28";
             labelControl28.Size = new System.Drawing.Size(17, 13);
             labelControl28.TabIndex = 8;
@@ -634,55 +634,6 @@
             groupControl8.Size = new System.Drawing.Size(424, 106);
             groupControl8.TabIndex = 6;
             groupControl8.Text = "Datos Impresion";
-            // 
-            // comboBox2
-            // 
-            comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new System.Drawing.Point(86, 21);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new System.Drawing.Size(121, 21);
-            comboBox2.TabIndex = 12;
-            // 
-            // labelControl31
-            // 
-            labelControl31.Location = new System.Drawing.Point(13, 26);
-            labelControl31.Name = "labelControl31";
-            labelControl31.Size = new System.Drawing.Size(39, 13);
-            labelControl31.TabIndex = 13;
-            labelControl31.Text = "Hot-Fix:";
-            // 
-            // labelControl32
-            // 
-            labelControl32.Location = new System.Drawing.Point(13, 53);
-            labelControl32.Name = "labelControl32";
-            labelControl32.Size = new System.Drawing.Size(67, 13);
-            labelControl32.TabIndex = 15;
-            labelControl32.Text = "Tipo Limpieza:";
-            // 
-            // comboBox3
-            // 
-            comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new System.Drawing.Point(86, 48);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new System.Drawing.Size(121, 21);
-            comboBox3.TabIndex = 14;
-            // 
-            // labelControl33
-            // 
-            labelControl33.Location = new System.Drawing.Point(13, 78);
-            labelControl33.Name = "labelControl33";
-            labelControl33.Size = new System.Drawing.Size(58, 13);
-            labelControl33.TabIndex = 16;
-            labelControl33.Text = "Total Pares:";
-            // 
-            // textEdit18
-            // 
-            textEdit18.Location = new System.Drawing.Point(86, 75);
-            textEdit18.Name = "textEdit18";
-            textEdit18.Size = new System.Drawing.Size(121, 20);
-            textEdit18.TabIndex = 17;
             // 
             // labelControl34
             // 
@@ -717,6 +668,55 @@
             comboBox5.Name = "comboBox5";
             comboBox5.Size = new System.Drawing.Size(121, 21);
             comboBox5.TabIndex = 18;
+            // 
+            // textEdit18
+            // 
+            textEdit18.Location = new System.Drawing.Point(86, 75);
+            textEdit18.Name = "textEdit18";
+            textEdit18.Size = new System.Drawing.Size(121, 20);
+            textEdit18.TabIndex = 17;
+            // 
+            // labelControl33
+            // 
+            labelControl33.Location = new System.Drawing.Point(13, 78);
+            labelControl33.Name = "labelControl33";
+            labelControl33.Size = new System.Drawing.Size(58, 13);
+            labelControl33.TabIndex = 16;
+            labelControl33.Text = "Total Pares:";
+            // 
+            // labelControl32
+            // 
+            labelControl32.Location = new System.Drawing.Point(13, 53);
+            labelControl32.Name = "labelControl32";
+            labelControl32.Size = new System.Drawing.Size(67, 13);
+            labelControl32.TabIndex = 15;
+            labelControl32.Text = "Tipo Limpieza:";
+            // 
+            // comboBox3
+            // 
+            comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new System.Drawing.Point(86, 48);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new System.Drawing.Size(121, 21);
+            comboBox3.TabIndex = 14;
+            // 
+            // labelControl31
+            // 
+            labelControl31.Location = new System.Drawing.Point(13, 26);
+            labelControl31.Name = "labelControl31";
+            labelControl31.Size = new System.Drawing.Size(39, 13);
+            labelControl31.TabIndex = 13;
+            labelControl31.Text = "Hot-Fix:";
+            // 
+            // comboBox2
+            // 
+            comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new System.Drawing.Point(86, 21);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new System.Drawing.Size(121, 21);
+            comboBox2.TabIndex = 12;
             // 
             // frmCotizacionesUV
             // 

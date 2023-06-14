@@ -664,7 +664,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>I7d1sScn7jKvFNbXX6yjqIujSiD/hEudiZhRXmmsgJU=</dsig:DigestValue>
+      <dsig:DigestValue>b0Bv/aEgaYP7Swgljq0mM5v98xfx347fvbAv7SAnmAY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="libSkiaSharp.dylib" size="15852880">
@@ -1162,13 +1162,13 @@
       <dsig:DigestValue>FwedkfFV9x8Slwun8ARC2ScVRvhXTxQDgW01WFHG83M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TP.dll" size="307712">
+  <file name="TP.dll" size="312320">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>C85Pzrhw2LrrrsPilgnvWgupO51znJI/05SM0vGDfKI=</dsig:DigestValue>
+      <dsig:DigestValue>ru79m5mcjDHDXfUrsnVPtm7Y+aJpVR2/HJgX+4cdgkQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TP.dll.config" size="4314">
@@ -1186,7 +1186,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tcs9C4iLxByfqOoiYpqmU/TS33PK53kO3NjtoMi3qB0=</dsig:DigestValue>
+      <dsig:DigestValue>YbzCH72fo2kt1q0Az7u0lPV1EpfTQA234GbZ45GWxDQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="x64\libSkiaSharp.dll" size="9408912">
