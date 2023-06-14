@@ -55,6 +55,7 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <Resource Include="Resources\Plantilla.html" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FarmsRamirezBML\FarmsRamirezBML.csproj" />
@@ -102,6 +103,9 @@
     <Compile Remove="frmClientes.cs" />
     <Compile Remove="frmClientes.Designer.cs" />
     <EmbeddedResource Remove="frmClientes.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\Plantilla.html" />
   </ItemGroup>
   <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.3\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.3\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
   <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.2.88.3\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.3\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />

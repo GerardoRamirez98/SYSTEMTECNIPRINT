@@ -73,15 +73,6 @@
       <dsig:DigestValue>bEG3O/GP2VBxJVgmVJYnfNfRrc6yV4zV7m58Ji0dprI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="BouncyCastle.Crypto.dll" size="2609152">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>MzkDx9IqJwmORfxkt3omSqIgYFz70+MpwgDX5LQsiBw=</dsig:DigestValue>
-    </hash>
-  </file>
   <file name="Dapper.dll" size="202752">
     <hash>
       <dsig:Transforms>
@@ -676,13 +667,22 @@
       <dsig:DigestValue>b0Bv/aEgaYP7Swgljq0mM5v98xfx347fvbAv7SAnmAY=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="itextsharp.dll" size="2592768">
+  <file name="itextsharp.dll" size="4071424">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>zloQfa1DpBAe6z/oT/bRc6bVXzTwv/cltTY2bxDplBA=</dsig:DigestValue>
+      <dsig:DigestValue>KTggC3wDAMMapFiGC59PaE9PP1iTqw8dZ8nXlxaMrRc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="itextsharp.xmlworker.dll" size="169984">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qWrc1r8yvVos1h6rg3U6Z9mv3eBp+mWz/UK+5SJjdjs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="libSkiaSharp.dylib" size="15852880">
@@ -1180,13 +1180,13 @@
       <dsig:DigestValue>FwedkfFV9x8Slwun8ARC2ScVRvhXTxQDgW01WFHG83M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TP.dll" size="314880">
+  <file name="TP.dll" size="323072">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>4fITPwLBcdHXzHH5BRMG4qTf+rrcOW4nC1InQ4zeWn0=</dsig:DigestValue>
+      <dsig:DigestValue>15B9vqzJwYSznwHQ6jHPdSUVDi5I7wgLwDDiFjfnnkE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TP.dll.config" size="4314">
