@@ -49,7 +49,7 @@ namespace TP
             SaveFileDialog guardar = new SaveFileDialog();
             guardar.FileName = DateTime.Now.ToString("ddMMyyyyHHmmss")+".pdf";
 
-            string paginahtml_texto = "<table><tr><td></td>HOLA</tr></table>";
+            string paginahtml_texto = Properties.Resources.
 
             if (guardar.ShowDialog() == DialogResult.OK)
             {
@@ -66,7 +66,7 @@ namespace TP
 
                     using (StreamReader sr = new StreamReader(paginahtml_texto))
                     {
-                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr)
+                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
                     }
 
                     pdfDoc.Close();
