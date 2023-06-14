@@ -95,8 +95,15 @@
             comboBox3 = new System.Windows.Forms.ComboBox();
             labelControl31 = new DevExpress.XtraEditors.LabelControl();
             comboBox2 = new System.Windows.Forms.ComboBox();
-            gridControl1 = new DevExpress.XtraGrid.GridControl();
-            gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            labelControl36 = new DevExpress.XtraEditors.LabelControl();
+            labelControl37 = new DevExpress.XtraEditors.LabelControl();
+            labelControl38 = new DevExpress.XtraEditors.LabelControl();
+            labelControl39 = new DevExpress.XtraEditors.LabelControl();
+            labelControl40 = new DevExpress.XtraEditors.LabelControl();
+            labelControl41 = new DevExpress.XtraEditors.LabelControl();
+            btnGenerarPDF = new DevExpress.XtraEditors.SimpleButton();
+            btnAgregar = new DevExpress.XtraEditors.SimpleButton();
+            dgvImpresionUV = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
@@ -132,8 +139,7 @@
             ((System.ComponentModel.ISupportInitialize)groupControl8).BeginInit();
             groupControl8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit18.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridControl1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)gridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvImpresionUV).BeginInit();
             SuspendLayout();
             // 
             // groupControl1
@@ -722,27 +728,96 @@
             comboBox2.Size = new System.Drawing.Size(121, 21);
             comboBox2.TabIndex = 19;
             // 
-            // gridControl1
+            // labelControl36
             // 
-            gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            gridControl1.Location = new System.Drawing.Point(0, 534);
-            gridControl1.MainView = gridView1;
-            gridControl1.Name = "gridControl1";
-            gridControl1.Size = new System.Drawing.Size(1296, 400);
-            gridControl1.TabIndex = 12;
-            gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
+            labelControl36.Location = new System.Drawing.Point(662, 316);
+            labelControl36.Name = "labelControl36";
+            labelControl36.Size = new System.Drawing.Size(64, 13);
+            labelControl36.TabIndex = 13;
+            labelControl36.Text = "Precio Venta:";
             // 
-            // gridView1
+            // labelControl37
             // 
-            gridView1.GridControl = gridControl1;
-            gridView1.Name = "gridView1";
+            labelControl37.Location = new System.Drawing.Point(662, 335);
+            labelControl37.Name = "labelControl37";
+            labelControl37.Size = new System.Drawing.Size(73, 13);
+            labelControl37.TabIndex = 14;
+            labelControl37.Text = "Precio Unitario:";
+            // 
+            // labelControl38
+            // 
+            labelControl38.Location = new System.Drawing.Point(662, 354);
+            labelControl38.Name = "labelControl38";
+            labelControl38.Size = new System.Drawing.Size(52, 13);
+            labelControl38.TabIndex = 15;
+            labelControl38.Text = "Precio Par:";
+            // 
+            // labelControl39
+            // 
+            labelControl39.Location = new System.Drawing.Point(741, 316);
+            labelControl39.Name = "labelControl39";
+            labelControl39.Size = new System.Drawing.Size(6, 13);
+            labelControl39.TabIndex = 16;
+            labelControl39.Text = "$";
+            // 
+            // labelControl40
+            // 
+            labelControl40.Location = new System.Drawing.Point(741, 335);
+            labelControl40.Name = "labelControl40";
+            labelControl40.Size = new System.Drawing.Size(6, 13);
+            labelControl40.TabIndex = 17;
+            labelControl40.Text = "$";
+            // 
+            // labelControl41
+            // 
+            labelControl41.Location = new System.Drawing.Point(741, 354);
+            labelControl41.Name = "labelControl41";
+            labelControl41.Size = new System.Drawing.Size(6, 13);
+            labelControl41.TabIndex = 18;
+            labelControl41.Text = "$";
+            // 
+            // btnGenerarPDF
+            // 
+            btnGenerarPDF.Location = new System.Drawing.Point(660, 492);
+            btnGenerarPDF.Name = "btnGenerarPDF";
+            btnGenerarPDF.Size = new System.Drawing.Size(75, 23);
+            btnGenerarPDF.TabIndex = 19;
+            btnGenerarPDF.Text = "Generar PDF";
+            btnGenerarPDF.Click += btnGenerarPDF_Click;
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.Location = new System.Drawing.Point(579, 492);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new System.Drawing.Size(75, 23);
+            btnAgregar.TabIndex = 20;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.Click += btnAgregar_Click;
+            // 
+            // dgvImpresionUV
+            // 
+            dgvImpresionUV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvImpresionUV.Dock = System.Windows.Forms.DockStyle.Bottom;
+            dgvImpresionUV.Location = new System.Drawing.Point(0, 534);
+            dgvImpresionUV.Name = "dgvImpresionUV";
+            dgvImpresionUV.RowTemplate.Height = 25;
+            dgvImpresionUV.Size = new System.Drawing.Size(1296, 400);
+            dgvImpresionUV.TabIndex = 21;
             // 
             // frmCotizacionesUV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1296, 934);
-            Controls.Add(gridControl1);
+            Controls.Add(dgvImpresionUV);
+            Controls.Add(btnAgregar);
+            Controls.Add(btnGenerarPDF);
+            Controls.Add(labelControl41);
+            Controls.Add(labelControl40);
+            Controls.Add(labelControl39);
+            Controls.Add(labelControl38);
+            Controls.Add(labelControl37);
+            Controls.Add(labelControl36);
             Controls.Add(groupControl8);
             Controls.Add(groupControl7);
             Controls.Add(labelControl25);
@@ -757,6 +832,7 @@
             Controls.Add(groupControl1);
             Name = "frmCotizacionesUV";
             Text = "Cotizaciones";
+            Load += frmCotizacionesUV_Load;
             ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
             groupControl1.ResumeLayout(false);
             groupControl1.PerformLayout();
@@ -799,8 +875,7 @@
             groupControl8.ResumeLayout(false);
             groupControl8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit18.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridControl1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)gridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvImpresionUV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -874,7 +949,14 @@
         private System.Windows.Forms.ComboBox comboBox3;
         private DevExpress.XtraEditors.LabelControl labelControl31;
         private System.Windows.Forms.ComboBox comboBox2;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.LabelControl labelControl36;
+        private DevExpress.XtraEditors.LabelControl labelControl37;
+        private DevExpress.XtraEditors.LabelControl labelControl38;
+        private DevExpress.XtraEditors.LabelControl labelControl39;
+        private DevExpress.XtraEditors.LabelControl labelControl40;
+        private DevExpress.XtraEditors.LabelControl labelControl41;
+        private DevExpress.XtraEditors.SimpleButton btnGenerarPDF;
+        private DevExpress.XtraEditors.SimpleButton btnAgregar;
+        private System.Windows.Forms.DataGridView dgvImpresionUV;
     }
 }
