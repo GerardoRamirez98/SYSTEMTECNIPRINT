@@ -725,10 +725,10 @@
             // gridControl1
             // 
             gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            gridControl1.Location = new System.Drawing.Point(0, 505);
+            gridControl1.Location = new System.Drawing.Point(0, 534);
             gridControl1.MainView = gridView1;
             gridControl1.Name = "gridControl1";
-            gridControl1.Size = new System.Drawing.Size(1296, 289);
+            gridControl1.Size = new System.Drawing.Size(1296, 400);
             gridControl1.TabIndex = 12;
             gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
             // 
@@ -741,7 +741,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(1296, 794);
+            ClientSize = new System.Drawing.Size(1296, 934);
             Controls.Add(gridControl1);
             Controls.Add(groupControl8);
             Controls.Add(groupControl7);
