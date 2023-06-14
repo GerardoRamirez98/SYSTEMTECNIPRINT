@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using TECNIPRINT;
+using TP;
 
 namespace SimiSoft
 {
@@ -60,6 +61,25 @@ namespace SimiSoft
             SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargado Proveedores...");
 
             new frmProveedores() { MdiParent = this }.Show();
+
+            SplashScreenManager.CloseDefaultWaitForm();
+        }
+
+        private void btnCotizacionesUV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (tabMdiManager.MdiParent == null)
+                tabMdiManager.MdiParent = this;
+
+            foreach (Form form in Application.OpenForms)
+                if (form.GetType() == typeof(frmCotizacionesUV))
+                {
+                    form.Activate();
+                    return;
+                }
+
+            SplashScreenManager.ShowDefaultWaitForm("Por favor espere", "Cargado Clientes...");
+
+            new frmCotizacionesUV() { MdiParent = this }.Show();
 
             SplashScreenManager.CloseDefaultWaitForm();
         }
@@ -197,5 +217,6 @@ namespace SimiSoft
                 }
         }
 
+        
     }
 }
