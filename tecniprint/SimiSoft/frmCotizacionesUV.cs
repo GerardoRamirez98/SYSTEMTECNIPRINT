@@ -45,6 +45,7 @@ namespace TP
             //fecha y hora en tiempo real del sistema
             timer1.Enabled = true;
 
+            textEdit15.Text = string.Format("{0}", DateTime.Now.ToString("ddMMyyyyHHmmss"));
 
             dgvImpresionUV.Columns.Add("Cantidad", "Cantidad");
             dgvImpresionUV.Columns.Add("Descripcion", "Descripcion");

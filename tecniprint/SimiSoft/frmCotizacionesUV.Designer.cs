@@ -491,6 +491,7 @@
             // 
             // textEdit15
             // 
+            textEdit15.Enabled = false;
             textEdit15.Location = new System.Drawing.Point(280, 23);
             textEdit15.Name = "textEdit15";
             textEdit15.Size = new System.Drawing.Size(161, 20);
