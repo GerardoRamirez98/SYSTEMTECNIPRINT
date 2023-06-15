@@ -1180,13 +1180,13 @@
       <dsig:DigestValue>FwedkfFV9x8Slwun8ARC2ScVRvhXTxQDgW01WFHG83M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TP.dll" size="323072">
+  <file name="TP.dll" size="316928">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>15B9vqzJwYSznwHQ6jHPdSUVDi5I7wgLwDDiFjfnnkE=</dsig:DigestValue>
+      <dsig:DigestValue>NGFsdJNbSRJ2NtFJ3yvaKq1WAF6/Dqqv+e6QHlDW3qQ=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TP.dll.config" size="4314">

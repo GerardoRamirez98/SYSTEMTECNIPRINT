@@ -305,4 +305,3 @@ C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.frmCotizacionesUV.resources
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Debug\net7.0-windows\itextsharp.dll
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Debug\net7.0-windows\itextsharp.xmlworker.dll
-C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.g.resources

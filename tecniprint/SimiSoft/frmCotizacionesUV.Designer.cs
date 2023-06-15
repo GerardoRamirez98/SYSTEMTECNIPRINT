@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             groupControl1 = new DevExpress.XtraEditors.GroupControl();
             labelControl12 = new DevExpress.XtraEditors.LabelControl();
             labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -69,14 +70,14 @@
             labelControl30 = new DevExpress.XtraEditors.LabelControl();
             textEdit15 = new DevExpress.XtraEditors.TextEdit();
             labelControl21 = new DevExpress.XtraEditors.LabelControl();
-            textEdit13 = new DevExpress.XtraEditors.TextEdit();
+            txtCliente = new DevExpress.XtraEditors.TextEdit();
             labelControl19 = new DevExpress.XtraEditors.LabelControl();
             labelControl20 = new DevExpress.XtraEditors.LabelControl();
             textEdit14 = new DevExpress.XtraEditors.TextEdit();
             labelControl22 = new DevExpress.XtraEditors.LabelControl();
-            labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            lblFechaActual = new DevExpress.XtraEditors.LabelControl();
             labelControl24 = new DevExpress.XtraEditors.LabelControl();
-            labelControl25 = new DevExpress.XtraEditors.LabelControl();
+            lblHoraActual = new DevExpress.XtraEditors.LabelControl();
             labelControl26 = new DevExpress.XtraEditors.LabelControl();
             labelControl27 = new DevExpress.XtraEditors.LabelControl();
             textEdit16 = new DevExpress.XtraEditors.TextEdit();
@@ -104,6 +105,7 @@
             btnGenerarPDF = new DevExpress.XtraEditors.SimpleButton();
             btnAgregar = new DevExpress.XtraEditors.SimpleButton();
             dgvImpresionUV = new System.Windows.Forms.DataGridView();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
@@ -130,7 +132,7 @@
             ((System.ComponentModel.ISupportInitialize)groupControl6).BeginInit();
             groupControl6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCliente.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit16.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)textEdit17.Properties).BeginInit();
@@ -461,7 +463,7 @@
             groupControl6.Controls.Add(labelControl30);
             groupControl6.Controls.Add(textEdit15);
             groupControl6.Controls.Add(labelControl21);
-            groupControl6.Controls.Add(textEdit13);
+            groupControl6.Controls.Add(txtCliente);
             groupControl6.Controls.Add(labelControl19);
             groupControl6.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl6.Location = new System.Drawing.Point(12, 53);
@@ -501,12 +503,12 @@
             labelControl21.TabIndex = 4;
             labelControl21.Text = "Codigo:";
             // 
-            // textEdit13
+            // txtCliente
             // 
-            textEdit13.Location = new System.Drawing.Point(61, 23);
-            textEdit13.Name = "textEdit13";
-            textEdit13.Size = new System.Drawing.Size(161, 20);
-            textEdit13.TabIndex = 1;
+            txtCliente.Location = new System.Drawing.Point(61, 23);
+            txtCliente.Name = "txtCliente";
+            txtCliente.Size = new System.Drawing.Size(161, 20);
+            txtCliente.TabIndex = 1;
             // 
             // labelControl19
             // 
@@ -539,13 +541,13 @@
             labelControl22.TabIndex = 7;
             labelControl22.Text = "Fecha:";
             // 
-            // labelControl23
+            // lblFechaActual
             // 
-            labelControl23.Location = new System.Drawing.Point(51, 18);
-            labelControl23.Name = "labelControl23";
-            labelControl23.Size = new System.Drawing.Size(48, 13);
-            labelControl23.TabIndex = 8;
-            labelControl23.Text = "dd-mm-yy";
+            lblFechaActual.Location = new System.Drawing.Point(51, 18);
+            lblFechaActual.Name = "lblFechaActual";
+            lblFechaActual.Size = new System.Drawing.Size(4, 13);
+            lblFechaActual.TabIndex = 8;
+            lblFechaActual.Text = "-";
             // 
             // labelControl24
             // 
@@ -555,13 +557,13 @@
             labelControl24.TabIndex = 9;
             labelControl24.Text = "Hora:";
             // 
-            // labelControl25
+            // lblHoraActual
             // 
-            labelControl25.Location = new System.Drawing.Point(51, 37);
-            labelControl25.Name = "labelControl25";
-            labelControl25.Size = new System.Drawing.Size(51, 13);
-            labelControl25.TabIndex = 10;
-            labelControl25.Text = "hr-min-seg";
+            lblHoraActual.Location = new System.Drawing.Point(51, 37);
+            lblHoraActual.Name = "lblHoraActual";
+            lblHoraActual.Size = new System.Drawing.Size(4, 13);
+            lblHoraActual.TabIndex = 10;
+            lblHoraActual.Text = "-";
             // 
             // labelControl26
             // 
@@ -820,9 +822,9 @@
             Controls.Add(labelControl36);
             Controls.Add(groupControl8);
             Controls.Add(groupControl7);
-            Controls.Add(labelControl25);
+            Controls.Add(lblHoraActual);
             Controls.Add(labelControl24);
-            Controls.Add(labelControl23);
+            Controls.Add(lblFechaActual);
             Controls.Add(labelControl22);
             Controls.Add(groupControl6);
             Controls.Add(groupControl5);
@@ -864,7 +866,7 @@
             groupControl6.ResumeLayout(false);
             groupControl6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit13.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCliente.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit16.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)textEdit17.Properties).EndInit();
@@ -920,14 +922,14 @@
         private DevExpress.XtraEditors.GroupControl groupControl6;
         private DevExpress.XtraEditors.LabelControl labelControl20;
         private DevExpress.XtraEditors.TextEdit textEdit14;
-        private DevExpress.XtraEditors.TextEdit textEdit13;
+        private DevExpress.XtraEditors.TextEdit txtCliente;
         private DevExpress.XtraEditors.LabelControl labelControl19;
         private DevExpress.XtraEditors.TextEdit textEdit15;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.XtraEditors.LabelControl labelControl22;
-        private DevExpress.XtraEditors.LabelControl labelControl23;
+        private DevExpress.XtraEditors.LabelControl lblFechaActual;
         private DevExpress.XtraEditors.LabelControl labelControl24;
-        private DevExpress.XtraEditors.LabelControl labelControl25;
+        private DevExpress.XtraEditors.LabelControl lblHoraActual;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
         private DevExpress.XtraEditors.TextEdit textEdit17;
         private DevExpress.XtraEditors.TextEdit textEdit16;
@@ -958,5 +960,6 @@
         private DevExpress.XtraEditors.SimpleButton btnGenerarPDF;
         private DevExpress.XtraEditors.SimpleButton btnAgregar;
         private System.Windows.Forms.DataGridView dgvImpresionUV;
+        private System.Windows.Forms.Timer timer1;
     }
 }
