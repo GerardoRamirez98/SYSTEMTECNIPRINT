@@ -735,7 +735,7 @@
             // 
             // labelControl36
             // 
-            labelControl36.Location = new System.Drawing.Point(526, 318);
+            labelControl36.Location = new System.Drawing.Point(527, 356);
             labelControl36.Name = "labelControl36";
             labelControl36.Size = new System.Drawing.Size(64, 13);
             labelControl36.TabIndex = 13;
@@ -743,7 +743,7 @@
             // 
             // labelControl37
             // 
-            labelControl37.Location = new System.Drawing.Point(526, 337);
+            labelControl37.Location = new System.Drawing.Point(527, 318);
             labelControl37.Name = "labelControl37";
             labelControl37.Size = new System.Drawing.Size(73, 13);
             labelControl37.TabIndex = 14;
@@ -751,7 +751,7 @@
             // 
             // labelControl38
             // 
-            labelControl38.Location = new System.Drawing.Point(526, 356);
+            labelControl38.Location = new System.Drawing.Point(527, 337);
             labelControl38.Name = "labelControl38";
             labelControl38.Size = new System.Drawing.Size(52, 13);
             labelControl38.TabIndex = 15;
@@ -759,7 +759,7 @@
             // 
             // lblPrecioVenta
             // 
-            lblPrecioVenta.Location = new System.Drawing.Point(605, 318);
+            lblPrecioVenta.Location = new System.Drawing.Point(606, 356);
             lblPrecioVenta.Name = "lblPrecioVenta";
             lblPrecioVenta.Size = new System.Drawing.Size(6, 13);
             lblPrecioVenta.TabIndex = 16;
@@ -767,7 +767,7 @@
             // 
             // lblPrecioUnitario
             // 
-            lblPrecioUnitario.Location = new System.Drawing.Point(605, 337);
+            lblPrecioUnitario.Location = new System.Drawing.Point(606, 318);
             lblPrecioUnitario.Name = "lblPrecioUnitario";
             lblPrecioUnitario.Size = new System.Drawing.Size(6, 13);
             lblPrecioUnitario.TabIndex = 17;
@@ -775,7 +775,7 @@
             // 
             // lblPrecioPar
             // 
-            lblPrecioPar.Location = new System.Drawing.Point(605, 356);
+            lblPrecioPar.Location = new System.Drawing.Point(606, 337);
             lblPrecioPar.Name = "lblPrecioPar";
             lblPrecioPar.Size = new System.Drawing.Size(6, 13);
             lblPrecioPar.TabIndex = 18;

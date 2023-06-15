@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BarcodeLib" Version="2.4.0" />
+    <PackageReference Include="IronOcr" Version="2023.6.6" />
     <PackageReference Include="iTextSharp" Version="5.5.13" />
     <PackageReference Include="itextsharp.xmlworker" Version="5.5.13" />
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="8.0.0-preview.4.23259.5" />

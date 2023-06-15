@@ -171,6 +171,10 @@
               "target": "Package",
               "version": "[22.2.*-*, )"
             },
+            "IronOcr": {
+              "target": "Package",
+              "version": "[2023.6.6, )"
+            },
             "Microsoft.Bcl.AsyncInterfaces": {
               "target": "Package",
               "version": "[8.0.0-preview.4.23259.5, )"

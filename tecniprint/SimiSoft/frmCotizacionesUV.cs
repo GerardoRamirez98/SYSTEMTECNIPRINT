@@ -136,7 +136,23 @@ namespace TP
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
-            
+            BorrarCamposExluyendo(this);
+        }
+
+        public void BorrarCamposExluyendo(Control control)
+        {
+            foreach (Control childControl in control.Controls)
+            {
+                if (childControl is TextEdit && childControl.Name != "txtCodigo")
+                {
+                    ((TextEdit)childControl).Clear();
+                }
+
+                if (childControl.HasChildren)
+                {
+                    BorrarCamposExluyendo(childControl);
+                }
+            }
         }
 
         public void BorrarCampos(Control control)
@@ -161,5 +177,7 @@ namespace TP
 
             txtCodigo.Text = string.Format("{0}", DateTime.Now.ToString("ddMMyyyyHHmmss"));
         }
+
+        
     }
-}
+} 
