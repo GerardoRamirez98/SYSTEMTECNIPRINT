@@ -73,6 +73,8 @@ C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7.0-windows\app.publish\DevExpress.XtraTreeMap.v22.2.UI.dll
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7.0-windows\app.publish\DevExpress.XtraVerticalGrid.v22.2.dll
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7.0-windows\app.publish\DevExpress.Xpo.v22.2.dll
+C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7.0-windows\app.publish\itextsharp.dll
+C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7.0-windows\app.publish\itextsharp.xmlworker.dll
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7.0-windows\app.publish\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7.0-windows\app.publish\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Release\net7.0-windows\app.publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll

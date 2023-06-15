@@ -106,6 +106,7 @@
             btnAgregar = new DevExpress.XtraEditors.SimpleButton();
             dgvImpresionUV = new System.Windows.Forms.DataGridView();
             timer1 = new System.Windows.Forms.Timer(components);
+            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
@@ -806,11 +807,24 @@
             dgvImpresionUV.Size = new System.Drawing.Size(1296, 400);
             dgvImpresionUV.TabIndex = 21;
             // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick_1;
+            // 
+            // simpleButton1
+            // 
+            simpleButton1.Location = new System.Drawing.Point(498, 492);
+            simpleButton1.Name = "simpleButton1";
+            simpleButton1.Size = new System.Drawing.Size(75, 23);
+            simpleButton1.TabIndex = 22;
+            simpleButton1.Text = "Limpiar";
+            // 
             // frmCotizacionesUV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1296, 934);
+            Controls.Add(simpleButton1);
             Controls.Add(dgvImpresionUV);
             Controls.Add(btnAgregar);
             Controls.Add(btnGenerarPDF);
@@ -961,5 +975,6 @@
         private DevExpress.XtraEditors.SimpleButton btnAgregar;
         private System.Windows.Forms.DataGridView dgvImpresionUV;
         private System.Windows.Forms.Timer timer1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

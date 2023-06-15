@@ -23,7 +23,7 @@ namespace TP
         }
 
         //Fecha y Hora en tiempo real
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick_1(object sender, EventArgs e)
         {
             lblHoraActual.Text = DateTime.Now.ToString("hh:mm:ss");
             lblFechaActual.Text = DateTime.Now.ToLongDateString();
@@ -48,7 +48,7 @@ namespace TP
 
             dgvImpresionUV.Columns.Add("Cantidad", "Cantidad");
             dgvImpresionUV.Columns.Add("Descripcion", "Descripcion");
-            dgvImpresionUV.Columns.Add("PrecioUnitario", "Precio Unitario");
+            dgvImpresionUV.Columns.Add("PrecioUnitario", "PrecioUnitario");
             //dgvImpresionUV.Columns.Add("Importe", "Importe");
         }
 
@@ -140,5 +140,7 @@ namespace TP
                 MessageBox.Show("Ocurrió un error al generar el PDF de cotización: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }
