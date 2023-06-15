@@ -1,4 +1,5 @@
-﻿using iTextSharp.text;
+﻿using DevExpress.XtraEditors;
+using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System;
 using System.IO;
@@ -133,6 +134,32 @@ namespace TP
             }
         }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            
+        }
 
+        public void BorrarCampos(Control control)
+        {
+            foreach (Control childControl in control.Controls)
+            {
+                if (childControl is TextEdit)
+                {
+                    ((TextEdit)childControl).Clear();
+                }
+
+                if (childControl.HasChildren)
+                {
+                    BorrarCampos(childControl);
+                }
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            BorrarCampos(this);
+
+            txtCodigo.Text = string.Format("{0}", DateTime.Now.ToString("ddMMyyyyHHmmss"));
+        }
     }
 }

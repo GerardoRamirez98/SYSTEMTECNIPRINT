@@ -106,7 +106,8 @@
             btnAgregar = new DevExpress.XtraEditors.SimpleButton();
             dgvImpresionUV = new System.Windows.Forms.DataGridView();
             timer1 = new System.Windows.Forms.Timer(components);
-            simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            btnLimpiar = new DevExpress.XtraEditors.SimpleButton();
+            btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)txtGloss.Properties).BeginInit();
@@ -812,20 +813,31 @@
             // 
             timer1.Tick += timer1_Tick_1;
             // 
-            // simpleButton1
+            // btnLimpiar
             // 
-            simpleButton1.Location = new System.Drawing.Point(498, 492);
-            simpleButton1.Name = "simpleButton1";
-            simpleButton1.Size = new System.Drawing.Size(75, 23);
-            simpleButton1.TabIndex = 22;
-            simpleButton1.Text = "Limpiar";
+            btnLimpiar.Location = new System.Drawing.Point(498, 492);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new System.Drawing.Size(75, 23);
+            btnLimpiar.TabIndex = 22;
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.Click += btnLimpiar_Click;
+            // 
+            // btnNuevo
+            // 
+            btnNuevo.Location = new System.Drawing.Point(417, 492);
+            btnNuevo.Name = "btnNuevo";
+            btnNuevo.Size = new System.Drawing.Size(75, 23);
+            btnNuevo.TabIndex = 23;
+            btnNuevo.Text = "Nuevo";
+            btnNuevo.Click += btnNuevo_Click;
             // 
             // frmCotizacionesUV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1296, 934);
-            Controls.Add(simpleButton1);
+            Controls.Add(btnNuevo);
+            Controls.Add(btnLimpiar);
             Controls.Add(dgvImpresionUV);
             Controls.Add(btnAgregar);
             Controls.Add(btnGenerarPDF);
@@ -976,6 +988,7 @@
         private DevExpress.XtraEditors.SimpleButton btnAgregar;
         private System.Windows.Forms.DataGridView dgvImpresionUV;
         private System.Windows.Forms.Timer timer1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnLimpiar;
+        private DevExpress.XtraEditors.SimpleButton btnNuevo;
     }
 }
