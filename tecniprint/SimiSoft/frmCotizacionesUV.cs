@@ -1,17 +1,8 @@
-﻿using DevExpress.XtraEditors;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.IO;
-using iTextSharp.text;
+﻿using iTextSharp.text;
 using iTextSharp.text.pdf;
-using iTextSharp.tool.xml;
+using System;
+using System.IO;
+using System.Windows.Forms;
 
 namespace TP
 {
@@ -34,10 +25,10 @@ namespace TP
             int indice_fila = dgvImpresionUV.Rows.Add();
             DataGridViewRow row = dgvImpresionUV.Rows[indice_fila];
 
-            row.Cells["Cantidad"].Value = textEdit18.Text;
-            row.Cells["Descripcion"].Value = textEdit14.Text;
-            row.Cells["PrecioUnitario"].Value = labelControl40.Text;
-            //row.Cells["Importe"].Value = decimal.Parse(labelControl41.Text) * decimal.Parse(txtprecio.Text);
+            row.Cells["Cantidad"].Value = txtTotalPares.Text;
+            row.Cells["Descripcion"].Value = txtEstilo.Text;
+            row.Cells["PrecioUnitario"].Value = lblPrecioUnitario.Text;
+            row.Cells["PrecioVenta"].Value = lblPrecioVenta.Text;
         }
 
         private void frmCotizacionesUV_Load(object sender, EventArgs e)
@@ -45,12 +36,12 @@ namespace TP
             //fecha y hora en tiempo real del sistema
             timer1.Enabled = true;
 
-            textEdit15.Text = string.Format("{0}", DateTime.Now.ToString("ddMMyyyyHHmmss"));
+            txtCodigo.Text = string.Format("{0}", DateTime.Now.ToString("ddMMyyyyHHmmss"));
 
             dgvImpresionUV.Columns.Add("Cantidad", "Cantidad");
             dgvImpresionUV.Columns.Add("Descripcion", "Descripcion");
             dgvImpresionUV.Columns.Add("PrecioUnitario", "PrecioUnitario");
-            //dgvImpresionUV.Columns.Add("Importe", "Importe");
+            dgvImpresionUV.Columns.Add("PrecioVenta", "PrecioVenta");
         }
 
         private void btnGenerarPDF_Click(object sender, EventArgs e)
@@ -75,7 +66,7 @@ namespace TP
             try
             {
                 // Define la ubicación y el nombre del archivo PDF de salida
-                string outputPath = "C://Users/USER/Pictures/Nueva carpeta/cotizacion.pdf";
+                string outputPath = "C://Users/USER/Pictures/Nueva carpeta/" + txtCodigo.Text + ".pdf";
 
                 // Crea un objeto PdfWriter para escribir en el archivo PDF
                 PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(outputPath, FileMode.Create));

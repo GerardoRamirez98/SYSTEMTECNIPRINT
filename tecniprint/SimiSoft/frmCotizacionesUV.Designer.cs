@@ -36,12 +36,12 @@
             labelControl9 = new DevExpress.XtraEditors.LabelControl();
             labelControl8 = new DevExpress.XtraEditors.LabelControl();
             labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            textEdit6 = new DevExpress.XtraEditors.TextEdit();
-            textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            txtGloss = new DevExpress.XtraEditors.TextEdit();
+            txtCyan = new DevExpress.XtraEditors.TextEdit();
+            txtBlack = new DevExpress.XtraEditors.TextEdit();
+            txtMagenta = new DevExpress.XtraEditors.TextEdit();
+            txtYellow = new DevExpress.XtraEditors.TextEdit();
+            txtWhite = new DevExpress.XtraEditors.TextEdit();
             labelControl6 = new DevExpress.XtraEditors.LabelControl();
             labelControl5 = new DevExpress.XtraEditors.LabelControl();
             labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -49,59 +49,59 @@
             labelControl2 = new DevExpress.XtraEditors.LabelControl();
             labelControl1 = new DevExpress.XtraEditors.LabelControl();
             groupControl2 = new DevExpress.XtraEditors.GroupControl();
-            textEdit8 = new DevExpress.XtraEditors.TextEdit();
-            textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            txtSegundoImpresion = new DevExpress.XtraEditors.TextEdit();
+            txtMinutoImpresion = new DevExpress.XtraEditors.TextEdit();
             labelControl14 = new DevExpress.XtraEditors.LabelControl();
             labelControl13 = new DevExpress.XtraEditors.LabelControl();
             groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            textEdit10 = new DevExpress.XtraEditors.TextEdit();
+            txtSegundoPloteado = new DevExpress.XtraEditors.TextEdit();
+            txtMinutoPloteado = new DevExpress.XtraEditors.TextEdit();
             labelControl15 = new DevExpress.XtraEditors.LabelControl();
             labelControl16 = new DevExpress.XtraEditors.LabelControl();
             groupControl4 = new DevExpress.XtraEditors.GroupControl();
-            textEdit11 = new DevExpress.XtraEditors.TextEdit();
-            textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            txtSegundoDepilado = new DevExpress.XtraEditors.TextEdit();
+            txtMinutoDepilado = new DevExpress.XtraEditors.TextEdit();
             labelControl17 = new DevExpress.XtraEditors.LabelControl();
             labelControl18 = new DevExpress.XtraEditors.LabelControl();
             groupControl5 = new DevExpress.XtraEditors.GroupControl();
-            pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
+            pbImagenImprimir = new DevExpress.XtraEditors.PictureEdit();
             groupControl6 = new DevExpress.XtraEditors.GroupControl();
-            comboBox1 = new System.Windows.Forms.ComboBox();
+            cbTipoCotizacion = new System.Windows.Forms.ComboBox();
             labelControl30 = new DevExpress.XtraEditors.LabelControl();
-            textEdit15 = new DevExpress.XtraEditors.TextEdit();
+            txtCodigo = new DevExpress.XtraEditors.TextEdit();
             labelControl21 = new DevExpress.XtraEditors.LabelControl();
             txtCliente = new DevExpress.XtraEditors.TextEdit();
             labelControl19 = new DevExpress.XtraEditors.LabelControl();
             labelControl20 = new DevExpress.XtraEditors.LabelControl();
-            textEdit14 = new DevExpress.XtraEditors.TextEdit();
+            txtEstilo = new DevExpress.XtraEditors.TextEdit();
             labelControl22 = new DevExpress.XtraEditors.LabelControl();
             lblFechaActual = new DevExpress.XtraEditors.LabelControl();
             labelControl24 = new DevExpress.XtraEditors.LabelControl();
             lblHoraActual = new DevExpress.XtraEditors.LabelControl();
             labelControl26 = new DevExpress.XtraEditors.LabelControl();
             labelControl27 = new DevExpress.XtraEditors.LabelControl();
-            textEdit16 = new DevExpress.XtraEditors.TextEdit();
-            textEdit17 = new DevExpress.XtraEditors.TextEdit();
+            txtLargo = new DevExpress.XtraEditors.TextEdit();
+            txtAncho = new DevExpress.XtraEditors.TextEdit();
             groupControl7 = new DevExpress.XtraEditors.GroupControl();
             labelControl29 = new DevExpress.XtraEditors.LabelControl();
             labelControl28 = new DevExpress.XtraEditors.LabelControl();
             groupControl8 = new DevExpress.XtraEditors.GroupControl();
             labelControl34 = new DevExpress.XtraEditors.LabelControl();
-            comboBox4 = new System.Windows.Forms.ComboBox();
+            cbTipo = new System.Windows.Forms.ComboBox();
             labelControl35 = new DevExpress.XtraEditors.LabelControl();
-            comboBox5 = new System.Windows.Forms.ComboBox();
-            textEdit18 = new DevExpress.XtraEditors.TextEdit();
+            cbMaterial = new System.Windows.Forms.ComboBox();
+            txtTotalPares = new DevExpress.XtraEditors.TextEdit();
             labelControl33 = new DevExpress.XtraEditors.LabelControl();
             labelControl32 = new DevExpress.XtraEditors.LabelControl();
-            comboBox3 = new System.Windows.Forms.ComboBox();
+            cbTipoLimpieza = new System.Windows.Forms.ComboBox();
             labelControl31 = new DevExpress.XtraEditors.LabelControl();
-            comboBox2 = new System.Windows.Forms.ComboBox();
+            cbHotFix = new System.Windows.Forms.ComboBox();
             labelControl36 = new DevExpress.XtraEditors.LabelControl();
             labelControl37 = new DevExpress.XtraEditors.LabelControl();
             labelControl38 = new DevExpress.XtraEditors.LabelControl();
-            labelControl39 = new DevExpress.XtraEditors.LabelControl();
-            labelControl40 = new DevExpress.XtraEditors.LabelControl();
-            labelControl41 = new DevExpress.XtraEditors.LabelControl();
+            lblPrecioVenta = new DevExpress.XtraEditors.LabelControl();
+            lblPrecioUnitario = new DevExpress.XtraEditors.LabelControl();
+            lblPrecioPar = new DevExpress.XtraEditors.LabelControl();
             btnGenerarPDF = new DevExpress.XtraEditors.SimpleButton();
             btnAgregar = new DevExpress.XtraEditors.SimpleButton();
             dgvImpresionUV = new System.Windows.Forms.DataGridView();
@@ -109,39 +109,39 @@
             simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit5.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit4.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit3.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtGloss.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCyan.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtBlack.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtMagenta.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtYellow.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtWhite.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl2).BeginInit();
             groupControl2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit8.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit7.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtSegundoImpresion.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtMinutoImpresion.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl3).BeginInit();
             groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit9.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit10.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtSegundoPloteado.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtMinutoPloteado.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl4).BeginInit();
             groupControl4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtSegundoDepilado.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtMinutoDepilado.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl5).BeginInit();
             groupControl5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureEdit1.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbImagenImprimir.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl6).BeginInit();
             groupControl6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCodigo.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtCliente.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit16.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit17.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtEstilo.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtLargo.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtAncho.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)groupControl7).BeginInit();
             groupControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)groupControl8).BeginInit();
             groupControl8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit18.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtTotalPares.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvImpresionUV).BeginInit();
             SuspendLayout();
             // 
@@ -153,12 +153,12 @@
             groupControl1.Controls.Add(labelControl9);
             groupControl1.Controls.Add(labelControl8);
             groupControl1.Controls.Add(labelControl7);
-            groupControl1.Controls.Add(textEdit6);
-            groupControl1.Controls.Add(textEdit5);
-            groupControl1.Controls.Add(textEdit4);
-            groupControl1.Controls.Add(textEdit3);
-            groupControl1.Controls.Add(textEdit2);
-            groupControl1.Controls.Add(textEdit1);
+            groupControl1.Controls.Add(txtGloss);
+            groupControl1.Controls.Add(txtCyan);
+            groupControl1.Controls.Add(txtBlack);
+            groupControl1.Controls.Add(txtMagenta);
+            groupControl1.Controls.Add(txtYellow);
+            groupControl1.Controls.Add(txtWhite);
             groupControl1.Controls.Add(labelControl6);
             groupControl1.Controls.Add(labelControl5);
             groupControl1.Controls.Add(labelControl4);
@@ -220,47 +220,47 @@
             labelControl7.TabIndex = 12;
             labelControl7.Text = "ml.";
             // 
-            // textEdit6
+            // txtGloss
             // 
-            textEdit6.Location = new System.Drawing.Point(66, 153);
-            textEdit6.Name = "textEdit6";
-            textEdit6.Size = new System.Drawing.Size(97, 20);
-            textEdit6.TabIndex = 15;
+            txtGloss.Location = new System.Drawing.Point(66, 153);
+            txtGloss.Name = "txtGloss";
+            txtGloss.Size = new System.Drawing.Size(97, 20);
+            txtGloss.TabIndex = 15;
             // 
-            // textEdit5
+            // txtCyan
             // 
-            textEdit5.Location = new System.Drawing.Point(66, 127);
-            textEdit5.Name = "textEdit5";
-            textEdit5.Size = new System.Drawing.Size(97, 20);
-            textEdit5.TabIndex = 14;
+            txtCyan.Location = new System.Drawing.Point(66, 127);
+            txtCyan.Name = "txtCyan";
+            txtCyan.Size = new System.Drawing.Size(97, 20);
+            txtCyan.TabIndex = 14;
             // 
-            // textEdit4
+            // txtBlack
             // 
-            textEdit4.Location = new System.Drawing.Point(66, 101);
-            textEdit4.Name = "textEdit4";
-            textEdit4.Size = new System.Drawing.Size(97, 20);
-            textEdit4.TabIndex = 13;
+            txtBlack.Location = new System.Drawing.Point(66, 101);
+            txtBlack.Name = "txtBlack";
+            txtBlack.Size = new System.Drawing.Size(97, 20);
+            txtBlack.TabIndex = 13;
             // 
-            // textEdit3
+            // txtMagenta
             // 
-            textEdit3.Location = new System.Drawing.Point(66, 75);
-            textEdit3.Name = "textEdit3";
-            textEdit3.Size = new System.Drawing.Size(97, 20);
-            textEdit3.TabIndex = 12;
+            txtMagenta.Location = new System.Drawing.Point(66, 75);
+            txtMagenta.Name = "txtMagenta";
+            txtMagenta.Size = new System.Drawing.Size(97, 20);
+            txtMagenta.TabIndex = 12;
             // 
-            // textEdit2
+            // txtYellow
             // 
-            textEdit2.Location = new System.Drawing.Point(66, 49);
-            textEdit2.Name = "textEdit2";
-            textEdit2.Size = new System.Drawing.Size(97, 20);
-            textEdit2.TabIndex = 11;
+            txtYellow.Location = new System.Drawing.Point(66, 49);
+            txtYellow.Name = "txtYellow";
+            txtYellow.Size = new System.Drawing.Size(97, 20);
+            txtYellow.TabIndex = 11;
             // 
-            // textEdit1
+            // txtWhite
             // 
-            textEdit1.Location = new System.Drawing.Point(66, 23);
-            textEdit1.Name = "textEdit1";
-            textEdit1.Size = new System.Drawing.Size(97, 20);
-            textEdit1.TabIndex = 10;
+            txtWhite.Location = new System.Drawing.Point(66, 23);
+            txtWhite.Name = "txtWhite";
+            txtWhite.Size = new System.Drawing.Size(97, 20);
+            txtWhite.TabIndex = 10;
             // 
             // labelControl6
             // 
@@ -312,8 +312,8 @@
             // 
             // groupControl2
             // 
-            groupControl2.Controls.Add(textEdit8);
-            groupControl2.Controls.Add(textEdit7);
+            groupControl2.Controls.Add(txtSegundoImpresion);
+            groupControl2.Controls.Add(txtMinutoImpresion);
             groupControl2.Controls.Add(labelControl14);
             groupControl2.Controls.Add(labelControl13);
             groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
@@ -323,19 +323,19 @@
             groupControl2.TabIndex = 1;
             groupControl2.Text = "Tiempo Impresion";
             // 
-            // textEdit8
+            // txtSegundoImpresion
             // 
-            textEdit8.Location = new System.Drawing.Point(75, 49);
-            textEdit8.Name = "textEdit8";
-            textEdit8.Size = new System.Drawing.Size(100, 20);
-            textEdit8.TabIndex = 5;
+            txtSegundoImpresion.Location = new System.Drawing.Point(75, 49);
+            txtSegundoImpresion.Name = "txtSegundoImpresion";
+            txtSegundoImpresion.Size = new System.Drawing.Size(100, 20);
+            txtSegundoImpresion.TabIndex = 5;
             // 
-            // textEdit7
+            // txtMinutoImpresion
             // 
-            textEdit7.Location = new System.Drawing.Point(73, 23);
-            textEdit7.Name = "textEdit7";
-            textEdit7.Size = new System.Drawing.Size(100, 20);
-            textEdit7.TabIndex = 4;
+            txtMinutoImpresion.Location = new System.Drawing.Point(73, 23);
+            txtMinutoImpresion.Name = "txtMinutoImpresion";
+            txtMinutoImpresion.Size = new System.Drawing.Size(100, 20);
+            txtMinutoImpresion.TabIndex = 4;
             // 
             // labelControl14
             // 
@@ -355,8 +355,8 @@
             // 
             // groupControl3
             // 
-            groupControl3.Controls.Add(textEdit9);
-            groupControl3.Controls.Add(textEdit10);
+            groupControl3.Controls.Add(txtSegundoPloteado);
+            groupControl3.Controls.Add(txtMinutoPloteado);
             groupControl3.Controls.Add(labelControl15);
             groupControl3.Controls.Add(labelControl16);
             groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
@@ -366,19 +366,19 @@
             groupControl3.TabIndex = 4;
             groupControl3.Text = "Tiempo Ploteado";
             // 
-            // textEdit9
+            // txtSegundoPloteado
             // 
-            textEdit9.Location = new System.Drawing.Point(75, 49);
-            textEdit9.Name = "textEdit9";
-            textEdit9.Size = new System.Drawing.Size(100, 20);
-            textEdit9.TabIndex = 7;
+            txtSegundoPloteado.Location = new System.Drawing.Point(75, 49);
+            txtSegundoPloteado.Name = "txtSegundoPloteado";
+            txtSegundoPloteado.Size = new System.Drawing.Size(100, 20);
+            txtSegundoPloteado.TabIndex = 7;
             // 
-            // textEdit10
+            // txtMinutoPloteado
             // 
-            textEdit10.Location = new System.Drawing.Point(73, 23);
-            textEdit10.Name = "textEdit10";
-            textEdit10.Size = new System.Drawing.Size(100, 20);
-            textEdit10.TabIndex = 6;
+            txtMinutoPloteado.Location = new System.Drawing.Point(73, 23);
+            txtMinutoPloteado.Name = "txtMinutoPloteado";
+            txtMinutoPloteado.Size = new System.Drawing.Size(100, 20);
+            txtMinutoPloteado.TabIndex = 6;
             // 
             // labelControl15
             // 
@@ -398,8 +398,8 @@
             // 
             // groupControl4
             // 
-            groupControl4.Controls.Add(textEdit11);
-            groupControl4.Controls.Add(textEdit12);
+            groupControl4.Controls.Add(txtSegundoDepilado);
+            groupControl4.Controls.Add(txtMinutoDepilado);
             groupControl4.Controls.Add(labelControl17);
             groupControl4.Controls.Add(labelControl18);
             groupControl4.GroupStyle = DevExpress.Utils.GroupStyle.Light;
@@ -409,19 +409,19 @@
             groupControl4.TabIndex = 4;
             groupControl4.Text = "Tiempo Depilado";
             // 
-            // textEdit11
+            // txtSegundoDepilado
             // 
-            textEdit11.Location = new System.Drawing.Point(73, 49);
-            textEdit11.Name = "textEdit11";
-            textEdit11.Size = new System.Drawing.Size(100, 20);
-            textEdit11.TabIndex = 9;
+            txtSegundoDepilado.Location = new System.Drawing.Point(73, 49);
+            txtSegundoDepilado.Name = "txtSegundoDepilado";
+            txtSegundoDepilado.Size = new System.Drawing.Size(100, 20);
+            txtSegundoDepilado.TabIndex = 9;
             // 
-            // textEdit12
+            // txtMinutoDepilado
             // 
-            textEdit12.Location = new System.Drawing.Point(73, 23);
-            textEdit12.Name = "textEdit12";
-            textEdit12.Size = new System.Drawing.Size(100, 20);
-            textEdit12.TabIndex = 8;
+            txtMinutoDepilado.Location = new System.Drawing.Point(73, 23);
+            txtMinutoDepilado.Name = "txtMinutoDepilado";
+            txtMinutoDepilado.Size = new System.Drawing.Size(100, 20);
+            txtMinutoDepilado.TabIndex = 8;
             // 
             // labelControl17
             // 
@@ -441,7 +441,7 @@
             // 
             // groupControl5
             // 
-            groupControl5.Controls.Add(pictureEdit1);
+            groupControl5.Controls.Add(pbImagenImprimir);
             groupControl5.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl5.Location = new System.Drawing.Point(227, 116);
             groupControl5.Name = "groupControl5";
@@ -449,20 +449,20 @@
             groupControl5.TabIndex = 5;
             groupControl5.Text = "Impresion";
             // 
-            // pictureEdit1
+            // pbImagenImprimir
             // 
-            pictureEdit1.Location = new System.Drawing.Point(16, 26);
-            pictureEdit1.Name = "pictureEdit1";
-            pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            pictureEdit1.Size = new System.Drawing.Size(262, 219);
-            pictureEdit1.TabIndex = 24;
+            pbImagenImprimir.Location = new System.Drawing.Point(16, 26);
+            pbImagenImprimir.Name = "pbImagenImprimir";
+            pbImagenImprimir.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            pbImagenImprimir.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
+            pbImagenImprimir.Size = new System.Drawing.Size(262, 219);
+            pbImagenImprimir.TabIndex = 24;
             // 
             // groupControl6
             // 
-            groupControl6.Controls.Add(comboBox1);
+            groupControl6.Controls.Add(cbTipoCotizacion);
             groupControl6.Controls.Add(labelControl30);
-            groupControl6.Controls.Add(textEdit15);
+            groupControl6.Controls.Add(txtCodigo);
             groupControl6.Controls.Add(labelControl21);
             groupControl6.Controls.Add(txtCliente);
             groupControl6.Controls.Add(labelControl19);
@@ -472,14 +472,14 @@
             groupControl6.Size = new System.Drawing.Size(723, 60);
             groupControl6.TabIndex = 6;
             // 
-            // comboBox1
+            // cbTipoCotizacion
             // 
-            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new System.Drawing.Point(529, 22);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new System.Drawing.Size(161, 21);
-            comboBox1.TabIndex = 3;
+            cbTipoCotizacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbTipoCotizacion.FormattingEnabled = true;
+            cbTipoCotizacion.Location = new System.Drawing.Point(529, 22);
+            cbTipoCotizacion.Name = "cbTipoCotizacion";
+            cbTipoCotizacion.Size = new System.Drawing.Size(161, 21);
+            cbTipoCotizacion.TabIndex = 3;
             // 
             // labelControl30
             // 
@@ -489,13 +489,13 @@
             labelControl30.TabIndex = 6;
             labelControl30.Text = "Tipo Cotizacion:";
             // 
-            // textEdit15
+            // txtCodigo
             // 
-            textEdit15.Enabled = false;
-            textEdit15.Location = new System.Drawing.Point(280, 23);
-            textEdit15.Name = "textEdit15";
-            textEdit15.Size = new System.Drawing.Size(161, 20);
-            textEdit15.TabIndex = 2;
+            txtCodigo.Enabled = false;
+            txtCodigo.Location = new System.Drawing.Point(280, 23);
+            txtCodigo.Name = "txtCodigo";
+            txtCodigo.Size = new System.Drawing.Size(161, 20);
+            txtCodigo.TabIndex = 2;
             // 
             // labelControl21
             // 
@@ -528,12 +528,12 @@
             labelControl20.TabIndex = 3;
             labelControl20.Text = "Estilo:";
             // 
-            // textEdit14
+            // txtEstilo
             // 
-            textEdit14.Location = new System.Drawing.Point(55, 23);
-            textEdit14.Name = "textEdit14";
-            textEdit14.Size = new System.Drawing.Size(202, 20);
-            textEdit14.TabIndex = 16;
+            txtEstilo.Location = new System.Drawing.Point(55, 23);
+            txtEstilo.Name = "txtEstilo";
+            txtEstilo.Size = new System.Drawing.Size(202, 20);
+            txtEstilo.TabIndex = 16;
             // 
             // labelControl22
             // 
@@ -583,29 +583,29 @@
             labelControl27.TabIndex = 5;
             labelControl27.Text = "Ancho:";
             // 
-            // textEdit16
+            // txtLargo
             // 
-            textEdit16.Location = new System.Drawing.Point(55, 49);
-            textEdit16.Name = "textEdit16";
-            textEdit16.Size = new System.Drawing.Size(80, 20);
-            textEdit16.TabIndex = 17;
+            txtLargo.Location = new System.Drawing.Point(55, 49);
+            txtLargo.Name = "txtLargo";
+            txtLargo.Size = new System.Drawing.Size(80, 20);
+            txtLargo.TabIndex = 17;
             // 
-            // textEdit17
+            // txtAncho
             // 
-            textEdit17.Location = new System.Drawing.Point(55, 75);
-            textEdit17.Name = "textEdit17";
-            textEdit17.Size = new System.Drawing.Size(80, 20);
-            textEdit17.TabIndex = 18;
+            txtAncho.Location = new System.Drawing.Point(55, 75);
+            txtAncho.Name = "txtAncho";
+            txtAncho.Size = new System.Drawing.Size(80, 20);
+            txtAncho.TabIndex = 18;
             // 
             // groupControl7
             // 
             groupControl7.Controls.Add(labelControl29);
             groupControl7.Controls.Add(labelControl28);
-            groupControl7.Controls.Add(textEdit17);
+            groupControl7.Controls.Add(txtAncho);
             groupControl7.Controls.Add(labelControl20);
-            groupControl7.Controls.Add(textEdit16);
+            groupControl7.Controls.Add(txtLargo);
             groupControl7.Controls.Add(labelControl27);
-            groupControl7.Controls.Add(textEdit14);
+            groupControl7.Controls.Add(txtEstilo);
             groupControl7.Controls.Add(labelControl26);
             groupControl7.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl7.Location = new System.Drawing.Point(12, 380);
@@ -633,15 +633,15 @@
             // groupControl8
             // 
             groupControl8.Controls.Add(labelControl34);
-            groupControl8.Controls.Add(comboBox4);
+            groupControl8.Controls.Add(cbTipo);
             groupControl8.Controls.Add(labelControl35);
-            groupControl8.Controls.Add(comboBox5);
-            groupControl8.Controls.Add(textEdit18);
+            groupControl8.Controls.Add(cbMaterial);
+            groupControl8.Controls.Add(txtTotalPares);
             groupControl8.Controls.Add(labelControl33);
             groupControl8.Controls.Add(labelControl32);
-            groupControl8.Controls.Add(comboBox3);
+            groupControl8.Controls.Add(cbTipoLimpieza);
             groupControl8.Controls.Add(labelControl31);
-            groupControl8.Controls.Add(comboBox2);
+            groupControl8.Controls.Add(cbHotFix);
             groupControl8.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl8.Location = new System.Drawing.Point(311, 380);
             groupControl8.Name = "groupControl8";
@@ -657,14 +657,14 @@
             labelControl34.TabIndex = 21;
             labelControl34.Text = "Tipo:";
             // 
-            // comboBox4
+            // cbTipo
             // 
-            comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Location = new System.Drawing.Point(274, 49);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new System.Drawing.Size(121, 21);
-            comboBox4.TabIndex = 23;
+            cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbTipo.FormattingEnabled = true;
+            cbTipo.Location = new System.Drawing.Point(274, 49);
+            cbTipo.Name = "cbTipo";
+            cbTipo.Size = new System.Drawing.Size(121, 21);
+            cbTipo.TabIndex = 23;
             // 
             // labelControl35
             // 
@@ -674,21 +674,21 @@
             labelControl35.TabIndex = 19;
             labelControl35.Text = "Material:";
             // 
-            // comboBox5
+            // cbMaterial
             // 
-            comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Location = new System.Drawing.Point(274, 22);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new System.Drawing.Size(121, 21);
-            comboBox5.TabIndex = 22;
+            cbMaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbMaterial.FormattingEnabled = true;
+            cbMaterial.Location = new System.Drawing.Point(274, 22);
+            cbMaterial.Name = "cbMaterial";
+            cbMaterial.Size = new System.Drawing.Size(121, 21);
+            cbMaterial.TabIndex = 22;
             // 
-            // textEdit18
+            // txtTotalPares
             // 
-            textEdit18.Location = new System.Drawing.Point(86, 75);
-            textEdit18.Name = "textEdit18";
-            textEdit18.Size = new System.Drawing.Size(121, 20);
-            textEdit18.TabIndex = 21;
+            txtTotalPares.Location = new System.Drawing.Point(86, 75);
+            txtTotalPares.Name = "txtTotalPares";
+            txtTotalPares.Size = new System.Drawing.Size(121, 20);
+            txtTotalPares.TabIndex = 21;
             // 
             // labelControl33
             // 
@@ -706,14 +706,14 @@
             labelControl32.TabIndex = 15;
             labelControl32.Text = "Tipo Limpieza:";
             // 
-            // comboBox3
+            // cbTipoLimpieza
             // 
-            comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new System.Drawing.Point(86, 48);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new System.Drawing.Size(121, 21);
-            comboBox3.TabIndex = 20;
+            cbTipoLimpieza.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbTipoLimpieza.FormattingEnabled = true;
+            cbTipoLimpieza.Location = new System.Drawing.Point(86, 48);
+            cbTipoLimpieza.Name = "cbTipoLimpieza";
+            cbTipoLimpieza.Size = new System.Drawing.Size(121, 21);
+            cbTipoLimpieza.TabIndex = 20;
             // 
             // labelControl31
             // 
@@ -723,18 +723,18 @@
             labelControl31.TabIndex = 13;
             labelControl31.Text = "Hot-Fix:";
             // 
-            // comboBox2
+            // cbHotFix
             // 
-            comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new System.Drawing.Point(86, 21);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new System.Drawing.Size(121, 21);
-            comboBox2.TabIndex = 19;
+            cbHotFix.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbHotFix.FormattingEnabled = true;
+            cbHotFix.Location = new System.Drawing.Point(86, 21);
+            cbHotFix.Name = "cbHotFix";
+            cbHotFix.Size = new System.Drawing.Size(121, 21);
+            cbHotFix.TabIndex = 19;
             // 
             // labelControl36
             // 
-            labelControl36.Location = new System.Drawing.Point(662, 316);
+            labelControl36.Location = new System.Drawing.Point(526, 318);
             labelControl36.Name = "labelControl36";
             labelControl36.Size = new System.Drawing.Size(64, 13);
             labelControl36.TabIndex = 13;
@@ -742,7 +742,7 @@
             // 
             // labelControl37
             // 
-            labelControl37.Location = new System.Drawing.Point(662, 335);
+            labelControl37.Location = new System.Drawing.Point(526, 337);
             labelControl37.Name = "labelControl37";
             labelControl37.Size = new System.Drawing.Size(73, 13);
             labelControl37.TabIndex = 14;
@@ -750,35 +750,35 @@
             // 
             // labelControl38
             // 
-            labelControl38.Location = new System.Drawing.Point(662, 354);
+            labelControl38.Location = new System.Drawing.Point(526, 356);
             labelControl38.Name = "labelControl38";
             labelControl38.Size = new System.Drawing.Size(52, 13);
             labelControl38.TabIndex = 15;
             labelControl38.Text = "Precio Par:";
             // 
-            // labelControl39
+            // lblPrecioVenta
             // 
-            labelControl39.Location = new System.Drawing.Point(741, 316);
-            labelControl39.Name = "labelControl39";
-            labelControl39.Size = new System.Drawing.Size(6, 13);
-            labelControl39.TabIndex = 16;
-            labelControl39.Text = "$";
+            lblPrecioVenta.Location = new System.Drawing.Point(605, 318);
+            lblPrecioVenta.Name = "lblPrecioVenta";
+            lblPrecioVenta.Size = new System.Drawing.Size(6, 13);
+            lblPrecioVenta.TabIndex = 16;
+            lblPrecioVenta.Text = "$";
             // 
-            // labelControl40
+            // lblPrecioUnitario
             // 
-            labelControl40.Location = new System.Drawing.Point(741, 335);
-            labelControl40.Name = "labelControl40";
-            labelControl40.Size = new System.Drawing.Size(6, 13);
-            labelControl40.TabIndex = 17;
-            labelControl40.Text = "$";
+            lblPrecioUnitario.Location = new System.Drawing.Point(605, 337);
+            lblPrecioUnitario.Name = "lblPrecioUnitario";
+            lblPrecioUnitario.Size = new System.Drawing.Size(6, 13);
+            lblPrecioUnitario.TabIndex = 17;
+            lblPrecioUnitario.Text = "$";
             // 
-            // labelControl41
+            // lblPrecioPar
             // 
-            labelControl41.Location = new System.Drawing.Point(741, 354);
-            labelControl41.Name = "labelControl41";
-            labelControl41.Size = new System.Drawing.Size(6, 13);
-            labelControl41.TabIndex = 18;
-            labelControl41.Text = "$";
+            lblPrecioPar.Location = new System.Drawing.Point(605, 356);
+            lblPrecioPar.Name = "lblPrecioPar";
+            lblPrecioPar.Size = new System.Drawing.Size(6, 13);
+            lblPrecioPar.TabIndex = 18;
+            lblPrecioPar.Text = "$";
             // 
             // btnGenerarPDF
             // 
@@ -829,9 +829,9 @@
             Controls.Add(dgvImpresionUV);
             Controls.Add(btnAgregar);
             Controls.Add(btnGenerarPDF);
-            Controls.Add(labelControl41);
-            Controls.Add(labelControl40);
-            Controls.Add(labelControl39);
+            Controls.Add(lblPrecioPar);
+            Controls.Add(lblPrecioUnitario);
+            Controls.Add(lblPrecioVenta);
             Controls.Add(labelControl38);
             Controls.Add(labelControl37);
             Controls.Add(labelControl36);
@@ -853,45 +853,45 @@
             ((System.ComponentModel.ISupportInitialize)groupControl1).EndInit();
             groupControl1.ResumeLayout(false);
             groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit6.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit5.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit4.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit3.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit2.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit1.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtGloss.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCyan.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtBlack.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtMagenta.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtYellow.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtWhite.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl2).EndInit();
             groupControl2.ResumeLayout(false);
             groupControl2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit8.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit7.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtSegundoImpresion.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtMinutoImpresion.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl3).EndInit();
             groupControl3.ResumeLayout(false);
             groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit9.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit10.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtSegundoPloteado.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtMinutoPloteado.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl4).EndInit();
             groupControl4.ResumeLayout(false);
             groupControl4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit11.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit12.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtSegundoDepilado.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtMinutoDepilado.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl5).EndInit();
             groupControl5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureEdit1.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbImagenImprimir.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl6).EndInit();
             groupControl6.ResumeLayout(false);
             groupControl6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit15.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCodigo.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtCliente.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit14.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit16.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)textEdit17.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtEstilo.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtLargo.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtAncho.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)groupControl7).EndInit();
             groupControl7.ResumeLayout(false);
             groupControl7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)groupControl8).EndInit();
             groupControl8.ResumeLayout(false);
             groupControl8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)textEdit18.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtTotalPares.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvImpresionUV).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -905,12 +905,12 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.TextEdit textEdit6;
-        private DevExpress.XtraEditors.TextEdit textEdit5;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txtGloss;
+        private DevExpress.XtraEditors.TextEdit txtCyan;
+        private DevExpress.XtraEditors.TextEdit txtBlack;
+        private DevExpress.XtraEditors.TextEdit txtMagenta;
+        private DevExpress.XtraEditors.TextEdit txtYellow;
+        private DevExpress.XtraEditors.TextEdit txtWhite;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
@@ -919,59 +919,59 @@
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.GroupControl groupControl2;
-        private DevExpress.XtraEditors.TextEdit textEdit8;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit txtSegundoImpresion;
+        private DevExpress.XtraEditors.TextEdit txtMinutoImpresion;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.GroupControl groupControl3;
-        private DevExpress.XtraEditors.TextEdit textEdit9;
-        private DevExpress.XtraEditors.TextEdit textEdit10;
+        private DevExpress.XtraEditors.TextEdit txtSegundoPloteado;
+        private DevExpress.XtraEditors.TextEdit txtMinutoPloteado;
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.LabelControl labelControl16;
         private DevExpress.XtraEditors.GroupControl groupControl4;
-        private DevExpress.XtraEditors.TextEdit textEdit11;
-        private DevExpress.XtraEditors.TextEdit textEdit12;
+        private DevExpress.XtraEditors.TextEdit txtSegundoDepilado;
+        private DevExpress.XtraEditors.TextEdit txtMinutoDepilado;
         private DevExpress.XtraEditors.LabelControl labelControl17;
         private DevExpress.XtraEditors.LabelControl labelControl18;
         private DevExpress.XtraEditors.GroupControl groupControl5;
         private DevExpress.XtraEditors.GroupControl groupControl6;
         private DevExpress.XtraEditors.LabelControl labelControl20;
-        private DevExpress.XtraEditors.TextEdit textEdit14;
+        private DevExpress.XtraEditors.TextEdit txtEstilo;
         private DevExpress.XtraEditors.TextEdit txtCliente;
         private DevExpress.XtraEditors.LabelControl labelControl19;
-        private DevExpress.XtraEditors.TextEdit textEdit15;
+        private DevExpress.XtraEditors.TextEdit txtCodigo;
         private DevExpress.XtraEditors.LabelControl labelControl21;
         private DevExpress.XtraEditors.LabelControl labelControl22;
         private DevExpress.XtraEditors.LabelControl lblFechaActual;
         private DevExpress.XtraEditors.LabelControl labelControl24;
         private DevExpress.XtraEditors.LabelControl lblHoraActual;
-        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit17;
-        private DevExpress.XtraEditors.TextEdit textEdit16;
+        private DevExpress.XtraEditors.PictureEdit pbImagenImprimir;
+        private DevExpress.XtraEditors.TextEdit txtAncho;
+        private DevExpress.XtraEditors.TextEdit txtLargo;
         private DevExpress.XtraEditors.LabelControl labelControl27;
         private DevExpress.XtraEditors.LabelControl labelControl26;
         private DevExpress.XtraEditors.GroupControl groupControl7;
         private DevExpress.XtraEditors.LabelControl labelControl29;
         private DevExpress.XtraEditors.LabelControl labelControl28;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbTipoCotizacion;
         private DevExpress.XtraEditors.LabelControl labelControl30;
         private DevExpress.XtraEditors.GroupControl groupControl8;
         private DevExpress.XtraEditors.LabelControl labelControl34;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbTipo;
         private DevExpress.XtraEditors.LabelControl labelControl35;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private DevExpress.XtraEditors.TextEdit textEdit18;
+        private System.Windows.Forms.ComboBox cbMaterial;
+        private DevExpress.XtraEditors.TextEdit txtTotalPares;
         private DevExpress.XtraEditors.LabelControl labelControl33;
         private DevExpress.XtraEditors.LabelControl labelControl32;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbTipoLimpieza;
         private DevExpress.XtraEditors.LabelControl labelControl31;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbHotFix;
         private DevExpress.XtraEditors.LabelControl labelControl36;
         private DevExpress.XtraEditors.LabelControl labelControl37;
         private DevExpress.XtraEditors.LabelControl labelControl38;
-        private DevExpress.XtraEditors.LabelControl labelControl39;
-        private DevExpress.XtraEditors.LabelControl labelControl40;
-        private DevExpress.XtraEditors.LabelControl labelControl41;
+        private DevExpress.XtraEditors.LabelControl lblPrecioVenta;
+        private DevExpress.XtraEditors.LabelControl lblPrecioUnitario;
+        private DevExpress.XtraEditors.LabelControl lblPrecioPar;
         private DevExpress.XtraEditors.SimpleButton btnGenerarPDF;
         private DevExpress.XtraEditors.SimpleButton btnAgregar;
         private System.Windows.Forms.DataGridView dgvImpresionUV;
