@@ -33,6 +33,7 @@ namespace TP
             row.Cells["Ancho"].Value = txtAncho.Text;
             row.Cells["PrecioUnitario"].Value = lblPrecioUnitario.Text;
             row.Cells["PrecioVenta"].Value = lblPrecioVenta.Text;
+            row.Cells["Descuento"].Value = "";
         }
 
         private void btmEliminar_Click(object sender, EventArgs e)
@@ -60,7 +61,8 @@ namespace TP
             dgvImpresionUV.Columns.Add("Largo", "Largo");
             dgvImpresionUV.Columns.Add("Ancho", "Ancho");
             dgvImpresionUV.Columns.Add("PrecioUnitario", "PrecioUnitario");
-            dgvImpresionUV.Columns.Add("PrecioVenta", "PrecioVenta");
+            dgvImpresionUV.Columns.Add("PrecioTotal", "PrecioTotal");
+            dgvImpresionUV.Columns.Add("Descuento", "Descuento");
         }
 
         private void btnGenerarPDF_Click(object sender, EventArgs e)
