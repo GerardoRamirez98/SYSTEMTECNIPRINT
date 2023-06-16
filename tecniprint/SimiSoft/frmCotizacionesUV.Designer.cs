@@ -94,9 +94,7 @@
             labelControl23 = new DevExpress.XtraEditors.LabelControl();
             comboBox1 = new System.Windows.Forms.ComboBox();
             labelControl34 = new DevExpress.XtraEditors.LabelControl();
-            cbTipo = new System.Windows.Forms.ComboBox();
             labelControl35 = new DevExpress.XtraEditors.LabelControl();
-            cbMaterial = new System.Windows.Forms.ComboBox();
             txtTotalPares = new DevExpress.XtraEditors.TextEdit();
             labelControl33 = new DevExpress.XtraEditors.LabelControl();
             labelControl32 = new DevExpress.XtraEditors.LabelControl();
@@ -116,6 +114,8 @@
             btnLimpiar = new DevExpress.XtraEditors.SimpleButton();
             btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             btmEliminar = new DevExpress.XtraEditors.SimpleButton();
+            txtProducto = new DevExpress.XtraEditors.TextEdit();
+            txtCategoria = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)txtGloss.Properties).BeginInit();
@@ -152,6 +152,8 @@
             groupControl8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)txtTotalPares.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvImpresionUV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtProducto.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtCategoria.Properties).BeginInit();
             SuspendLayout();
             // 
             // groupControl1
@@ -660,14 +662,14 @@
             // 
             // groupControl8
             // 
+            groupControl8.Controls.Add(txtCategoria);
+            groupControl8.Controls.Add(txtProducto);
             groupControl8.Controls.Add(btnTipo);
             groupControl8.Controls.Add(btnMaterial);
             groupControl8.Controls.Add(labelControl23);
             groupControl8.Controls.Add(comboBox1);
             groupControl8.Controls.Add(labelControl34);
-            groupControl8.Controls.Add(cbTipo);
             groupControl8.Controls.Add(labelControl35);
-            groupControl8.Controls.Add(cbMaterial);
             groupControl8.Controls.Add(txtTotalPares);
             groupControl8.Controls.Add(labelControl33);
             groupControl8.Controls.Add(labelControl32);
@@ -724,15 +726,6 @@
             labelControl34.TabIndex = 21;
             labelControl34.Text = "Tipo:";
             // 
-            // cbTipo
-            // 
-            cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cbTipo.FormattingEnabled = true;
-            cbTipo.Location = new System.Drawing.Point(298, 75);
-            cbTipo.Name = "cbTipo";
-            cbTipo.Size = new System.Drawing.Size(121, 21);
-            cbTipo.TabIndex = 23;
-            // 
             // labelControl35
             // 
             labelControl35.Location = new System.Drawing.Point(223, 51);
@@ -740,15 +733,6 @@
             labelControl35.Size = new System.Drawing.Size(42, 13);
             labelControl35.TabIndex = 19;
             labelControl35.Text = "Material:";
-            // 
-            // cbMaterial
-            // 
-            cbMaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            cbMaterial.FormattingEnabled = true;
-            cbMaterial.Location = new System.Drawing.Point(298, 48);
-            cbMaterial.Name = "cbMaterial";
-            cbMaterial.Size = new System.Drawing.Size(121, 21);
-            cbMaterial.TabIndex = 22;
             // 
             // txtTotalPares
             // 
@@ -906,6 +890,20 @@
             btmEliminar.Text = "Eliminar";
             btmEliminar.Click += btmEliminar_Click;
             // 
+            // txtProducto
+            // 
+            txtProducto.Location = new System.Drawing.Point(298, 50);
+            txtProducto.Name = "txtProducto";
+            txtProducto.Size = new System.Drawing.Size(121, 20);
+            txtProducto.TabIndex = 29;
+            // 
+            // txtCategoria
+            // 
+            txtCategoria.Location = new System.Drawing.Point(298, 76);
+            txtCategoria.Name = "txtCategoria";
+            txtCategoria.Size = new System.Drawing.Size(121, 20);
+            txtCategoria.TabIndex = 30;
+            // 
             // frmCotizacionesUV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -981,6 +979,8 @@
             groupControl8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)txtTotalPares.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvImpresionUV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtProducto.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtCategoria.Properties).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1045,9 +1045,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl30;
         private DevExpress.XtraEditors.GroupControl groupControl8;
         private DevExpress.XtraEditors.LabelControl labelControl34;
-        private System.Windows.Forms.ComboBox cbTipo;
         private DevExpress.XtraEditors.LabelControl labelControl35;
-        private System.Windows.Forms.ComboBox cbMaterial;
         private DevExpress.XtraEditors.TextEdit txtTotalPares;
         private DevExpress.XtraEditors.LabelControl labelControl33;
         private DevExpress.XtraEditors.LabelControl labelControl32;
@@ -1073,5 +1071,7 @@
         private DevExpress.XtraEditors.SimpleButton btnCodigo;
         private DevExpress.XtraEditors.SimpleButton btnCliente;
         private DevExpress.XtraEditors.SimpleButton btnTipo;
+        private DevExpress.XtraEditors.TextEdit txtCategoria;
+        private DevExpress.XtraEditors.TextEdit txtProducto;
     }
 }

@@ -47,7 +47,7 @@
             gridControl1.Location = new System.Drawing.Point(11, 12);
             gridControl1.MainView = gvCategorias;
             gridControl1.Name = "gridControl1";
-            gridControl1.Size = new System.Drawing.Size(330, 268);
+            gridControl1.Size = new System.Drawing.Size(522, 257);
             gridControl1.TabIndex = 1;
             gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvCategorias });
             gridControl1.DoubleClick += gridView_DoubleClick;
@@ -105,10 +105,10 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(353, 293);
+            ClientSize = new System.Drawing.Size(545, 293);
             Controls.Add(gridControl1);
             Name = "FormBuscarCategorias";
-            Text = "FormBuscarCategorias";
+            Text = "s";
             Load += FormBuscarCategorias_Load;
             ((System.ComponentModel.ISupportInitialize)gridControl1).EndInit();
             ((System.ComponentModel.ISupportInitialize)categoriasBindingSource).EndInit();

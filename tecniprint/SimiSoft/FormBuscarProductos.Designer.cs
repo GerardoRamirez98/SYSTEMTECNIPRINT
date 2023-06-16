@@ -58,10 +58,10 @@
             // gridControl1
             // 
             gridControl1.DataSource = productoBindingSource;
-            gridControl1.Location = new System.Drawing.Point(12, 12);
+            gridControl1.Location = new System.Drawing.Point(12, 30);
             gridControl1.MainView = gvProducto;
             gridControl1.Name = "gridControl1";
-            gridControl1.Size = new System.Drawing.Size(718, 343);
+            gridControl1.Size = new System.Drawing.Size(718, 325);
             gridControl1.TabIndex = 1;
             gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvProducto });
             // 
@@ -80,6 +80,12 @@
             // 
             colIdProducto.FieldName = "IdProducto";
             colIdProducto.Name = "colIdProducto";
+            colIdProducto.OptionsColumn.AllowEdit = false;
+            colIdProducto.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            colIdProducto.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            colIdProducto.OptionsColumn.AllowMove = false;
+            colIdProducto.OptionsColumn.AllowSize = false;
+            colIdProducto.OptionsColumn.FixedWidth = true;
             colIdProducto.Visible = true;
             colIdProducto.VisibleIndex = 0;
             // 
@@ -87,6 +93,12 @@
             // 
             colCodigo.FieldName = "Codigo";
             colCodigo.Name = "colCodigo";
+            colCodigo.OptionsColumn.AllowEdit = false;
+            colCodigo.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            colCodigo.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            colCodigo.OptionsColumn.AllowMove = false;
+            colCodigo.OptionsColumn.AllowSize = false;
+            colCodigo.OptionsColumn.FixedWidth = true;
             colCodigo.Visible = true;
             colCodigo.VisibleIndex = 1;
             // 
@@ -99,6 +111,12 @@
             // 
             colNombre.FieldName = "Nombre";
             colNombre.Name = "colNombre";
+            colNombre.OptionsColumn.AllowEdit = false;
+            colNombre.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            colNombre.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            colNombre.OptionsColumn.AllowMove = false;
+            colNombre.OptionsColumn.AllowSize = false;
+            colNombre.OptionsColumn.FixedWidth = true;
             colNombre.Visible = true;
             colNombre.VisibleIndex = 2;
             // 
@@ -106,6 +124,12 @@
             // 
             colDescripcion.FieldName = "Descripcion";
             colDescripcion.Name = "colDescripcion";
+            colDescripcion.OptionsColumn.AllowEdit = false;
+            colDescripcion.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            colDescripcion.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            colDescripcion.OptionsColumn.AllowMove = false;
+            colDescripcion.OptionsColumn.AllowSize = false;
+            colDescripcion.OptionsColumn.FixedWidth = true;
             colDescripcion.Visible = true;
             colDescripcion.VisibleIndex = 3;
             // 
@@ -158,6 +182,12 @@
             // 
             colCategoriaDescripcion.FieldName = "CategoriaDescripcion";
             colCategoriaDescripcion.Name = "colCategoriaDescripcion";
+            colCategoriaDescripcion.OptionsColumn.AllowEdit = false;
+            colCategoriaDescripcion.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            colCategoriaDescripcion.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            colCategoriaDescripcion.OptionsColumn.AllowMove = false;
+            colCategoriaDescripcion.OptionsColumn.AllowSize = false;
+            colCategoriaDescripcion.OptionsColumn.FixedWidth = true;
             colCategoriaDescripcion.Visible = true;
             colCategoriaDescripcion.VisibleIndex = 4;
             // 
@@ -180,7 +210,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(742, 388);
+            ClientSize = new System.Drawing.Size(742, 374);
             Controls.Add(gridControl1);
             Name = "FormBuscarProductos";
             Text = "FormBuscarProducto";

@@ -664,7 +664,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>uIlMq4ZAYoR+gn8MivDKvSUjdcWILtUb0I7Z0saVJ4g=</dsig:DigestValue>
+      <dsig:DigestValue>jWZKxLL/uLtB08nKE2s6nzJc9osYAAIICAOeCS3YquY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="FarmsRamirezDAL.dll" size="7168">
@@ -673,7 +673,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>b0Bv/aEgaYP7Swgljq0mM5v98xfx347fvbAv7SAnmAY=</dsig:DigestValue>
+      <dsig:DigestValue>TDASRUoqmcoUZU9nDcxdwbJEEK851TxmgjPefZKtgtY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="IronOcr.dll" size="5643808">
@@ -1459,13 +1459,13 @@
       <dsig:DigestValue>FwedkfFV9x8Slwun8ARC2ScVRvhXTxQDgW01WFHG83M=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="TP.dll" size="334336">
+  <file name="TP.dll" size="334848">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>pud1dTFV+R+HX34ayJv/v148Bf7LrFkfu7eNWBO0zR0=</dsig:DigestValue>
+      <dsig:DigestValue>P37bj/lgWhu8Sb8tWfQ9JbJyvhhkTdKogIEqh4gWlUY=</dsig:DigestValue>
     </hash>
   </file>
   <file name="TP.dll.config" size="4314">

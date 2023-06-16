@@ -262,7 +262,7 @@ namespace TP
             if (categoria != null)
             {
                 // Actualiza los controles de tu formulario con los datos del cliente.
-                cbTipo.Text = categoria.Descripcion;
+                txtCategoria.Text = categoria.Descripcion;
                 // Ajusta el resto de los controles según las propiedades del objeto Cliente.
             }
         }
@@ -292,7 +292,7 @@ namespace TP
             if (producto != null)
             {
                 // Actualiza los controles de tu formulario con los datos del cliente.
-                cbMaterial.Text = producto.Nombre;
+                txtProducto.Text = producto.Nombre;
                 // Ajusta el resto de los controles según las propiedades del objeto Cliente.
             }
         }
