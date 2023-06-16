@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCotizacionesUV));
             groupControl1 = new DevExpress.XtraEditors.GroupControl();
             labelControl12 = new DevExpress.XtraEditors.LabelControl();
             labelControl11 = new DevExpress.XtraEditors.LabelControl();
@@ -484,6 +485,7 @@
             // 
             // btnCodigo
             // 
+            btnCodigo.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("btnCodigo.ImageOptions.Image");
             btnCodigo.Location = new System.Drawing.Point(417, 22);
             btnCodigo.Name = "btnCodigo";
             btnCodigo.Size = new System.Drawing.Size(24, 21);
@@ -491,6 +493,7 @@
             // 
             // btnCliente
             // 
+            btnCliente.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("btnCliente.ImageOptions.Image");
             btnCliente.Location = new System.Drawing.Point(198, 22);
             btnCliente.Name = "btnCliente";
             btnCliente.Size = new System.Drawing.Size(24, 21);
@@ -680,6 +683,7 @@
             // 
             // btnTipo
             // 
+            btnTipo.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("btnTipo.ImageOptions.Image");
             btnTipo.Location = new System.Drawing.Point(422, 75);
             btnTipo.Name = "btnTipo";
             btnTipo.Size = new System.Drawing.Size(24, 21);
@@ -687,6 +691,7 @@
             // 
             // btnMaterial
             // 
+            btnMaterial.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("btnMaterial.ImageOptions.Image");
             btnMaterial.Location = new System.Drawing.Point(422, 49);
             btnMaterial.Name = "btnMaterial";
             btnMaterial.Size = new System.Drawing.Size(24, 21);

@@ -4,7 +4,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using SimiSoft;
 using System;
-using System.Data;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -209,31 +209,32 @@ namespace TP
 
         private void btnCliente_Click(object sender, EventArgs e)
         {
-            // Obtener el cliente seleccionado del GridView
-            int[] selectedRows = gvClientes.GetSelectedRows();
+            FormBuscarClientes buscarClientes = new FormBuscarClientes();
 
-            if (selectedRows.Length > 0)
+            buscarClientes.ShowDialog();
+
+            // Verifica si se seleccionó un cliente en el formulario secundario
+            if (buscarClientes.ClienteSeleccionado != null)
             {
-                int selectedRowIndex = selectedRows[0];
-                DataRowView selectedRow = (DataRowView)gvClientes.GetRow(selectedRowIndex);
+                // Obtiene el cliente seleccionado desde el formulario secundario
+                Cliente clienteSeleccionado = buscarClientes.ClienteSeleccionado;
 
-                // Obtener los datos del cliente de la fila seleccionada
-                int idCliente = Convert.ToInt32(selectedRow["IdCliente"]);
-                string nombreCliente = selectedRow["Nombre"].ToString();
-
-                // Crear una instancia del cliente seleccionado
-                ClienteSeleccionado = new Cliente()
-                {
-                    IdCliente = idCliente,
-                    Nombre = nombreCliente
-                    // Incluir otros datos del cliente si es necesario
-                };
-
-                // Cerrar el formulario de clientes con DialogResult.OK
-                DialogResult = DialogResult.OK;
-                Close();
+                // Actualiza los controles del formulario original con los datos del cliente seleccionado
+                MostrarDatosCliente(clienteSeleccionado);
             }
+
+            // Libera los recursos del formulario secundario
+            buscarClientes.Dispose();
         }
+
+        public void MostrarDatosCliente(Cliente cliente)
+        {
+            if (cliente != null)
+            {
+                // Actualiza los controles de tu formulario con los datos del cliente.
+                txtCliente.Text = cliente.Nombres;
+                // Ajusta el resto de los controles según las propiedades del objeto Cliente.
+            }
         }
     }
 }
