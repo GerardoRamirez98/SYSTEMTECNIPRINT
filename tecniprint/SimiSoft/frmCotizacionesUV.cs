@@ -232,7 +232,67 @@ namespace TP
             if (cliente != null)
             {
                 // Actualiza los controles de tu formulario con los datos del cliente.
-                txtCliente.Text = cliente.Nombres;
+                txtCliente.Text = cliente.Nombres + " " + cliente.ApellidoPaterno + " " + cliente.ApellidoMaterno;
+                // Ajusta el resto de los controles según las propiedades del objeto Cliente.
+            }
+        }
+
+        private void btnTipo_Click(object sender, EventArgs e)
+        {
+            FormBuscarCategorias buscarCategorias = new FormBuscarCategorias();
+
+            buscarCategorias.ShowDialog();
+
+            // Verifica si se seleccionó un cliente en el formulario secundario
+            if (buscarCategorias.CategoriaSeleccionado != null)
+            {
+                // Obtiene el cliente seleccionado desde el formulario secundario
+                Categorias categoriaSeleccionado = buscarCategorias.CategoriaSeleccionado;
+
+                // Actualiza los controles del formulario original con los datos del cliente seleccionado
+                MostrarDatosCategoria(categoriaSeleccionado);
+            }
+
+            // Libera los recursos del formulario secundario
+            buscarCategorias.Dispose();
+        }
+
+        public void MostrarDatosCategoria(Categorias categoria)
+        {
+            if (categoria != null)
+            {
+                // Actualiza los controles de tu formulario con los datos del cliente.
+                cbTipo.Text = categoria.Descripcion;
+                // Ajusta el resto de los controles según las propiedades del objeto Cliente.
+            }
+        }
+
+        private void btnMaterial_Click(object sender, EventArgs e)
+        {
+            FormBuscarProductos buscarProductos = new FormBuscarProductos();
+
+            buscarProductos.ShowDialog();
+
+            // Verifica si se seleccionó un cliente en el formulario secundario
+            if (buscarProductos.ProductoSeleccionado != null)
+            {
+                // Obtiene el cliente seleccionado desde el formulario secundario
+                Producto productoSeleccionado = buscarProductos.ProductoSeleccionado;
+
+                // Actualiza los controles del formulario original con los datos del cliente seleccionado
+                MostrarDatosProducto(productoSeleccionado);
+            }
+
+            // Libera los recursos del formulario secundario
+            buscarProductos.Dispose();
+        }
+
+        public void MostrarDatosProducto(Producto producto)
+        {
+            if (producto != null)
+            {
+                // Actualiza los controles de tu formulario con los datos del cliente.
+                cbMaterial.Text = producto.Nombre;
                 // Ajusta el resto de los controles según las propiedades del objeto Cliente.
             }
         }

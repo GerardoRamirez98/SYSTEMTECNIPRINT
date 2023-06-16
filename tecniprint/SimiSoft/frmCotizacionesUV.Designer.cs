@@ -688,6 +688,7 @@
             btnTipo.Name = "btnTipo";
             btnTipo.Size = new System.Drawing.Size(24, 21);
             btnTipo.TabIndex = 27;
+            btnTipo.Click += btnTipo_Click;
             // 
             // btnMaterial
             // 
@@ -696,6 +697,7 @@
             btnMaterial.Name = "btnMaterial";
             btnMaterial.Size = new System.Drawing.Size(24, 21);
             btnMaterial.TabIndex = 26;
+            btnMaterial.Click += btnMaterial_Click;
             // 
             // labelControl23
             // 

@@ -200,7 +200,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(635, 387);
+            ClientSize = new System.Drawing.Size(635, 293);
             Controls.Add(gridControl1);
             Name = "FormBuscarClientes";
             Text = "FormBuscarClientes";

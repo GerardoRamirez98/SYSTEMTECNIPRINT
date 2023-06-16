@@ -339,3 +339,5 @@ C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Debug\net7.0
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Debug\net7.0-windows\runtimes\win-x86\native\pdf.ttx
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.frmCotizaciones.resources
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.FormBuscarClientes.resources
+C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.FormBuscarCategorias.resources
+C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.FormBuscarProductos.resources

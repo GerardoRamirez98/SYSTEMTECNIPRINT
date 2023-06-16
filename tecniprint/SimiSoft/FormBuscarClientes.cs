@@ -1,10 +1,8 @@
 ﻿using DevExpress.XtraGrid.Views.Grid;
 using FarmsRamirezBML;
-using System.Windows.Forms;
 using System;
-using System.Collections.Generic;
-using DevExpress.XtraGrid;
 using System.Linq;
+using System.Windows.Forms;
 
 namespace TP
 {
