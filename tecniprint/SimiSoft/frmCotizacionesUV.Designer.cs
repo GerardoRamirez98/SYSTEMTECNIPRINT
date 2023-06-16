@@ -86,6 +86,8 @@
             labelControl29 = new DevExpress.XtraEditors.LabelControl();
             labelControl28 = new DevExpress.XtraEditors.LabelControl();
             groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            labelControl23 = new DevExpress.XtraEditors.LabelControl();
+            comboBox1 = new System.Windows.Forms.ComboBox();
             labelControl34 = new DevExpress.XtraEditors.LabelControl();
             cbTipo = new System.Windows.Forms.ComboBox();
             labelControl35 = new DevExpress.XtraEditors.LabelControl();
@@ -108,6 +110,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             btnLimpiar = new DevExpress.XtraEditors.SimpleButton();
             btnNuevo = new DevExpress.XtraEditors.SimpleButton();
+            btmEliminar = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)txtGloss.Properties).BeginInit();
@@ -633,6 +636,8 @@
             // 
             // groupControl8
             // 
+            groupControl8.Controls.Add(labelControl23);
+            groupControl8.Controls.Add(comboBox1);
             groupControl8.Controls.Add(labelControl34);
             groupControl8.Controls.Add(cbTipo);
             groupControl8.Controls.Add(labelControl35);
@@ -650,9 +655,26 @@
             groupControl8.TabIndex = 6;
             groupControl8.Text = "Datos Impresion";
             // 
+            // labelControl23
+            // 
+            labelControl23.Location = new System.Drawing.Point(223, 26);
+            labelControl23.Name = "labelControl23";
+            labelControl23.Size = new System.Drawing.Size(73, 13);
+            labelControl23.TabIndex = 24;
+            labelControl23.Text = "Transportador:";
+            // 
+            // comboBox1
+            // 
+            comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new System.Drawing.Point(298, 21);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new System.Drawing.Size(121, 21);
+            comboBox1.TabIndex = 25;
+            // 
             // labelControl34
             // 
-            labelControl34.Location = new System.Drawing.Point(226, 53);
+            labelControl34.Location = new System.Drawing.Point(223, 78);
             labelControl34.Name = "labelControl34";
             labelControl34.Size = new System.Drawing.Size(24, 13);
             labelControl34.TabIndex = 21;
@@ -662,14 +684,14 @@
             // 
             cbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbTipo.FormattingEnabled = true;
-            cbTipo.Location = new System.Drawing.Point(274, 49);
+            cbTipo.Location = new System.Drawing.Point(298, 75);
             cbTipo.Name = "cbTipo";
             cbTipo.Size = new System.Drawing.Size(121, 21);
             cbTipo.TabIndex = 23;
             // 
             // labelControl35
             // 
-            labelControl35.Location = new System.Drawing.Point(226, 26);
+            labelControl35.Location = new System.Drawing.Point(223, 51);
             labelControl35.Name = "labelControl35";
             labelControl35.Size = new System.Drawing.Size(42, 13);
             labelControl35.TabIndex = 19;
@@ -679,7 +701,7 @@
             // 
             cbMaterial.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             cbMaterial.FormattingEnabled = true;
-            cbMaterial.Location = new System.Drawing.Point(274, 22);
+            cbMaterial.Location = new System.Drawing.Point(298, 48);
             cbMaterial.Name = "cbMaterial";
             cbMaterial.Size = new System.Drawing.Size(121, 21);
             cbMaterial.TabIndex = 22;
@@ -815,7 +837,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new System.Drawing.Point(498, 492);
+            btnLimpiar.Location = new System.Drawing.Point(417, 492);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new System.Drawing.Size(75, 23);
             btnLimpiar.TabIndex = 22;
@@ -824,18 +846,28 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new System.Drawing.Point(417, 492);
+            btnNuevo.Location = new System.Drawing.Point(336, 492);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new System.Drawing.Size(75, 23);
             btnNuevo.TabIndex = 23;
             btnNuevo.Text = "Nuevo";
             btnNuevo.Click += btnNuevo_Click;
             // 
+            // btmEliminar
+            // 
+            btmEliminar.Location = new System.Drawing.Point(498, 492);
+            btmEliminar.Name = "btmEliminar";
+            btmEliminar.Size = new System.Drawing.Size(75, 23);
+            btmEliminar.TabIndex = 24;
+            btmEliminar.Text = "Eliminar";
+            btmEliminar.Click += btmEliminar_Click;
+            // 
             // frmCotizacionesUV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(1296, 934);
+            Controls.Add(btmEliminar);
             Controls.Add(btnNuevo);
             Controls.Add(btnLimpiar);
             Controls.Add(dgvImpresionUV);
@@ -990,5 +1022,8 @@
         private System.Windows.Forms.Timer timer1;
         private DevExpress.XtraEditors.SimpleButton btnLimpiar;
         private DevExpress.XtraEditors.SimpleButton btnNuevo;
+        private DevExpress.XtraEditors.LabelControl labelControl23;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private DevExpress.XtraEditors.SimpleButton btmEliminar;
     }
 }

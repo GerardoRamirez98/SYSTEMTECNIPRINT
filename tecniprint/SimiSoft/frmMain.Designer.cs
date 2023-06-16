@@ -38,8 +38,9 @@ namespace SimiSoft
             btnAsignarPermisosRol = new DevExpress.XtraBars.BarButtonItem();
             btnCategorias = new DevExpress.XtraBars.BarButtonItem();
             btnClientes = new DevExpress.XtraBars.BarButtonItem();
-            btnProveedores = new DevExpress.XtraBars.BarButtonItem();
+            btnCotizacionesUV = new DevExpress.XtraBars.BarButtonItem();
             btnProductos = new DevExpress.XtraBars.BarButtonItem();
+            btnProveedores = new DevExpress.XtraBars.BarButtonItem();
             btnRoles = new DevExpress.XtraBars.BarButtonItem();
             btnUsuarios = new DevExpress.XtraBars.BarButtonItem();
             btnVentas = new DevExpress.XtraBars.BarButtonItem();
@@ -49,7 +50,6 @@ namespace SimiSoft
             barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            btnCotizacionesUV = new DevExpress.XtraBars.BarButtonItem();
             tabMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(components);
             bar1 = new DevExpress.XtraBars.Bar();
             ((System.ComponentModel.ISupportInitialize)bManager).BeginInit();
@@ -100,7 +100,7 @@ namespace SimiSoft
             // 
             mnCatalogo.Caption = "Catalogo";
             mnCatalogo.Id = 2;
-            mnCatalogo.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(btnAsignarPermisosRol), new DevExpress.XtraBars.LinkPersistInfo(btnCategorias), new DevExpress.XtraBars.LinkPersistInfo(btnClientes), new DevExpress.XtraBars.LinkPersistInfo(btnCotizacionesUV), new DevExpress.XtraBars.LinkPersistInfo(btnProductos), new DevExpress.XtraBars.LinkPersistInfo(btnProveedores), new DevExpress.XtraBars.LinkPersistInfo(btnRoles), new DevExpress.XtraBars.LinkPersistInfo(btnUsuarios), new DevExpress.XtraBars.LinkPersistInfo(btnVentas) });
+            mnCatalogo.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] { new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.None, false, btnAsignarPermisosRol, false), new DevExpress.XtraBars.LinkPersistInfo(btnCategorias), new DevExpress.XtraBars.LinkPersistInfo(btnClientes), new DevExpress.XtraBars.LinkPersistInfo(btnCotizacionesUV), new DevExpress.XtraBars.LinkPersistInfo(btnProductos), new DevExpress.XtraBars.LinkPersistInfo(btnProveedores), new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.None, false, btnRoles, false), new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.None, false, btnUsuarios, false), new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.None, false, btnVentas, false) });
             mnCatalogo.Name = "mnCatalogo";
             // 
             // btnAsignarPermisosRol
@@ -124,12 +124,12 @@ namespace SimiSoft
             btnClientes.Name = "btnClientes";
             btnClientes.ItemClick += btnClientes_ItemClick;
             // 
-            // btnProveedores
+            // btnCotizacionesUV
             // 
-            btnProveedores.Caption = "Proveedores";
-            btnProveedores.Id = 4;
-            btnProveedores.Name = "btnProveedores";
-            btnProveedores.ItemClick += btnProveedores_ItemClick;
+            btnCotizacionesUV.Caption = "CotizacionesUV";
+            btnCotizacionesUV.Id = 13;
+            btnCotizacionesUV.Name = "btnCotizacionesUV";
+            btnCotizacionesUV.ItemClick += btnCotizacionesUV_ItemClick;
             // 
             // btnProductos
             // 
@@ -137,6 +137,13 @@ namespace SimiSoft
             btnProductos.Id = 5;
             btnProductos.Name = "btnProductos";
             btnProductos.ItemClick += btnProductos_ItemClick;
+            // 
+            // btnProveedores
+            // 
+            btnProveedores.Caption = "Proveedores";
+            btnProveedores.Id = 4;
+            btnProveedores.Name = "btnProveedores";
+            btnProveedores.ItemClick += btnProveedores_ItemClick;
             // 
             // btnRoles
             // 
@@ -208,13 +215,6 @@ namespace SimiSoft
             barButtonItem2.Caption = "Productos";
             barButtonItem2.Id = 7;
             barButtonItem2.Name = "barButtonItem2";
-            // 
-            // btnCotizacionesUV
-            // 
-            btnCotizacionesUV.Caption = "CotizacionesUV";
-            btnCotizacionesUV.Id = 13;
-            btnCotizacionesUV.Name = "btnCotizacionesUV";
-            btnCotizacionesUV.ItemClick += btnCotizacionesUV_ItemClick;
             // 
             // tabMdiManager
             // 

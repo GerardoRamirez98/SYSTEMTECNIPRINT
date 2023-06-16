@@ -26,10 +26,25 @@ namespace TP
             int indice_fila = dgvImpresionUV.Rows.Add();
             DataGridViewRow row = dgvImpresionUV.Rows[indice_fila];
 
-            row.Cells["Cantidad"].Value = txtTotalPares.Text;
+            row.Cells["CantidadPares"].Value = txtTotalPares.Text;
+            row.Cells["CantidadImpares"].Value = "";
             row.Cells["Descripcion"].Value = txtEstilo.Text;
+            row.Cells["Largo"].Value = txtLargo.Text;
+            row.Cells["Ancho"].Value = txtAncho.Text;
             row.Cells["PrecioUnitario"].Value = lblPrecioUnitario.Text;
             row.Cells["PrecioVenta"].Value = lblPrecioVenta.Text;
+        }
+
+        private void btmEliminar_Click(object sender, EventArgs e)
+        {
+            // Obtener las filas seleccionadas
+            DataGridViewSelectedRowCollection filasSeleccionadas = dgvImpresionUV.SelectedRows;
+
+            // Iterar sobre las filas seleccionadas y eliminarlas
+            foreach (DataGridViewRow fila in filasSeleccionadas)
+            {
+                dgvImpresionUV.Rows.Remove(fila);
+            }
         }
 
         private void frmCotizacionesUV_Load(object sender, EventArgs e)
@@ -39,8 +54,11 @@ namespace TP
 
             txtCodigo.Text = string.Format("{0}", DateTime.Now.ToString("ddMMyyyyHHmmss"));
 
-            dgvImpresionUV.Columns.Add("Cantidad", "Cantidad");
+            dgvImpresionUV.Columns.Add("CantidadPares", "CantidadPares");
+            dgvImpresionUV.Columns.Add("CantidadImpares", "CantidadImpares");
             dgvImpresionUV.Columns.Add("Descripcion", "Descripcion");
+            dgvImpresionUV.Columns.Add("Largo", "Largo");
+            dgvImpresionUV.Columns.Add("Ancho", "Ancho");
             dgvImpresionUV.Columns.Add("PrecioUnitario", "PrecioUnitario");
             dgvImpresionUV.Columns.Add("PrecioVenta", "PrecioVenta");
         }
@@ -81,6 +99,9 @@ namespace TP
                 // Agrega información del cliente
                 Paragraph clienteParagraph = new Paragraph("Cliente: " + txtCliente.Text);
                 doc.Add(clienteParagraph);
+
+                Paragraph codigoParagraph = new Paragraph("Codigo: " + txtCodigo.Text);
+                doc.Add(codigoParagraph);
 
                 // Agrega información de la fecha
                 Paragraph fechaParagraph = new Paragraph("Fecha: " + lblFechaActual.Text);
@@ -173,6 +194,8 @@ namespace TP
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            dgvImpresionUV.Rows.Clear();
+
             BorrarCampos(this);
 
             txtCodigo.Text = string.Format("{0}", DateTime.Now.ToString("ddMMyyyyHHmmss"));
@@ -180,4 +203,4 @@ namespace TP
 
         
     }
-} 
+}
