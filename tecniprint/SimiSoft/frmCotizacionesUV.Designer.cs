@@ -66,6 +66,8 @@
             groupControl5 = new DevExpress.XtraEditors.GroupControl();
             pbImagenImprimir = new DevExpress.XtraEditors.PictureEdit();
             groupControl6 = new DevExpress.XtraEditors.GroupControl();
+            btnCodigo = new DevExpress.XtraEditors.SimpleButton();
+            btnCliente = new DevExpress.XtraEditors.SimpleButton();
             cbTipoCotizacion = new System.Windows.Forms.ComboBox();
             labelControl30 = new DevExpress.XtraEditors.LabelControl();
             txtCodigo = new DevExpress.XtraEditors.TextEdit();
@@ -86,6 +88,8 @@
             labelControl29 = new DevExpress.XtraEditors.LabelControl();
             labelControl28 = new DevExpress.XtraEditors.LabelControl();
             groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            btnTipo = new DevExpress.XtraEditors.SimpleButton();
+            btnMaterial = new DevExpress.XtraEditors.SimpleButton();
             labelControl23 = new DevExpress.XtraEditors.LabelControl();
             comboBox1 = new System.Windows.Forms.ComboBox();
             labelControl34 = new DevExpress.XtraEditors.LabelControl();
@@ -170,15 +174,15 @@
             groupControl1.Controls.Add(labelControl2);
             groupControl1.Controls.Add(labelControl1);
             groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl1.Location = new System.Drawing.Point(526, 116);
+            groupControl1.Location = new System.Drawing.Point(541, 116);
             groupControl1.Name = "groupControl1";
-            groupControl1.Size = new System.Drawing.Size(209, 183);
+            groupControl1.Size = new System.Drawing.Size(224, 183);
             groupControl1.TabIndex = 0;
             groupControl1.Text = "Consumo Tinta";
             // 
             // labelControl12
             // 
-            labelControl12.Location = new System.Drawing.Point(169, 156);
+            labelControl12.Location = new System.Drawing.Point(187, 156);
             labelControl12.Name = "labelControl12";
             labelControl12.Size = new System.Drawing.Size(14, 13);
             labelControl12.TabIndex = 17;
@@ -186,7 +190,7 @@
             // 
             // labelControl11
             // 
-            labelControl11.Location = new System.Drawing.Point(169, 130);
+            labelControl11.Location = new System.Drawing.Point(187, 130);
             labelControl11.Name = "labelControl11";
             labelControl11.Size = new System.Drawing.Size(14, 13);
             labelControl11.TabIndex = 16;
@@ -194,7 +198,7 @@
             // 
             // labelControl10
             // 
-            labelControl10.Location = new System.Drawing.Point(169, 104);
+            labelControl10.Location = new System.Drawing.Point(187, 104);
             labelControl10.Name = "labelControl10";
             labelControl10.Size = new System.Drawing.Size(14, 13);
             labelControl10.TabIndex = 15;
@@ -202,7 +206,7 @@
             // 
             // labelControl9
             // 
-            labelControl9.Location = new System.Drawing.Point(169, 78);
+            labelControl9.Location = new System.Drawing.Point(187, 78);
             labelControl9.Name = "labelControl9";
             labelControl9.Size = new System.Drawing.Size(14, 13);
             labelControl9.TabIndex = 14;
@@ -210,7 +214,7 @@
             // 
             // labelControl8
             // 
-            labelControl8.Location = new System.Drawing.Point(169, 52);
+            labelControl8.Location = new System.Drawing.Point(187, 52);
             labelControl8.Name = "labelControl8";
             labelControl8.Size = new System.Drawing.Size(14, 13);
             labelControl8.TabIndex = 13;
@@ -218,7 +222,7 @@
             // 
             // labelControl7
             // 
-            labelControl7.Location = new System.Drawing.Point(169, 26);
+            labelControl7.Location = new System.Drawing.Point(187, 26);
             labelControl7.Name = "labelControl7";
             labelControl7.Size = new System.Drawing.Size(14, 13);
             labelControl7.TabIndex = 12;
@@ -228,42 +232,42 @@
             // 
             txtGloss.Location = new System.Drawing.Point(66, 153);
             txtGloss.Name = "txtGloss";
-            txtGloss.Size = new System.Drawing.Size(97, 20);
+            txtGloss.Size = new System.Drawing.Size(115, 20);
             txtGloss.TabIndex = 15;
             // 
             // txtCyan
             // 
             txtCyan.Location = new System.Drawing.Point(66, 127);
             txtCyan.Name = "txtCyan";
-            txtCyan.Size = new System.Drawing.Size(97, 20);
+            txtCyan.Size = new System.Drawing.Size(115, 20);
             txtCyan.TabIndex = 14;
             // 
             // txtBlack
             // 
             txtBlack.Location = new System.Drawing.Point(66, 101);
             txtBlack.Name = "txtBlack";
-            txtBlack.Size = new System.Drawing.Size(97, 20);
+            txtBlack.Size = new System.Drawing.Size(115, 20);
             txtBlack.TabIndex = 13;
             // 
             // txtMagenta
             // 
             txtMagenta.Location = new System.Drawing.Point(66, 75);
             txtMagenta.Name = "txtMagenta";
-            txtMagenta.Size = new System.Drawing.Size(97, 20);
+            txtMagenta.Size = new System.Drawing.Size(115, 20);
             txtMagenta.TabIndex = 12;
             // 
             // txtYellow
             // 
             txtYellow.Location = new System.Drawing.Point(66, 49);
             txtYellow.Name = "txtYellow";
-            txtYellow.Size = new System.Drawing.Size(97, 20);
+            txtYellow.Size = new System.Drawing.Size(115, 20);
             txtYellow.TabIndex = 11;
             // 
             // txtWhite
             // 
             txtWhite.Location = new System.Drawing.Point(66, 23);
             txtWhite.Name = "txtWhite";
-            txtWhite.Size = new System.Drawing.Size(97, 20);
+            txtWhite.Size = new System.Drawing.Size(115, 20);
             txtWhite.TabIndex = 10;
             // 
             // labelControl6
@@ -449,7 +453,7 @@
             groupControl5.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl5.Location = new System.Drawing.Point(227, 116);
             groupControl5.Name = "groupControl5";
-            groupControl5.Size = new System.Drawing.Size(293, 258);
+            groupControl5.Size = new System.Drawing.Size(308, 258);
             groupControl5.TabIndex = 5;
             groupControl5.Text = "Impresion";
             // 
@@ -459,11 +463,13 @@
             pbImagenImprimir.Name = "pbImagenImprimir";
             pbImagenImprimir.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             pbImagenImprimir.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
-            pbImagenImprimir.Size = new System.Drawing.Size(262, 219);
+            pbImagenImprimir.Size = new System.Drawing.Size(275, 193);
             pbImagenImprimir.TabIndex = 24;
             // 
             // groupControl6
             // 
+            groupControl6.Controls.Add(btnCodigo);
+            groupControl6.Controls.Add(btnCliente);
             groupControl6.Controls.Add(cbTipoCotizacion);
             groupControl6.Controls.Add(labelControl30);
             groupControl6.Controls.Add(txtCodigo);
@@ -471,10 +477,25 @@
             groupControl6.Controls.Add(txtCliente);
             groupControl6.Controls.Add(labelControl19);
             groupControl6.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            groupControl6.Location = new System.Drawing.Point(12, 53);
+            groupControl6.Location = new System.Drawing.Point(27, 56);
             groupControl6.Name = "groupControl6";
             groupControl6.Size = new System.Drawing.Size(723, 60);
             groupControl6.TabIndex = 6;
+            // 
+            // btnCodigo
+            // 
+            btnCodigo.Location = new System.Drawing.Point(417, 22);
+            btnCodigo.Name = "btnCodigo";
+            btnCodigo.Size = new System.Drawing.Size(24, 21);
+            btnCodigo.TabIndex = 28;
+            // 
+            // btnCliente
+            // 
+            btnCliente.Location = new System.Drawing.Point(198, 22);
+            btnCliente.Name = "btnCliente";
+            btnCliente.Size = new System.Drawing.Size(24, 21);
+            btnCliente.TabIndex = 27;
+            btnCliente.Click += btnCliente_Click;
             // 
             // cbTipoCotizacion
             // 
@@ -496,9 +517,9 @@
             // txtCodigo
             // 
             txtCodigo.Enabled = false;
-            txtCodigo.Location = new System.Drawing.Point(280, 23);
+            txtCodigo.Location = new System.Drawing.Point(271, 23);
             txtCodigo.Name = "txtCodigo";
-            txtCodigo.Size = new System.Drawing.Size(161, 20);
+            txtCodigo.Size = new System.Drawing.Size(140, 20);
             txtCodigo.TabIndex = 2;
             // 
             // labelControl21
@@ -513,7 +534,7 @@
             // 
             txtCliente.Location = new System.Drawing.Point(61, 23);
             txtCliente.Name = "txtCliente";
-            txtCliente.Size = new System.Drawing.Size(161, 20);
+            txtCliente.Size = new System.Drawing.Size(134, 20);
             txtCliente.TabIndex = 1;
             // 
             // labelControl19
@@ -636,6 +657,8 @@
             // 
             // groupControl8
             // 
+            groupControl8.Controls.Add(btnTipo);
+            groupControl8.Controls.Add(btnMaterial);
             groupControl8.Controls.Add(labelControl23);
             groupControl8.Controls.Add(comboBox1);
             groupControl8.Controls.Add(labelControl34);
@@ -651,9 +674,23 @@
             groupControl8.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             groupControl8.Location = new System.Drawing.Point(311, 380);
             groupControl8.Name = "groupControl8";
-            groupControl8.Size = new System.Drawing.Size(424, 106);
+            groupControl8.Size = new System.Drawing.Size(454, 106);
             groupControl8.TabIndex = 6;
             groupControl8.Text = "Datos Impresion";
+            // 
+            // btnTipo
+            // 
+            btnTipo.Location = new System.Drawing.Point(422, 75);
+            btnTipo.Name = "btnTipo";
+            btnTipo.Size = new System.Drawing.Size(24, 21);
+            btnTipo.TabIndex = 27;
+            // 
+            // btnMaterial
+            // 
+            btnMaterial.Location = new System.Drawing.Point(422, 49);
+            btnMaterial.Name = "btnMaterial";
+            btnMaterial.Size = new System.Drawing.Size(24, 21);
+            btnMaterial.TabIndex = 26;
             // 
             // labelControl23
             // 
@@ -757,7 +794,7 @@
             // 
             // labelControl36
             // 
-            labelControl36.Location = new System.Drawing.Point(527, 356);
+            labelControl36.Location = new System.Drawing.Point(625, 356);
             labelControl36.Name = "labelControl36";
             labelControl36.Size = new System.Drawing.Size(64, 13);
             labelControl36.TabIndex = 13;
@@ -765,7 +802,7 @@
             // 
             // labelControl37
             // 
-            labelControl37.Location = new System.Drawing.Point(527, 318);
+            labelControl37.Location = new System.Drawing.Point(625, 318);
             labelControl37.Name = "labelControl37";
             labelControl37.Size = new System.Drawing.Size(73, 13);
             labelControl37.TabIndex = 14;
@@ -773,7 +810,7 @@
             // 
             // labelControl38
             // 
-            labelControl38.Location = new System.Drawing.Point(527, 337);
+            labelControl38.Location = new System.Drawing.Point(625, 337);
             labelControl38.Name = "labelControl38";
             labelControl38.Size = new System.Drawing.Size(52, 13);
             labelControl38.TabIndex = 15;
@@ -781,7 +818,7 @@
             // 
             // lblPrecioVenta
             // 
-            lblPrecioVenta.Location = new System.Drawing.Point(606, 356);
+            lblPrecioVenta.Location = new System.Drawing.Point(704, 356);
             lblPrecioVenta.Name = "lblPrecioVenta";
             lblPrecioVenta.Size = new System.Drawing.Size(6, 13);
             lblPrecioVenta.TabIndex = 16;
@@ -789,7 +826,7 @@
             // 
             // lblPrecioUnitario
             // 
-            lblPrecioUnitario.Location = new System.Drawing.Point(606, 318);
+            lblPrecioUnitario.Location = new System.Drawing.Point(704, 318);
             lblPrecioUnitario.Name = "lblPrecioUnitario";
             lblPrecioUnitario.Size = new System.Drawing.Size(6, 13);
             lblPrecioUnitario.TabIndex = 17;
@@ -797,7 +834,7 @@
             // 
             // lblPrecioPar
             // 
-            lblPrecioPar.Location = new System.Drawing.Point(606, 337);
+            lblPrecioPar.Location = new System.Drawing.Point(704, 337);
             lblPrecioPar.Name = "lblPrecioPar";
             lblPrecioPar.Size = new System.Drawing.Size(6, 13);
             lblPrecioPar.TabIndex = 18;
@@ -805,7 +842,7 @@
             // 
             // btnGenerarPDF
             // 
-            btnGenerarPDF.Location = new System.Drawing.Point(660, 492);
+            btnGenerarPDF.Location = new System.Drawing.Point(690, 492);
             btnGenerarPDF.Name = "btnGenerarPDF";
             btnGenerarPDF.Size = new System.Drawing.Size(75, 23);
             btnGenerarPDF.TabIndex = 19;
@@ -814,7 +851,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Location = new System.Drawing.Point(579, 492);
+            btnAgregar.Location = new System.Drawing.Point(255, 492);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new System.Drawing.Size(75, 23);
             btnAgregar.TabIndex = 20;
@@ -837,7 +874,7 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Location = new System.Drawing.Point(417, 492);
+            btnLimpiar.Location = new System.Drawing.Point(93, 492);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new System.Drawing.Size(75, 23);
             btnLimpiar.TabIndex = 22;
@@ -846,7 +883,7 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new System.Drawing.Point(336, 492);
+            btnNuevo.Location = new System.Drawing.Point(12, 492);
             btnNuevo.Name = "btnNuevo";
             btnNuevo.Size = new System.Drawing.Size(75, 23);
             btnNuevo.TabIndex = 23;
@@ -855,7 +892,7 @@
             // 
             // btmEliminar
             // 
-            btmEliminar.Location = new System.Drawing.Point(498, 492);
+            btmEliminar.Location = new System.Drawing.Point(174, 492);
             btmEliminar.Name = "btmEliminar";
             btmEliminar.Size = new System.Drawing.Size(75, 23);
             btmEliminar.TabIndex = 24;
@@ -1025,5 +1062,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl23;
         private System.Windows.Forms.ComboBox comboBox1;
         private DevExpress.XtraEditors.SimpleButton btmEliminar;
+        private DevExpress.XtraEditors.SimpleButton btnMaterial;
+        private DevExpress.XtraEditors.SimpleButton btnCodigo;
+        private DevExpress.XtraEditors.SimpleButton btnCliente;
+        private DevExpress.XtraEditors.SimpleButton btnTipo;
     }
 }

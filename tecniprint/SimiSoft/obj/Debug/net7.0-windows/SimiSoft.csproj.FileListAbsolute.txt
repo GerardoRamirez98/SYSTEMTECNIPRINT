@@ -337,3 +337,4 @@ C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Debug\net7.0
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Debug\net7.0-windows\runtimes\win-x86\native\osd.traineddata
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Debug\net7.0-windows\runtimes\win-x86\native\pdf.ttf
 C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\bin\Debug\net7.0-windows\runtimes\win-x86\native\pdf.ttx
+C:\Users\USER\Source\Repos\SYSTEMTECNIPRINT\tecniprint\SimiSoft\obj\Debug\net7.0-windows\TP.frmCotizaciones.resources

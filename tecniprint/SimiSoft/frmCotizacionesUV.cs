@@ -1,7 +1,11 @@
 ﻿using DevExpress.XtraEditors;
+using FarmsRamirezBML;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using SimiSoft;
 using System;
+using System.Data;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
 
@@ -32,7 +36,7 @@ namespace TP
             row.Cells["Largo"].Value = txtLargo.Text;
             row.Cells["Ancho"].Value = txtAncho.Text;
             row.Cells["PrecioUnitario"].Value = lblPrecioUnitario.Text;
-            row.Cells["PrecioVenta"].Value = lblPrecioVenta.Text;
+            row.Cells["PrecioTotal"].Value = lblPrecioVenta.Text;
             row.Cells["Descuento"].Value = "";
         }
 
@@ -203,6 +207,33 @@ namespace TP
             txtCodigo.Text = string.Format("{0}", DateTime.Now.ToString("ddMMyyyyHHmmss"));
         }
 
-        
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            // Obtener el cliente seleccionado del GridView
+            int[] selectedRows = gvClientes.GetSelectedRows();
+
+            if (selectedRows.Length > 0)
+            {
+                int selectedRowIndex = selectedRows[0];
+                DataRowView selectedRow = (DataRowView)gvClientes.GetRow(selectedRowIndex);
+
+                // Obtener los datos del cliente de la fila seleccionada
+                int idCliente = Convert.ToInt32(selectedRow["IdCliente"]);
+                string nombreCliente = selectedRow["Nombre"].ToString();
+
+                // Crear una instancia del cliente seleccionado
+                ClienteSeleccionado = new Cliente()
+                {
+                    IdCliente = idCliente,
+                    Nombre = nombreCliente
+                    // Incluir otros datos del cliente si es necesario
+                };
+
+                // Cerrar el formulario de clientes con DialogResult.OK
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+        }
+        }
     }
 }
