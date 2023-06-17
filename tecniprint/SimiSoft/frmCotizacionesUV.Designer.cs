@@ -89,6 +89,8 @@
             labelControl29 = new DevExpress.XtraEditors.LabelControl();
             labelControl28 = new DevExpress.XtraEditors.LabelControl();
             groupControl8 = new DevExpress.XtraEditors.GroupControl();
+            txtCategoria = new DevExpress.XtraEditors.TextEdit();
+            txtProducto = new DevExpress.XtraEditors.TextEdit();
             btnTipo = new DevExpress.XtraEditors.SimpleButton();
             btnMaterial = new DevExpress.XtraEditors.SimpleButton();
             labelControl23 = new DevExpress.XtraEditors.LabelControl();
@@ -114,8 +116,6 @@
             btnLimpiar = new DevExpress.XtraEditors.SimpleButton();
             btnNuevo = new DevExpress.XtraEditors.SimpleButton();
             btmEliminar = new DevExpress.XtraEditors.SimpleButton();
-            txtProducto = new DevExpress.XtraEditors.TextEdit();
-            txtCategoria = new DevExpress.XtraEditors.TextEdit();
             ((System.ComponentModel.ISupportInitialize)groupControl1).BeginInit();
             groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)txtGloss.Properties).BeginInit();
@@ -150,10 +150,10 @@
             groupControl7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)groupControl8).BeginInit();
             groupControl8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)txtCategoria.Properties).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)txtProducto.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)txtTotalPares.Properties).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvImpresionUV).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtProducto.Properties).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)txtCategoria.Properties).BeginInit();
             SuspendLayout();
             // 
             // groupControl1
@@ -683,6 +683,20 @@
             groupControl8.TabIndex = 6;
             groupControl8.Text = "Datos Impresion";
             // 
+            // txtCategoria
+            // 
+            txtCategoria.Location = new System.Drawing.Point(298, 76);
+            txtCategoria.Name = "txtCategoria";
+            txtCategoria.Size = new System.Drawing.Size(121, 20);
+            txtCategoria.TabIndex = 30;
+            // 
+            // txtProducto
+            // 
+            txtProducto.Location = new System.Drawing.Point(298, 50);
+            txtProducto.Name = "txtProducto";
+            txtProducto.Size = new System.Drawing.Size(121, 20);
+            txtProducto.TabIndex = 29;
+            // 
             // btnTipo
             // 
             btnTipo.ImageOptions.Image = (System.Drawing.Image)resources.GetObject("btnTipo.ImageOptions.Image");
@@ -890,20 +904,6 @@
             btmEliminar.Text = "Eliminar";
             btmEliminar.Click += btmEliminar_Click;
             // 
-            // txtProducto
-            // 
-            txtProducto.Location = new System.Drawing.Point(298, 50);
-            txtProducto.Name = "txtProducto";
-            txtProducto.Size = new System.Drawing.Size(121, 20);
-            txtProducto.TabIndex = 29;
-            // 
-            // txtCategoria
-            // 
-            txtCategoria.Location = new System.Drawing.Point(298, 76);
-            txtCategoria.Name = "txtCategoria";
-            txtCategoria.Size = new System.Drawing.Size(121, 20);
-            txtCategoria.TabIndex = 30;
-            // 
             // frmCotizacionesUV
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -977,10 +977,10 @@
             ((System.ComponentModel.ISupportInitialize)groupControl8).EndInit();
             groupControl8.ResumeLayout(false);
             groupControl8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)txtCategoria.Properties).EndInit();
+            ((System.ComponentModel.ISupportInitialize)txtProducto.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)txtTotalPares.Properties).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvImpresionUV).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtProducto.Properties).EndInit();
-            ((System.ComponentModel.ISupportInitialize)txtCategoria.Properties).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
