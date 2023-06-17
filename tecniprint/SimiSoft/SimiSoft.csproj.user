@@ -24,7 +24,7 @@
     <Compile Update="FormBuscarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormBuscarProductos.cs">
+    <Compile Update="FormBuscarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmAsignarPermisosRol.cs">

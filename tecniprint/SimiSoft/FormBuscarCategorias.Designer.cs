@@ -108,7 +108,7 @@
             ClientSize = new System.Drawing.Size(545, 293);
             Controls.Add(gridControl1);
             Name = "FormBuscarCategorias";
-            Text = "s";
+            Text = "Buscar Categoria";
             Load += FormBuscarCategorias_Load;
             ((System.ComponentModel.ISupportInitialize)gridControl1).EndInit();
             ((System.ComponentModel.ISupportInitialize)categoriasBindingSource).EndInit();

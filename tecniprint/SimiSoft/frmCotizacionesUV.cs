@@ -269,7 +269,7 @@ namespace TP
 
         private void btnMaterial_Click(object sender, EventArgs e)
         {
-            FormBuscarProductos buscarProductos = new FormBuscarProductos();
+            FormBuscarProducto buscarProductos = new FormBuscarProducto();
 
             buscarProductos.ShowDialog();
 

@@ -203,7 +203,7 @@
             ClientSize = new System.Drawing.Size(635, 293);
             Controls.Add(gridControl1);
             Name = "FormBuscarClientes";
-            Text = "FormBuscarClientes";
+            Text = "Buscar Clientes";
             Load += FormBuscarClientes_Load;
             DoubleClick += FormBuscarClientes_Load;
             ((System.ComponentModel.ISupportInitialize)gridControl1).EndInit();

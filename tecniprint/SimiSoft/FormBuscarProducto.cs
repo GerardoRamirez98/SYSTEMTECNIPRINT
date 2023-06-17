@@ -1,15 +1,22 @@
-﻿using DevExpress.XtraGrid.Views.Grid;
+﻿using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 using FarmsRamirezBML;
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TP
 {
-    public partial class FormBuscarProductos : DevExpress.XtraEditors.XtraForm
+    public partial class FormBuscarProducto : DevExpress.XtraEditors.XtraForm
     {
         public Producto ProductoSeleccionado { get; private set; }
-        public FormBuscarProductos()
+        public FormBuscarProducto()
         {
             InitializeComponent();
             gvProducto.DoubleClick += gridView_DoubleClick;
@@ -22,6 +29,7 @@ namespace TP
 
         private void gridView_DoubleClick(object sender, EventArgs e)
         {
+            // Obtiene la fila seleccionada en el GridControl.
             GridView view = sender as GridView;
             if (view != null)
             {
@@ -30,6 +38,7 @@ namespace TP
                 {
                     Producto productoSeleccionado = view.GetRow(focusedRowHandle) as Producto;
 
+                    // Transfiere los datos al formulario original.
                     frmCotizacionesUV formularioOriginal = Application.OpenForms.OfType<frmCotizacionesUV>().FirstOrDefault();
                     if (formularioOriginal != null)
                     {
@@ -37,6 +46,8 @@ namespace TP
                     }
                 }
             }
+
+            // Cierra el formulario actual.
             Close();
         }
     }

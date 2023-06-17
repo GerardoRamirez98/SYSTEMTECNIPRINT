@@ -1,6 +1,6 @@
 ﻿namespace TP
 {
-    partial class FormBuscarProductos
+    partial class FormBuscarProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -58,11 +58,11 @@
             // gridControl1
             // 
             gridControl1.DataSource = productoBindingSource;
-            gridControl1.Location = new System.Drawing.Point(12, 30);
+            gridControl1.Location = new System.Drawing.Point(12, 12);
             gridControl1.MainView = gvProducto;
             gridControl1.Name = "gridControl1";
-            gridControl1.Size = new System.Drawing.Size(718, 325);
-            gridControl1.TabIndex = 1;
+            gridControl1.Size = new System.Drawing.Size(674, 357);
+            gridControl1.TabIndex = 0;
             gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gvProducto });
             // 
             // productoBindingSource
@@ -74,7 +74,6 @@
             gvProducto.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { colIdProducto, colCodigo, colCodigoBarras, colNombre, colDescripcion, colMarca, colUnidadMedida, colPrecioCompra, colMargenGanancia, colPrecioVenta, colStock, colStockMin, colStockMax, colIdCategoria, colCategoriaDescripcion, colActivo, colFechaRegistro, colImagen });
             gvProducto.GridControl = gridControl1;
             gvProducto.Name = "gvProducto";
-            gvProducto.OptionsEditForm.ShowOnDoubleClick = DevExpress.Utils.DefaultBoolean.True;
             // 
             // colIdProducto
             // 
@@ -137,6 +136,12 @@
             // 
             colMarca.FieldName = "Marca";
             colMarca.Name = "colMarca";
+            colMarca.OptionsColumn.AllowEdit = false;
+            colMarca.OptionsColumn.AllowGroup = DevExpress.Utils.DefaultBoolean.False;
+            colMarca.OptionsColumn.AllowMerge = DevExpress.Utils.DefaultBoolean.False;
+            colMarca.OptionsColumn.AllowMove = false;
+            colMarca.OptionsColumn.AllowSize = false;
+            colMarca.OptionsColumn.FixedWidth = true;
             // 
             // colUnidadMedida
             // 
@@ -206,14 +211,15 @@
             colImagen.FieldName = "Imagen";
             colImagen.Name = "colImagen";
             // 
-            // FormBuscarProductos
+            // FormBuscarProducto
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(742, 374);
+            ClientSize = new System.Drawing.Size(694, 376);
             Controls.Add(gridControl1);
-            Name = "FormBuscarProductos";
-            Text = "FormBuscarProducto";
+            Name = "FormBuscarProducto";
+            Text = "Buscar Producto";
+            Load += FormBuscarProducto_Load;
             ((System.ComponentModel.ISupportInitialize)gridControl1).EndInit();
             ((System.ComponentModel.ISupportInitialize)productoBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)gvProducto).EndInit();
